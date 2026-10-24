@@ -7,6 +7,12 @@
   },
   "scripts": {
     "app": "node demo-app/server.js",
-    "smoke": "node orchestrator/src/smoke.ts"
+    "smoke": "node orchestrator/src/smoke.ts",
+    "suite": "node orchestrator/src/suite.ts",
+    "build": "node orchestrator/src/build.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "5.9"
   }
 }
