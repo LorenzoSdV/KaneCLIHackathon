@@ -1,0 +1,24 @@
+:root {
+  --bg: #faf7f2;
+  --card: #ffffff;
+  --text: #1f1d1a;
+  --muted: #6b665e;
+  --accent: #c2410c;
+  --error: #b91c1c;
+  --border: #e7e1d8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+header { padding: 16px 24px; border-bottom: 1px solid var(--border); background: var(--card); }
+.brand { font-weight: 700; color: var(--text); text-decoration: none; }
+main { max-width: 720px; margin: 24px auto; padding: 0 16px; display: grid; gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+h1, h2 { margin-top: 0; }
+form { display: grid; gap: 12px; }
+label { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+input, select { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; }
+button { font: inherit; padding: 8px 14px; border: 0; border-radius: 8px; background: var(--accent); color: white; cursor: pointer; justify-self: start; }
+.muted { color: var(--muted); }
+.error { color: var(--error); font-weight: 600; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 10px 12px; }
+input.invalid { border-color: var(--error); outline: 2px solid #fecaca; }
+.events { padding-left: 18px; }

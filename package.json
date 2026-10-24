@@ -1,0 +1,12 @@
+{
+  "name": "spec-contract",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "app": "node demo-app/server.js",
+    "smoke": "node orchestrator/src/smoke.ts"
+  }
+}

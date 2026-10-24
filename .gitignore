@@ -1,0 +1,5 @@
+node_modules/
+wt/
+.contract/
+.testmuai/evidence/
+.DS_Store
