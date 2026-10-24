@@ -1,0 +1,18 @@
+{
+  "commit_id": "cf90eaf4-7e6f-48b6-91b6-1326f1ece7b6",
+  "test_id": "f588d031-251f-49d1-ae6c-fc1ab4dbfbdc",
+  "testcase_id": "01M5R2HDT1N2GFVHN1051KWCZ9",
+  "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
+  "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
+  "org_id": "3398072",
+  "session_name": "dashboard-replay-final-state",
+  "executions": [
+    {
+      "execution_id": "82ebc9b7-0efb-4593-9469-00cebc69ac1f",
+      "run_kind": "author",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-10-24T23:22:57.350Z"
+    }
+  ]
+}
