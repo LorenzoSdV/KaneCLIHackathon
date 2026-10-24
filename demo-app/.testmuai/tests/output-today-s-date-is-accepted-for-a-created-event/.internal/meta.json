@@ -8,12 +8,12 @@
   "session_name": "today-s-date-is-accepted-for-a-created-event",
   "executions": [
     {
-      "execution_id": "ddfde741-c3e7-44f4-a432-31f0bf1e12ce",
+      "execution_id": "5d8291df-c848-4a12-bfa5-1f868b8e8906",
       "run_kind": "author",
-      "status": "passed",
+      "status": "failed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T21:58:09.379Z"
+      "at": "2026-10-24T22:00:19.743Z"
     }
   ]
 }
