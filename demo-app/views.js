@@ -80,35 +80,14 @@ export function eventPage({ event, error }) {
   <h1>${escape(event.title)}</h1>
   <p class="date">${escape(event.date)}</p>
   <p class="host">Hosted by ${escape(event.host)}</p>
-  <p><a id="other-event-tab" href="/events/${event.id}" target="_blank">Open event in another tab</a></p>
+  <p><a href="/events/${event.id}" target="_blank" rel="noopener">Open event in another tab</a></p>
 </section>
 <section class="card" aria-labelledby="dishes-heading">
   <h2 id="dishes-heading">Dishes</h2>
   <p>${Object.keys(event.claims).length} of 5 dishes claimed</p>
   ${error ? `<div class="error" role="alert">${escape(error)}</div>` : ""}
   <ul class="dishes">${dishes}</ul>
-</section>
-<script>
-  // Keep each tab's rendered forms intact when switching between event views.
-  const tabLink = document.getElementById("other-event-tab");
-  const tabKey = "potluck-event-${event.id}";
-  if (window.name !== tabKey + "-original" && window.name !== tabKey + "-other") {
-    window.name = tabKey + "-original";
-  }
-  const isOriginal = window.name === tabKey + "-original";
-  const otherTabName = tabKey + (isOriginal ? "-other" : "-original");
-  tabLink.target = otherTabName;
-  if (!isOriginal) tabLink.textContent = "Switch to original event tab";
-  tabLink.addEventListener("click", (event) => {
-    // An empty URL focuses an existing named tab without navigating it.
-    const otherTab = window.open("", otherTabName);
-    if (!otherTab) return;
-    event.preventDefault();
-    if (otherTab.location.href === "about:blank") otherTab.location.href = tabLink.href;
-    otherTab.focus();
-    if (isOriginal) tabLink.textContent = "Switch to other event tab";
-  });
-</script>`
+</section>`
   );
 }
 
