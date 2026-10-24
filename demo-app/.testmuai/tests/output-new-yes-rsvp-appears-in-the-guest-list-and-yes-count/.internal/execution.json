@@ -2,24 +2,24 @@
   "test_id": "39736582-4d0c-4c2d-9430-d102dd1a3cfa",
   "version": "v4",
   "auto_heal_version": "AH2",
-  "session_id": "71173dda-9f1c-45be-ae98-853c9b437bf4",
+  "session_id": "c5f3d033-5ab9-454d-ac64-62f1e9c72cbc",
   "org_id": "3398072",
   "user_id": "3574171",
   "url": "",
-  "start_timestamp": "2026-10-24T22:48:25.955Z",
-  "end_timestamp": "2026-10-24T22:49:47.482Z",
+  "start_timestamp": "2026-10-24T22:56:55.439Z",
+  "end_timestamp": "2026-10-24T22:57:53.847Z",
   "status": "success",
-  "commit_id": "71173dda-9f1c-45be-ae98-853c9b437bf4",
+  "commit_id": "c5f3d033-5ab9-454d-ac64-62f1e9c72cbc",
   "instructions": [
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_d79c6359cf33483cb7130ba27cf3b9e3",
-      "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+      "instruction_id": "generative_block_9326f88b67b84a618829d9a7efd234a5",
+      "generative_id": "9326f88b67b84a618829d9a7efd234a5",
       "objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "1d7e8c23-e414-4261-9e3d-1605de3dc55f",
+          "instruction_id": "cc3151a2-dc7d-4dba-bd94-ed8645858b0f",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Navigate to {{global.start_url}}",
@@ -31,11 +31,11 @@
           "operations": [
             {
               "operation_id": "3ec4a1ee-83bb-4d73-a6bb-792e45b0f69c",
-              "instruction_id": "1d7e8c23-e414-4261-9e3d-1605de3dc55f",
+              "instruction_id": "cc3151a2-dc7d-4dba-bd94-ed8645858b0f",
               "instruction": "Navigate to {{global.start_url}}",
               "intent": "Navigate to {{global.start_url}}",
-              "operation_start": "2026-10-24T22:48:32.266317+00:00",
-              "operation_end": "2026-10-24T22:48:32.300Z",
+              "operation_start": "2026-10-24T22:56:58.323802+00:00",
+              "operation_end": "2026-10-24T22:56:58.355Z",
               "status": "success",
               "command": "OPEN",
               "name": "",
@@ -158,8 +158,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:32.266317+00:00",
-          "end_timestamp": "2026-10-24T22:48:32.300Z",
+          "start_timestamp": "2026-10-24T22:56:58.323802+00:00",
+          "end_timestamp": "2026-10-24T22:56:58.355Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -185,7 +185,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -196,7 +196,7 @@
           "reasoning": "Navigate to {{global.start_url}}"
         },
         {
-          "instruction_id": "69276cdd-02ce-458e-a9e5-090e03b24226",
+          "instruction_id": "a5e32777-1332-4aa4-8289-77cf180b0d6a",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Waiting while the event form steps are queued",
@@ -208,11 +208,11 @@
           "operations": [
             {
               "operation_id": "130fc344-d790-4438-84db-6f60a5b5b3e0",
-              "instruction_id": "69276cdd-02ce-458e-a9e5-090e03b24226",
+              "instruction_id": "a5e32777-1332-4aa4-8289-77cf180b0d6a",
               "instruction": "Waiting while the event form steps are queued",
               "intent": "Waiting while the event form steps are queued",
-              "operation_start": "2026-10-24T22:48:39.786171+00:00",
-              "operation_end": "2026-10-24T22:48:40.790Z",
+              "operation_start": "2026-10-24T22:56:59.412186+00:00",
+              "operation_end": "2026-10-24T22:57:00.416Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -335,8 +335,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:39.786171+00:00",
-          "end_timestamp": "2026-10-24T22:48:40.790Z",
+          "start_timestamp": "2026-10-24T22:56:59.412186+00:00",
+          "end_timestamp": "2026-10-24T22:57:00.416Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -362,7 +362,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -373,7 +373,7 @@
           "reasoning": "queued plan (4 steps): type \"Event title\"; type \"Date\"; type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "7f7edcb3-f620-4155-a4ca-40b4215bcf39",
+          "instruction_id": "4f13db29-4a72-45a1-aa80-9ad0d0c5ed01",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"RSVP Yes test\" into \"Event title\"",
@@ -385,11 +385,11 @@
           "operations": [
             {
               "operation_id": "3b9a64e6-c157-4de4-86a4-8c9257a250ed",
-              "instruction_id": "7f7edcb3-f620-4155-a4ca-40b4215bcf39",
+              "instruction_id": "4f13db29-4a72-45a1-aa80-9ad0d0c5ed01",
               "instruction": "Type \"RSVP Yes test\" into \"Event title\"",
               "intent": "Type \"RSVP Yes test\" into \"Event title\"",
-              "operation_start": "2026-10-24T22:48:40.519690+00:00",
-              "operation_end": "2026-10-24T22:48:40.554Z",
+              "operation_start": "2026-10-24T22:56:59.584416+00:00",
+              "operation_end": "2026-10-24T22:56:59.693Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -537,8 +537,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:40.519690+00:00",
-          "end_timestamp": "2026-10-24T22:48:40.554Z",
+          "start_timestamp": "2026-10-24T22:56:59.584416+00:00",
+          "end_timestamp": "2026-10-24T22:56:59.693Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -564,7 +564,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -575,7 +575,7 @@
           "reasoning": "PRIMARY: event title input; role=textbox; text=\"Event title\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "a7fb431c-e3bf-41fc-a1b4-58362bae6398",
+          "instruction_id": "20284d8a-6205-47f0-8aaf-2886db91d8fe",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"2026-10-24\" into \"Date\"",
@@ -587,11 +587,11 @@
           "operations": [
             {
               "operation_id": "12b02136-8964-4454-a11d-956294455ec4",
-              "instruction_id": "a7fb431c-e3bf-41fc-a1b4-58362bae6398",
+              "instruction_id": "20284d8a-6205-47f0-8aaf-2886db91d8fe",
               "instruction": "Type \"2026-10-24\" into \"Date\"",
               "intent": "Type \"2026-10-24\" into \"Date\"",
-              "operation_start": "2026-10-24T22:48:41.260210+00:00",
-              "operation_end": "2026-10-24T22:48:41.288Z",
+              "operation_start": "2026-10-24T22:56:59.729680+00:00",
+              "operation_end": "2026-10-24T22:56:59.782Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -739,8 +739,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:41.260210+00:00",
-          "end_timestamp": "2026-10-24T22:48:41.288Z",
+          "start_timestamp": "2026-10-24T22:56:59.729680+00:00",
+          "end_timestamp": "2026-10-24T22:56:59.782Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -766,7 +766,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -777,7 +777,7 @@
           "reasoning": "PRIMARY: event date input; role=date; text=\"Date\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "1ab04d03-7fec-47f3-a426-4eb18a7e63ed",
+          "instruction_id": "f4b3ac68-26ad-4cd3-94dc-a49a6d0766f8",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Waiting for the plan to start after typing the host name",
@@ -789,11 +789,11 @@
           "operations": [
             {
               "operation_id": "51745329-7d3b-44f4-969c-b79b2700af3d",
-              "instruction_id": "1ab04d03-7fec-47f3-a426-4eb18a7e63ed",
+              "instruction_id": "f4b3ac68-26ad-4cd3-94dc-a49a6d0766f8",
               "instruction": "Waiting for the plan to start after typing the host name",
               "intent": "Waiting for the plan to start after typing the host name",
-              "operation_start": "2026-10-24T22:48:47.036031+00:00",
-              "operation_end": "2026-10-24T22:48:48.040Z",
+              "operation_start": "2026-10-24T22:57:00.811071+00:00",
+              "operation_end": "2026-10-24T22:57:01.814Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -916,8 +916,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:47.036031+00:00",
-          "end_timestamp": "2026-10-24T22:48:48.040Z",
+          "start_timestamp": "2026-10-24T22:57:00.811071+00:00",
+          "end_timestamp": "2026-10-24T22:57:01.814Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -943,7 +943,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -954,7 +954,7 @@
           "reasoning": "queued plan (2 steps): type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "27d7158d-5bbd-4f69-87cc-ff769c6c2ca4",
+          "instruction_id": "2aa8b913-c5a8-44c4-a5e0-f70670a70cae",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Test Host\" into \"Host name\"",
@@ -966,11 +966,11 @@
           "operations": [
             {
               "operation_id": "b00b44a7-3ef3-4919-a31a-3cea93eab92e",
-              "instruction_id": "27d7158d-5bbd-4f69-87cc-ff769c6c2ca4",
+              "instruction_id": "2aa8b913-c5a8-44c4-a5e0-f70670a70cae",
               "instruction": "Type \"Test Host\" into \"Host name\"",
               "intent": "Type \"Test Host\" into \"Host name\"",
-              "operation_start": "2026-10-24T22:48:47.693826+00:00",
-              "operation_end": "2026-10-24T22:48:47.718Z",
+              "operation_start": "2026-10-24T22:57:00.906327+00:00",
+              "operation_end": "2026-10-24T22:57:00.955Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -1118,8 +1118,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:47.693826+00:00",
-          "end_timestamp": "2026-10-24T22:48:47.718Z",
+          "start_timestamp": "2026-10-24T22:57:00.906327+00:00",
+          "end_timestamp": "2026-10-24T22:57:00.955Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1145,7 +1145,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -1156,7 +1156,7 @@
           "reasoning": "PRIMARY: host name input; role=textbox; text=\"Host name\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "fa539243-d999-493a-95f0-e6e796efbf24",
+          "instruction_id": "40c5fdcd-5f6d-4e4d-8aae-204d5b91ec3c",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Click \"Create event\"",
@@ -1168,11 +1168,11 @@
           "operations": [
             {
               "operation_id": "b9b2362f-015c-4dd1-80bb-bdb2d6d8e7af",
-              "instruction_id": "fa539243-d999-493a-95f0-e6e796efbf24",
+              "instruction_id": "40c5fdcd-5f6d-4e4d-8aae-204d5b91ec3c",
               "instruction": "Click \"Create event\"",
               "intent": "Click \"Create event\"",
-              "operation_start": "2026-10-24T22:48:48.441289+00:00",
-              "operation_end": "2026-10-24T22:48:48.475Z",
+              "operation_start": "2026-10-24T22:57:01.019734+00:00",
+              "operation_end": "2026-10-24T22:57:01.064Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -1320,8 +1320,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:48:48.441289+00:00",
-          "end_timestamp": "2026-10-24T22:48:48.475Z",
+          "start_timestamp": "2026-10-24T22:57:01.019734+00:00",
+          "end_timestamp": "2026-10-24T22:57:01.064Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1347,7 +1347,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "d79c6359cf33483cb7130ba27cf3b9e3",
+          "generative_id": "9326f88b67b84a618829d9a7efd234a5",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, on the Potluck Planner home page, create an event titled 'RSVP Yes test' dated today with host 'Test Host' and reach its event page.",
           "error_message": "",
@@ -1360,27 +1360,23 @@
       ],
       "error_message": null,
       "error_code": null,
-      "result_code": null,
+      "result_code": 100,
       "bifurcation_context": [],
-      "approach_reason": [
-        "Opened the Potluck Planner home page.",
-        "Created an event titled “RSVP Yes test” for today with Test Host as the host.",
-        "Reached the new event’s page successfully."
-      ],
+      "approach_reason": [],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_a73a4f6c1da14c4fbb029a84126f2ab0",
-      "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+      "instruction_id": "generative_block_48e0d6e623d94224b6948c04d996885e",
+      "generative_id": "48e0d6e623d94224b6948c04d996885e",
       "objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "1244a45d-0362-404f-85ad-6d1bb3729bb7",
+          "instruction_id": "e8514c33-903f-49d5-8594-3eaefdef393d",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the RSVP section to load",
+          "instruction": "Waiting while inspecting the RSVP section options",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -1388,17 +1384,17 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "c0eabf8d-e203-4d8f-a228-58dabebbbb37",
-              "instruction_id": "1244a45d-0362-404f-85ad-6d1bb3729bb7",
-              "instruction": "Waiting for the RSVP section to load",
-              "intent": "Waiting for the RSVP section to load",
-              "operation_start": "2026-10-24T22:49:06.022547+00:00",
-              "operation_end": "2026-10-24T22:49:06.525Z",
+              "operation_id": "3ebec853-3139-490d-a50c-dcc99877b707",
+              "instruction_id": "e8514c33-903f-49d5-8594-3eaefdef393d",
+              "instruction": "Waiting while inspecting the RSVP section options",
+              "intent": "Waiting while inspecting the RSVP section options",
+              "operation_start": "2026-10-24T22:57:10.629597+00:00",
+              "operation_end": "2026-10-24T22:57:11.635Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
               "target": "",
-              "value": "500",
+              "value": "1000",
               "message": "",
               "operation_dict": "",
               "frame": "",
@@ -1407,7 +1403,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the RSVP section to load\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: inspect the RSVP section; role=region; text=\\\"RSVP\\\" | HINTS: container=event page main content\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting while inspecting the RSVP section options\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: inspect the RSVP section; role=radio; text=\\\"Yes, No, Maybe\\\" | HINTS: container=RSVP section beneath the event title\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1418,7 +1414,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c0eabf8d-e203-4d8f-a228-58dabebbbb37.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/3ebec853-3139-490d-a50c-dcc99877b707.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1512,12 +1508,12 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": null,
-              "reasoning": "PRIMARY: inspect the RSVP section; role=region; text=\"RSVP\" | HINTS: container=event page main content"
+              "reasoning": "PRIMARY: inspect the RSVP section; role=radio; text=\"Yes, No, Maybe\" | HINTS: container=RSVP section beneath the event title"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:06.022547+00:00",
-          "end_timestamp": "2026-10-24T22:49:06.525Z",
+          "start_timestamp": "2026-10-24T22:57:10.629597+00:00",
+          "end_timestamp": "2026-10-24T22:57:11.635Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1543,7 +1539,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -1551,10 +1547,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: inspect the RSVP section; role=region; text=\"RSVP\" | HINTS: container=event page main content"
+          "reasoning": "PRIMARY: inspect the RSVP section; role=radio; text=\"Yes, No, Maybe\" | HINTS: container=RSVP section beneath the event title"
         },
         {
-          "instruction_id": "817d5aee-cda9-4984-a704-96edc09eadf4",
+          "instruction_id": "cd2f5efb-24d7-401e-8de4-dff4e5d4fc2d",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Yes RSVP option is present",
@@ -1565,11 +1561,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "de1eb166-5412-4598-ae43-4cebda379c22",
-              "instruction_id": "817d5aee-cda9-4984-a704-96edc09eadf4",
+              "operation_id": "f96efd23-ec6b-4fb7-b45c-035dd8748f45",
+              "instruction_id": "cd2f5efb-24d7-401e-8de4-dff4e5d4fc2d",
               "instruction": "Checking whether the Yes RSVP option is present",
               "intent": "Checking whether the Yes RSVP option is present",
-              "operation_start": "2026-10-24T22:49:19.422396+00:00",
+              "operation_start": "2026-10-24T22:57:21.877949+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -1584,7 +1580,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Yes RSVP option is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Yes RSVP option is present (in the RSVP section)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(19).matches('input[type=\\\"radio\\\"]') && Array.from(el(19).labels || []).some(l => l.textContent.trim() === 'Yes')\",\"wrapped_js\":\"(els) => {\\n  const __m = {19: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(19).matches('input[type=\\\"radio\\\"]') && Array.from(el(19).labels || []).some(l => l.textContent.trim() === 'Yes'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Yes\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Yes RSVP option is present (in the RSVP section)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Yes is offered in the RSVP section.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Yes RSVP option is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Yes RSVP option is present (in the RSVP choice group)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(19).getAttribute('role') === 'radio' || el(19).type === 'radio'\",\"wrapped_js\":\"(els) => {\\n  const __m = {19: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(19).getAttribute('role') === 'radio' || el(19).type === 'radio');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Yes\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Yes RSVP option is present (in the RSVP choice group)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Yes is offered in the RSVP section.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1595,14 +1591,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/de1eb166-5412-4598-ae43-4cebda379c22.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/f96efd23-ec6b-4fb7-b45c-035dd8748f45.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "yes_offered",
+              "query_variable_name": "rsvp_yes_offered",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -1688,14 +1684,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "yes_offered": "true"
+                "rsvp_yes_offered": "true"
               },
               "visual_context": null,
-              "reasoning": "whether Yes RSVP option is present (in the RSVP section)"
+              "reasoning": "whether Yes RSVP option is present (in the RSVP choice group)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:19.422396+00:00",
+          "start_timestamp": "2026-10-24T22:57:21.877949+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -1722,7 +1718,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -1730,10 +1726,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether Yes RSVP option is present (in the RSVP section)"
+          "reasoning": "whether Yes RSVP option is present (in the RSVP choice group)"
         },
         {
-          "instruction_id": "c8818c55-0305-4473-b15b-b4afbfa25ee4",
+          "instruction_id": "72b6fdd6-2284-460c-bf1a-0517f425f293",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the No RSVP option is present",
@@ -1744,11 +1740,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "60e2f9e0-8e99-4337-93eb-ac1ab669e3b9",
-              "instruction_id": "c8818c55-0305-4473-b15b-b4afbfa25ee4",
+              "operation_id": "25653816-e7d7-4b5d-b4dd-ff527c446382",
+              "instruction_id": "72b6fdd6-2284-460c-bf1a-0517f425f293",
               "instruction": "Checking whether the No RSVP option is present",
               "intent": "Checking whether the No RSVP option is present",
-              "operation_start": "2026-10-24T22:49:19.423524+00:00",
+              "operation_start": "2026-10-24T22:57:21.878232+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -1763,7 +1759,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the No RSVP option is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether No RSVP option is present (in the RSVP section)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(20).matches('input[type=\\\"radio\\\"]') && Array.from(el(20).labels || []).some(l => l.textContent.trim() === 'No')\",\"wrapped_js\":\"(els) => {\\n  const __m = {20: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(20).matches('input[type=\\\"radio\\\"]') && Array.from(el(20).labels || []).some(l => l.textContent.trim() === 'No'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"No\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether No RSVP option is present (in the RSVP section)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"No is offered in the RSVP section.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the No RSVP option is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether No RSVP option is present (in the RSVP choice group)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(20).getAttribute('role') === 'radio' || el(20).type === 'radio'\",\"wrapped_js\":\"(els) => {\\n  const __m = {20: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(20).getAttribute('role') === 'radio' || el(20).type === 'radio');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"No\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether No RSVP option is present (in the RSVP choice group)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"No is offered in the RSVP section.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1774,14 +1770,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/60e2f9e0-8e99-4337-93eb-ac1ab669e3b9.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/25653816-e7d7-4b5d-b4dd-ff527c446382.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "no_offered",
+              "query_variable_name": "rsvp_no_offered",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -1867,14 +1863,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "no_offered": "true"
+                "rsvp_no_offered": "true"
               },
               "visual_context": null,
-              "reasoning": "whether No RSVP option is present (in the RSVP section)"
+              "reasoning": "whether No RSVP option is present (in the RSVP choice group)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:19.423524+00:00",
+          "start_timestamp": "2026-10-24T22:57:21.878232+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -1901,7 +1897,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -1909,10 +1905,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether No RSVP option is present (in the RSVP section)"
+          "reasoning": "whether No RSVP option is present (in the RSVP choice group)"
         },
         {
-          "instruction_id": "ed2e1eb4-5e9e-416d-9bf5-e5cef7ec9467",
+          "instruction_id": "5b506943-b190-402c-8e3d-1ea9366dc95c",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Maybe RSVP option is present",
@@ -1923,11 +1919,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "b79e8bef-d14d-4857-8acb-1e692f83e1cd",
-              "instruction_id": "ed2e1eb4-5e9e-416d-9bf5-e5cef7ec9467",
+              "operation_id": "e7e5acb4-293e-4085-8a83-f51e2b6d6df5",
+              "instruction_id": "5b506943-b190-402c-8e3d-1ea9366dc95c",
               "instruction": "Checking whether the Maybe RSVP option is present",
               "intent": "Checking whether the Maybe RSVP option is present",
-              "operation_start": "2026-10-24T22:49:19.423674+00:00",
+              "operation_start": "2026-10-24T22:57:21.878371+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -1942,7 +1938,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Maybe RSVP option is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Maybe RSVP option is present (in the RSVP section)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(21).matches('input[type=\\\"radio\\\"]') && Array.from(el(21).labels || []).some(l => l.textContent.trim() === 'Maybe')\",\"wrapped_js\":\"(els) => {\\n  const __m = {21: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(21).matches('input[type=\\\"radio\\\"]') && Array.from(el(21).labels || []).some(l => l.textContent.trim() === 'Maybe'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Maybe\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Maybe RSVP option is present (in the RSVP section)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Maybe is offered in the RSVP section.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Maybe RSVP option is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Maybe RSVP option is present (in the RSVP choice group)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(21).getAttribute('role') === 'radio' || el(21).type === 'radio'\",\"wrapped_js\":\"(els) => {\\n  const __m = {21: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(21).getAttribute('role') === 'radio' || el(21).type === 'radio');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Maybe\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Maybe RSVP option is present (in the RSVP choice group)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Maybe is offered in the RSVP section.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1953,14 +1949,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b79e8bef-d14d-4857-8acb-1e692f83e1cd.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e7e5acb4-293e-4085-8a83-f51e2b6d6df5.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "maybe_offered",
+              "query_variable_name": "rsvp_maybe_offered",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -2046,14 +2042,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "maybe_offered": "true"
+                "rsvp_maybe_offered": "true"
               },
               "visual_context": null,
-              "reasoning": "whether Maybe RSVP option is present (in the RSVP section)"
+              "reasoning": "whether Maybe RSVP option is present (in the RSVP choice group)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:19.423674+00:00",
+          "start_timestamp": "2026-10-24T22:57:21.878371+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2080,7 +2076,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -2088,10 +2084,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether Maybe RSVP option is present (in the RSVP section)"
+          "reasoning": "whether Maybe RSVP option is present (in the RSVP choice group)"
         },
         {
-          "instruction_id": "2b7a486f-85be-4334-8b98-7f5697d1c973",
+          "instruction_id": "142d5941-cc3f-4c03-ac4b-f73ba21cc4bf",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Yes RSVP option is selected",
@@ -2102,11 +2098,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "6d24dbdd-5ec2-4aa4-85bf-4d210b6abd35",
-              "instruction_id": "2b7a486f-85be-4334-8b98-7f5697d1c973",
+              "operation_id": "5408164d-b8c1-4cfa-aab4-3f0373bb4b15",
+              "instruction_id": "142d5941-cc3f-4c03-ac4b-f73ba21cc4bf",
               "instruction": "Checking whether the Yes RSVP option is selected",
               "intent": "Checking whether the Yes RSVP option is selected",
-              "operation_start": "2026-10-24T22:49:19.423775+00:00",
+              "operation_start": "2026-10-24T22:57:21.878478+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2121,7 +2117,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Yes RSVP option is selected\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Yes RSVP option selected is present (in the RSVP section)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(19).checked\",\"wrapped_js\":\"(els) => {\\n  const __m = {19: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(19).checked);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Yes\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Yes RSVP option selected is present (in the RSVP section)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"Yes is not selected in the RSVP section.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Yes RSVP option is selected\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Yes RSVP option selected is present (in the RSVP choice group)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(19).checked\",\"wrapped_js\":\"(els) => {\\n  const __m = {19: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(19).checked);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Yes\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Yes RSVP option selected is present (in the RSVP choice group)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"The Yes RSVP option is not selected.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2132,14 +2128,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6d24dbdd-5ec2-4aa4-85bf-4d210b6abd35.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/5408164d-b8c1-4cfa-aab4-3f0373bb4b15.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "yes_selected",
+              "query_variable_name": "rsvp_yes_selected",
               "query_variable_value": "false",
               "query_variable_type": "",
               "expected_value": "",
@@ -2225,14 +2221,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "yes_selected": "false"
+                "rsvp_yes_selected": "false"
               },
               "visual_context": null,
-              "reasoning": "whether Yes RSVP option selected is present (in the RSVP section)"
+              "reasoning": "whether Yes RSVP option selected is present (in the RSVP choice group)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:19.423775+00:00",
+          "start_timestamp": "2026-10-24T22:57:21.878478+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2259,7 +2255,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -2267,10 +2263,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether Yes RSVP option selected is present (in the RSVP section)"
+          "reasoning": "whether Yes RSVP option selected is present (in the RSVP choice group)"
         },
         {
-          "instruction_id": "74de1f57-bc05-40e9-a29e-00ced59a0c08",
+          "instruction_id": "35abef7b-78bb-4978-a330-4970085bc5e4",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the No RSVP option is selected",
@@ -2281,11 +2277,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "15c2a60a-df04-474b-8e53-96b4d72060b3",
-              "instruction_id": "74de1f57-bc05-40e9-a29e-00ced59a0c08",
+              "operation_id": "a5ffa7b3-6e5e-491a-b2ff-7142967537d6",
+              "instruction_id": "35abef7b-78bb-4978-a330-4970085bc5e4",
               "instruction": "Checking whether the No RSVP option is selected",
               "intent": "Checking whether the No RSVP option is selected",
-              "operation_start": "2026-10-24T22:49:19.423873+00:00",
+              "operation_start": "2026-10-24T22:57:21.878581+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2300,7 +2296,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the No RSVP option is selected\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether No RSVP option selected is present (in the RSVP section)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(20).checked\",\"wrapped_js\":\"(els) => {\\n  const __m = {20: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(20).checked);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"No\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether No RSVP option selected is present (in the RSVP section)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"No is not selected in the RSVP section.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the No RSVP option is selected\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether No RSVP option selected is present (in the RSVP choice group)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(20).checked\",\"wrapped_js\":\"(els) => {\\n  const __m = {20: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(20).checked);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"No\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether No RSVP option selected is present (in the RSVP choice group)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"The No RSVP option is not selected.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2311,14 +2307,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/15c2a60a-df04-474b-8e53-96b4d72060b3.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/a5ffa7b3-6e5e-491a-b2ff-7142967537d6.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "no_selected",
+              "query_variable_name": "rsvp_no_selected",
               "query_variable_value": "false",
               "query_variable_type": "",
               "expected_value": "",
@@ -2404,14 +2400,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "no_selected": "false"
+                "rsvp_no_selected": "false"
               },
               "visual_context": null,
-              "reasoning": "whether No RSVP option selected is present (in the RSVP section)"
+              "reasoning": "whether No RSVP option selected is present (in the RSVP choice group)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:19.423873+00:00",
+          "start_timestamp": "2026-10-24T22:57:21.878581+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2438,7 +2434,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -2446,10 +2442,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether No RSVP option selected is present (in the RSVP section)"
+          "reasoning": "whether No RSVP option selected is present (in the RSVP choice group)"
         },
         {
-          "instruction_id": "8f4a5c14-78a9-433b-9c55-1d8e57387f4d",
+          "instruction_id": "736c7472-0845-4b9f-a5bc-40ca088adf0f",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Maybe RSVP option is selected",
@@ -2460,11 +2456,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "6e23a29c-f7c8-4096-883d-f71a6baa48f1",
-              "instruction_id": "8f4a5c14-78a9-433b-9c55-1d8e57387f4d",
+              "operation_id": "3000c48d-4881-4aec-99e4-22a367fe17ee",
+              "instruction_id": "736c7472-0845-4b9f-a5bc-40ca088adf0f",
               "instruction": "Checking whether the Maybe RSVP option is selected",
               "intent": "Checking whether the Maybe RSVP option is selected",
-              "operation_start": "2026-10-24T22:49:19.423981+00:00",
+              "operation_start": "2026-10-24T22:57:21.878679+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2479,7 +2475,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Maybe RSVP option is selected\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Maybe RSVP option selected is present (in the RSVP section)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(21).checked\",\"wrapped_js\":\"(els) => {\\n  const __m = {21: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(21).checked);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Maybe\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Maybe RSVP option selected is present (in the RSVP section)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"Maybe is not selected in the RSVP section.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Maybe RSVP option is selected\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Maybe RSVP option selected is present (in the RSVP choice group)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(21).checked\",\"wrapped_js\":\"(els) => {\\n  const __m = {21: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(21).checked);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=radio[name=\\\"Maybe\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Maybe RSVP option selected is present (in the RSVP choice group)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"The Maybe RSVP option is not selected.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2490,14 +2486,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6e23a29c-f7c8-4096-883d-f71a6baa48f1.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/3000c48d-4881-4aec-99e4-22a367fe17ee.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "maybe_selected",
+              "query_variable_name": "rsvp_maybe_selected",
               "query_variable_value": "false",
               "query_variable_type": "",
               "expected_value": "",
@@ -2583,14 +2579,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "maybe_selected": "false"
+                "rsvp_maybe_selected": "false"
               },
               "visual_context": null,
-              "reasoning": "whether Maybe RSVP option selected is present (in the RSVP section)"
+              "reasoning": "whether Maybe RSVP option selected is present (in the RSVP choice group)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:19.423981+00:00",
+          "start_timestamp": "2026-10-24T22:57:21.878679+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2617,7 +2613,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -2625,10 +2621,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether Maybe RSVP option selected is present (in the RSVP section)"
+          "reasoning": "whether Maybe RSVP option selected is present (in the RSVP choice group)"
         },
         {
-          "instruction_id": "3647bb23-3067-4a52-be6f-e60a4c1e792b",
+          "instruction_id": "755fd78a-78ff-4168-ba57-166e310bcef9",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -2650,10 +2646,10 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{yes_offered}}",
-                      "store_key": "yes_offered",
+                      "extracted_value": "{{rsvp_yes_offered}}",
+                      "store_key": "rsvp_yes_offered",
                       "variable_refs": {
-                        "{{yes_offered}}": "true"
+                        "{{rsvp_yes_offered}}": "true"
                       }
                     },
                     {
@@ -2663,10 +2659,10 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{no_offered}}",
-                      "store_key": "no_offered",
+                      "extracted_value": "{{rsvp_no_offered}}",
+                      "store_key": "rsvp_no_offered",
                       "variable_refs": {
-                        "{{no_offered}}": "true"
+                        "{{rsvp_no_offered}}": "true"
                       }
                     },
                     {
@@ -2676,98 +2672,98 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{maybe_offered}}",
-                      "store_key": "maybe_offered",
+                      "extracted_value": "{{rsvp_maybe_offered}}",
+                      "store_key": "rsvp_maybe_offered",
                       "variable_refs": {
-                        "{{maybe_offered}}": "true"
+                        "{{rsvp_maybe_offered}}": "true"
                       }
                     },
                     {
-                      "description": "Yes is not selected in the RSVP section.",
+                      "description": "The Yes RSVP option is not selected.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
                       "expected": "false",
-                      "extracted_value": "{{yes_selected}}",
-                      "store_key": "yes_selected",
+                      "extracted_value": "{{rsvp_yes_selected}}",
+                      "store_key": "rsvp_yes_selected",
                       "variable_refs": {
-                        "{{yes_selected}}": "false"
+                        "{{rsvp_yes_selected}}": "false"
                       }
                     },
                     {
-                      "description": "No is not selected in the RSVP section.",
+                      "description": "The No RSVP option is not selected.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
                       "expected": "false",
-                      "extracted_value": "{{no_selected}}",
-                      "store_key": "no_selected",
+                      "extracted_value": "{{rsvp_no_selected}}",
+                      "store_key": "rsvp_no_selected",
                       "variable_refs": {
-                        "{{no_selected}}": "false"
+                        "{{rsvp_no_selected}}": "false"
                       }
                     },
                     {
-                      "description": "Maybe is not selected in the RSVP section.",
+                      "description": "The Maybe RSVP option is not selected.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
                       "expected": "false",
-                      "extracted_value": "{{maybe_selected}}",
-                      "store_key": "maybe_selected",
+                      "extracted_value": "{{rsvp_maybe_selected}}",
+                      "store_key": "rsvp_maybe_selected",
                       "variable_refs": {
-                        "{{maybe_selected}}": "false"
+                        "{{rsvp_maybe_selected}}": "false"
                       }
                     }
                   ],
                   "sub_checks": [
                     {
                       "description": "Yes is offered in the RSVP section.",
-                      "store_key": "yes_offered",
+                      "store_key": "rsvp_yes_offered",
                       "expected_value": "true",
-                      "extracted_value": "{{yes_offered}}",
+                      "extracted_value": "{{rsvp_yes_offered}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
                       "description": "No is offered in the RSVP section.",
-                      "store_key": "no_offered",
+                      "store_key": "rsvp_no_offered",
                       "expected_value": "true",
-                      "extracted_value": "{{no_offered}}",
+                      "extracted_value": "{{rsvp_no_offered}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
                       "description": "Maybe is offered in the RSVP section.",
-                      "store_key": "maybe_offered",
+                      "store_key": "rsvp_maybe_offered",
                       "expected_value": "true",
-                      "extracted_value": "{{maybe_offered}}",
+                      "extracted_value": "{{rsvp_maybe_offered}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
-                      "description": "Yes is not selected in the RSVP section.",
-                      "store_key": "yes_selected",
+                      "description": "The Yes RSVP option is not selected.",
+                      "store_key": "rsvp_yes_selected",
                       "expected_value": "false",
-                      "extracted_value": "{{yes_selected}}",
+                      "extracted_value": "{{rsvp_yes_selected}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
-                      "description": "No is not selected in the RSVP section.",
-                      "store_key": "no_selected",
+                      "description": "The No RSVP option is not selected.",
+                      "store_key": "rsvp_no_selected",
                       "expected_value": "false",
-                      "extracted_value": "{{no_selected}}",
+                      "extracted_value": "{{rsvp_no_selected}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
-                      "description": "Maybe is not selected in the RSVP section.",
-                      "store_key": "maybe_selected",
+                      "description": "The Maybe RSVP option is not selected.",
+                      "store_key": "rsvp_maybe_selected",
                       "expected_value": "false",
-                      "extracted_value": "{{maybe_selected}}",
+                      "extracted_value": "{{rsvp_maybe_selected}}",
                       "operator": "equals",
                       "transforms": []
                     }
@@ -2790,11 +2786,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "b33171d5-8ae8-4f5d-950d-bef35ac0b854",
-              "instruction_id": "3647bb23-3067-4a52-be6f-e60a4c1e792b",
+              "operation_id": "4494ec90-ed1c-4e55-8906-002954b0f936",
+              "instruction_id": "755fd78a-78ff-4168-ba57-166e310bcef9",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:49:20.020684+00:00",
+              "operation_start": "2026-10-24T22:57:22.450683+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -2820,7 +2816,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b33171d5-8ae8-4f5d-950d-bef35ac0b854.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4494ec90-ed1c-4e55-8906-002954b0f936.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2892,10 +2888,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{yes_offered}}",
-                    "store_key": "yes_offered",
+                    "extracted_value": "{{rsvp_yes_offered}}",
+                    "store_key": "rsvp_yes_offered",
                     "variable_refs": {
-                      "{{yes_offered}}": "true"
+                      "{{rsvp_yes_offered}}": "true"
                     }
                   },
                   {
@@ -2905,10 +2901,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{no_offered}}",
-                    "store_key": "no_offered",
+                    "extracted_value": "{{rsvp_no_offered}}",
+                    "store_key": "rsvp_no_offered",
                     "variable_refs": {
-                      "{{no_offered}}": "true"
+                      "{{rsvp_no_offered}}": "true"
                     }
                   },
                   {
@@ -2918,98 +2914,98 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{maybe_offered}}",
-                    "store_key": "maybe_offered",
+                    "extracted_value": "{{rsvp_maybe_offered}}",
+                    "store_key": "rsvp_maybe_offered",
                     "variable_refs": {
-                      "{{maybe_offered}}": "true"
+                      "{{rsvp_maybe_offered}}": "true"
                     }
                   },
                   {
-                    "description": "Yes is not selected in the RSVP section.",
+                    "description": "The Yes RSVP option is not selected.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "false",
-                    "extracted_value": "{{yes_selected}}",
-                    "store_key": "yes_selected",
+                    "extracted_value": "{{rsvp_yes_selected}}",
+                    "store_key": "rsvp_yes_selected",
                     "variable_refs": {
-                      "{{yes_selected}}": "false"
+                      "{{rsvp_yes_selected}}": "false"
                     }
                   },
                   {
-                    "description": "No is not selected in the RSVP section.",
+                    "description": "The No RSVP option is not selected.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "false",
-                    "extracted_value": "{{no_selected}}",
-                    "store_key": "no_selected",
+                    "extracted_value": "{{rsvp_no_selected}}",
+                    "store_key": "rsvp_no_selected",
                     "variable_refs": {
-                      "{{no_selected}}": "false"
+                      "{{rsvp_no_selected}}": "false"
                     }
                   },
                   {
-                    "description": "Maybe is not selected in the RSVP section.",
+                    "description": "The Maybe RSVP option is not selected.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "false",
-                    "extracted_value": "{{maybe_selected}}",
-                    "store_key": "maybe_selected",
+                    "extracted_value": "{{rsvp_maybe_selected}}",
+                    "store_key": "rsvp_maybe_selected",
                     "variable_refs": {
-                      "{{maybe_selected}}": "false"
+                      "{{rsvp_maybe_selected}}": "false"
                     }
                   }
                 ],
                 "sub_checks": [
                   {
                     "description": "Yes is offered in the RSVP section.",
-                    "store_key": "yes_offered",
+                    "store_key": "rsvp_yes_offered",
                     "expected_value": "true",
-                    "extracted_value": "{{yes_offered}}",
+                    "extracted_value": "{{rsvp_yes_offered}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
                     "description": "No is offered in the RSVP section.",
-                    "store_key": "no_offered",
+                    "store_key": "rsvp_no_offered",
                     "expected_value": "true",
-                    "extracted_value": "{{no_offered}}",
+                    "extracted_value": "{{rsvp_no_offered}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
                     "description": "Maybe is offered in the RSVP section.",
-                    "store_key": "maybe_offered",
+                    "store_key": "rsvp_maybe_offered",
                     "expected_value": "true",
-                    "extracted_value": "{{maybe_offered}}",
+                    "extracted_value": "{{rsvp_maybe_offered}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
-                    "description": "Yes is not selected in the RSVP section.",
-                    "store_key": "yes_selected",
+                    "description": "The Yes RSVP option is not selected.",
+                    "store_key": "rsvp_yes_selected",
                     "expected_value": "false",
-                    "extracted_value": "{{yes_selected}}",
+                    "extracted_value": "{{rsvp_yes_selected}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
-                    "description": "No is not selected in the RSVP section.",
-                    "store_key": "no_selected",
+                    "description": "The No RSVP option is not selected.",
+                    "store_key": "rsvp_no_selected",
                     "expected_value": "false",
-                    "extracted_value": "{{no_selected}}",
+                    "extracted_value": "{{rsvp_no_selected}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
-                    "description": "Maybe is not selected in the RSVP section.",
-                    "store_key": "maybe_selected",
+                    "description": "The Maybe RSVP option is not selected.",
+                    "store_key": "rsvp_maybe_selected",
                     "expected_value": "false",
-                    "extracted_value": "{{maybe_selected}}",
+                    "extracted_value": "{{rsvp_maybe_selected}}",
                     "operator": "equals",
                     "transforms": []
                   }
@@ -3030,10 +3026,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{yes_offered}}",
-                    "store_key": "yes_offered",
+                    "extracted_value": "{{rsvp_yes_offered}}",
+                    "store_key": "rsvp_yes_offered",
                     "variable_refs": {
-                      "{{yes_offered}}": "true"
+                      "{{rsvp_yes_offered}}": "true"
                     }
                   },
                   {
@@ -3043,10 +3039,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{no_offered}}",
-                    "store_key": "no_offered",
+                    "extracted_value": "{{rsvp_no_offered}}",
+                    "store_key": "rsvp_no_offered",
                     "variable_refs": {
-                      "{{no_offered}}": "true"
+                      "{{rsvp_no_offered}}": "true"
                     }
                   },
                   {
@@ -3056,49 +3052,49 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{maybe_offered}}",
-                    "store_key": "maybe_offered",
+                    "extracted_value": "{{rsvp_maybe_offered}}",
+                    "store_key": "rsvp_maybe_offered",
                     "variable_refs": {
-                      "{{maybe_offered}}": "true"
+                      "{{rsvp_maybe_offered}}": "true"
                     }
                   },
                   {
-                    "description": "Yes is not selected in the RSVP section.",
+                    "description": "The Yes RSVP option is not selected.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "false",
-                    "extracted_value": "{{yes_selected}}",
-                    "store_key": "yes_selected",
+                    "extracted_value": "{{rsvp_yes_selected}}",
+                    "store_key": "rsvp_yes_selected",
                     "variable_refs": {
-                      "{{yes_selected}}": "false"
+                      "{{rsvp_yes_selected}}": "false"
                     }
                   },
                   {
-                    "description": "No is not selected in the RSVP section.",
+                    "description": "The No RSVP option is not selected.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "false",
-                    "extracted_value": "{{no_selected}}",
-                    "store_key": "no_selected",
+                    "extracted_value": "{{rsvp_no_selected}}",
+                    "store_key": "rsvp_no_selected",
                     "variable_refs": {
-                      "{{no_selected}}": "false"
+                      "{{rsvp_no_selected}}": "false"
                     }
                   },
                   {
-                    "description": "Maybe is not selected in the RSVP section.",
+                    "description": "The Maybe RSVP option is not selected.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "false",
-                    "extracted_value": "{{maybe_selected}}",
-                    "store_key": "maybe_selected",
+                    "extracted_value": "{{rsvp_maybe_selected}}",
+                    "store_key": "rsvp_maybe_selected",
                     "variable_refs": {
-                      "{{maybe_selected}}": "false"
+                      "{{rsvp_maybe_selected}}": "false"
                     }
                   }
                 ],
@@ -3148,7 +3144,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:20.020684+00:00",
+          "start_timestamp": "2026-10-24T22:57:22.450683+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3175,7 +3171,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "a73a4f6c1da14c4fbb029a84126f2ab0",
+          "generative_id": "48e0d6e623d94224b6948c04d996885e",
           "plan_id": "",
           "generative_objective": "On that event page, inspect the RSVP section before answering, then assert Yes, No, and Maybe are offered with none selected.",
           "error_message": "",
@@ -3191,24 +3187,24 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Inspected the RSVP section on the event page as requested.",
+        "Inspected the RSVP section on the event page.",
         "Confirmed that Yes, No, and Maybe are available RSVP choices.",
-        "Confirmed that none of the RSVP choices was selected."
+        "Confirmed that none of the RSVP choices is selected."
       ],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_2128b2e8ede7444a8b7f6b483cc90e43",
-      "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+      "instruction_id": "generative_block_09303f15825f42d58d744070985e93b8",
+      "generative_id": "09303f15825f42d58d744070985e93b8",
       "objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "221782c6-6c77-4d77-ba9e-37be59a2dce4",
+          "instruction_id": "a347347e-a99b-4559-9c75-eca23c4b4f0b",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the RSVP steps to continue",
+          "instruction": "Waiting for the RSVP form to load",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -3216,12 +3212,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "96430f4c-07ab-4984-8b7b-bd1c62970cda",
-              "instruction_id": "221782c6-6c77-4d77-ba9e-37be59a2dce4",
-              "instruction": "Waiting for the RSVP steps to continue",
-              "intent": "Waiting for the RSVP steps to continue",
-              "operation_start": "2026-10-24T22:49:32.003893+00:00",
-              "operation_end": "2026-10-24T22:49:33.011Z",
+              "operation_id": "18e64ba8-c9bb-42b3-b3f3-f7cb4d31f2b6",
+              "instruction_id": "a347347e-a99b-4559-9c75-eca23c4b4f0b",
+              "instruction": "Waiting for the RSVP form to load",
+              "intent": "Waiting for the RSVP form to load",
+              "operation_start": "2026-10-24T22:57:34.316611+00:00",
+              "operation_end": "2026-10-24T22:57:35.321Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -3235,7 +3231,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the RSVP steps to continue\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (3 steps): type \\\"Guest name\\\"; click \\\"Yes\\\"; click \\\"Submit RSVP\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the RSVP form to load\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (3 steps): type \\\"Guest name\\\"; click \\\"Yes\\\"; click \\\"Submit RSVP\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3246,7 +3242,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/96430f4c-07ab-4984-8b7b-bd1c62970cda.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/18e64ba8-c9bb-42b3-b3f3-f7cb4d31f2b6.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3344,8 +3340,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:32.003893+00:00",
-          "end_timestamp": "2026-10-24T22:49:33.011Z",
+          "start_timestamp": "2026-10-24T22:57:34.316611+00:00",
+          "end_timestamp": "2026-10-24T22:57:35.321Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3371,7 +3367,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -3382,7 +3378,7 @@
           "reasoning": "queued plan (3 steps): type \"Guest name\"; click \"Yes\"; click \"Submit RSVP\""
         },
         {
-          "instruction_id": "da4485d0-5eaf-4011-8542-f30afffba673",
+          "instruction_id": "a8f9e800-432c-47fe-974f-d94668db7ae2",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Cora\" into \"Guest name\"",
@@ -3393,12 +3389,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "4f1d28b6-8ec9-44a1-9600-354cafe4fc2b",
-              "instruction_id": "da4485d0-5eaf-4011-8542-f30afffba673",
+              "operation_id": "da870a0c-3045-430e-9da0-4c7f7d914470",
+              "instruction_id": "a8f9e800-432c-47fe-974f-d94668db7ae2",
               "instruction": "Type \"Cora\" into \"Guest name\"",
               "intent": "Type \"Cora\" into \"Guest name\"",
-              "operation_start": "2026-10-24T22:49:32.645880+00:00",
-              "operation_end": "2026-10-24T22:49:32.671Z",
+              "operation_start": "2026-10-24T22:57:34.937920+00:00",
+              "operation_end": "2026-10-24T22:57:34.959Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -3412,7 +3408,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Type \\\"Cora\\\" into \\\"Guest name\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"TYPE\"},\"reasoning\":\"PRIMARY: RSVP guest name input; role=textbox; text=\\\"Guest name\\\" | HINTS: container=RSVP section\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Type \\\"Cora\\\" into \\\"Guest name\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"TYPE\"},\"reasoning\":\"PRIMARY: RSVP guest name input; role=textbox; text=\\\"Guest name\\\" | HINTS: container=RSVP form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3423,7 +3419,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4f1d28b6-8ec9-44a1-9600-354cafe4fc2b.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/da870a0c-3045-430e-9da0-4c7f7d914470.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3525,29 +3521,29 @@
               "output_variables": {},
               "visual_context": {
                 "x": 960,
-                "y": 441,
+                "y": 443,
                 "confidence": 0,
                 "bbox": {
                   "x": 648,
-                  "y": 433,
+                  "y": 435,
                   "width": 624,
-                  "height": 16
+                  "height": 17
                 },
                 "bbox_source": "accessibility_tree",
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4f1d28b6-8ec9-44a1-9600-354cafe4fc2b.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/da870a0c-3045-430e-9da0-4c7f7d914470.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: RSVP guest name input; role=textbox; text=\"Guest name\" | HINTS: container=RSVP section"
+              "reasoning": "PRIMARY: RSVP guest name input; role=textbox; text=\"Guest name\" | HINTS: container=RSVP form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:32.645880+00:00",
-          "end_timestamp": "2026-10-24T22:49:32.671Z",
+          "start_timestamp": "2026-10-24T22:57:34.937920+00:00",
+          "end_timestamp": "2026-10-24T22:57:34.959Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3573,7 +3569,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -3581,10 +3577,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: RSVP guest name input; role=textbox; text=\"Guest name\" | HINTS: container=RSVP section"
+          "reasoning": "PRIMARY: RSVP guest name input; role=textbox; text=\"Guest name\" | HINTS: container=RSVP form"
         },
         {
-          "instruction_id": "cd415d0d-e07b-43ba-9055-5f797f9ac94e",
+          "instruction_id": "1273d082-75e1-4b04-a08e-ba718f4fc583",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Scroll \"Yes\" into view",
@@ -3595,12 +3591,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "11516eea-68a8-48b0-9780-c582c7d10e6a",
-              "instruction_id": "cd415d0d-e07b-43ba-9055-5f797f9ac94e",
+              "operation_id": "c6204fa9-170a-4f96-901b-012ee0249ae4",
+              "instruction_id": "1273d082-75e1-4b04-a08e-ba718f4fc583",
               "instruction": "Scroll \"Yes\" into view",
               "intent": "Scroll \"Yes\" into view",
-              "operation_start": "2026-10-24T22:49:33.369006+00:00",
-              "operation_end": "2026-10-24T22:49:33.378Z",
+              "operation_start": "2026-10-24T22:57:35.576351+00:00",
+              "operation_end": "2026-10-24T22:57:35.584Z",
               "status": "success",
               "command": "SCROLL_UNTIL_ELEMENT",
               "name": "",
@@ -3614,7 +3610,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Scroll \\\"Yes\\\" into view\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"SCROLL_UNTIL_ELEMENT\"},\"reasoning\":\"Scroll into view: PRIMARY: RSVP Yes choice; role=radio; text=\\\"Yes\\\" | HINTS: container=RSVP section\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Scroll \\\"Yes\\\" into view\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"SCROLL_UNTIL_ELEMENT\"},\"reasoning\":\"Scroll into view: PRIMARY: RSVP Yes choice; role=radio; text=\\\"Yes\\\" | HINTS: container=RSVP form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3625,7 +3621,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/11516eea-68a8-48b0-9780-c582c7d10e6a.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c6204fa9-170a-4f96-901b-012ee0249ae4.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3726,12 +3722,12 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": null,
-              "reasoning": "Scroll into view: PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP section"
+              "reasoning": "Scroll into view: PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:33.369006+00:00",
-          "end_timestamp": "2026-10-24T22:49:33.378Z",
+          "start_timestamp": "2026-10-24T22:57:35.576351+00:00",
+          "end_timestamp": "2026-10-24T22:57:35.584Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3757,7 +3753,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -3765,10 +3761,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "Scroll into view: PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP section"
+          "reasoning": "Scroll into view: PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP form"
         },
         {
-          "instruction_id": "4bdf9b3e-01ae-4763-b201-314fcd2162f1",
+          "instruction_id": "5b572366-1933-45b3-badd-f9aab3049c16",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Click \"Yes\"",
@@ -3779,12 +3775,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "6e93a3dc-a964-4b46-b72f-769d49fafd58",
-              "instruction_id": "4bdf9b3e-01ae-4763-b201-314fcd2162f1",
+              "operation_id": "2be65023-d755-43da-b519-57046249e84e",
+              "instruction_id": "5b572366-1933-45b3-badd-f9aab3049c16",
               "instruction": "Click \"Yes\"",
               "intent": "Click \"Yes\"",
-              "operation_start": "2026-10-24T22:49:33.985996+00:00",
-              "operation_end": "2026-10-24T22:49:33.993Z",
+              "operation_start": "2026-10-24T22:57:36.211451+00:00",
+              "operation_end": "2026-10-24T22:57:36.238Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -3798,7 +3794,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Click \\\"Yes\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: RSVP Yes choice; role=radio; text=\\\"Yes\\\" | HINTS: container=RSVP section\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Click \\\"Yes\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: RSVP Yes choice; role=radio; text=\\\"Yes\\\" | HINTS: container=RSVP form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3809,7 +3805,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6e93a3dc-a964-4b46-b72f-769d49fafd58.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/2be65023-d755-43da-b519-57046249e84e.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3911,11 +3907,11 @@
               "output_variables": {},
               "visual_context": {
                 "x": 663,
-                "y": 505,
+                "y": 506,
                 "confidence": 0,
                 "bbox": {
                   "x": 657,
-                  "y": 499,
+                  "y": 500,
                   "width": 13,
                   "height": 13
                 },
@@ -3923,17 +3919,17 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6e93a3dc-a964-4b46-b72f-769d49fafd58.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/2be65023-d755-43da-b519-57046249e84e.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP section"
+              "reasoning": "PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:33.985996+00:00",
-          "end_timestamp": "2026-10-24T22:49:33.993Z",
+          "start_timestamp": "2026-10-24T22:57:36.211451+00:00",
+          "end_timestamp": "2026-10-24T22:57:36.238Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3959,7 +3955,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -3967,10 +3963,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP section"
+          "reasoning": "PRIMARY: RSVP Yes choice; role=radio; text=\"Yes\" | HINTS: container=RSVP form"
         },
         {
-          "instruction_id": "8ac71a43-ab12-4a30-8779-746f207ca562",
+          "instruction_id": "74e4484e-fe40-4c56-9ef3-41530bd5c229",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Click \"Submit RSVP\"",
@@ -3981,12 +3977,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "5fb3c22c-0de7-4079-bf62-caa24ffc5f36",
-              "instruction_id": "8ac71a43-ab12-4a30-8779-746f207ca562",
+              "operation_id": "affe5ed9-6354-477a-8a6e-522c60f73558",
+              "instruction_id": "74e4484e-fe40-4c56-9ef3-41530bd5c229",
               "instruction": "Click \"Submit RSVP\"",
               "intent": "Click \"Submit RSVP\"",
-              "operation_start": "2026-10-24T22:49:35.236674+00:00",
-              "operation_end": "2026-10-24T22:49:35.264Z",
+              "operation_start": "2026-10-24T22:57:37.403479+00:00",
+              "operation_end": "2026-10-24T22:57:37.471Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -4000,7 +3996,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Click \\\"Submit RSVP\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: submit RSVP button; role=button; text=\\\"Submit RSVP\\\" | HINTS: container=RSVP section\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Click \\\"Submit RSVP\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: submit RSVP button; role=button; text=\\\"Submit RSVP\\\" | HINTS: container=RSVP form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4011,7 +4007,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/5fb3c22c-0de7-4079-bf62-caa24ffc5f36.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/affe5ed9-6354-477a-8a6e-522c60f73558.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4113,29 +4109,29 @@
               "output_variables": {},
               "visual_context": {
                 "x": 698,
-                "y": 552,
+                "y": 553,
                 "confidence": 0,
                 "bbox": {
                   "x": 651,
-                  "y": 543,
+                  "y": 544,
                   "width": 95,
-                  "height": 19
+                  "height": 18
                 },
                 "bbox_source": "accessibility_tree",
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/5fb3c22c-0de7-4079-bf62-caa24ffc5f36.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/affe5ed9-6354-477a-8a6e-522c60f73558.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: submit RSVP button; role=button; text=\"Submit RSVP\" | HINTS: container=RSVP section"
+              "reasoning": "PRIMARY: submit RSVP button; role=button; text=\"Submit RSVP\" | HINTS: container=RSVP form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:35.236674+00:00",
-          "end_timestamp": "2026-10-24T22:49:35.264Z",
+          "start_timestamp": "2026-10-24T22:57:37.403479+00:00",
+          "end_timestamp": "2026-10-24T22:57:37.471Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -4161,7 +4157,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -4169,13 +4165,190 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: submit RSVP button; role=button; text=\"Submit RSVP\" | HINTS: container=RSVP section"
+          "reasoning": "PRIMARY: submit RSVP button; role=button; text=\"Submit RSVP\" | HINTS: container=RSVP form"
         },
         {
-          "instruction_id": "cd6f9c85-8d99-4c61-9032-c699eebee8d1",
+          "instruction_id": "2f46b059-8d36-49f7-b93b-beb3f8039d1f",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Checking for Cora's Yes entry in the guest list",
+          "instruction": "Waiting for 1000 ms after submitting Cora's RSVP",
+          "command": "WAIT",
+          "error": null,
+          "parent_instruction_id": "",
+          "classification_layer_resp": [],
+          "classification_error": {},
+          "operations": [
+            {
+              "operation_id": "fc0c5abc-3730-4858-b085-21d4100329be",
+              "instruction_id": "2f46b059-8d36-49f7-b93b-beb3f8039d1f",
+              "instruction": "Waiting for 1000 ms after submitting Cora's RSVP",
+              "intent": "Waiting for 1000 ms after submitting Cora's RSVP",
+              "operation_start": "2026-10-24T22:57:43.684254+00:00",
+              "operation_end": "2026-10-24T22:57:44.693Z",
+              "status": "success",
+              "command": "WAIT",
+              "name": "",
+              "target": "",
+              "value": "1000",
+              "message": "",
+              "operation_dict": "",
+              "frame": "",
+              "surface": "",
+              "frame_path": "",
+              "grounded_by": "",
+              "error_message": "",
+              "code_snippet": "",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for 1000 ms after submitting Cora's RSVP\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: wait 1000 ms after submitting Cora's RSVP\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "test_id": "",
+              "test_version": "",
+              "action": "",
+              "string_to_float": false,
+              "feedback_msg": "",
+              "time_taken": "",
+              "create_time_stamp": "",
+              "update_time_stamp": "",
+              "locator_variable": "",
+              "locator_variable_name": "",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/fc0c5abc-3730-4858-b085-21d4100329be.webp",
+              "alternative_xpaths": [],
+              "attribute": "",
+              "value_description": "",
+              "url": "",
+              "navigation_direction": "",
+              "tagified_image_url": "",
+              "query_variable_name": "",
+              "query_variable_value": "",
+              "query_variable_type": "",
+              "expected_value": "",
+              "queried_value": "",
+              "operator": "",
+              "assertion_status": "",
+              "query_info_dict": {},
+              "query_content_confidence": "none",
+              "debugging_logs": [],
+              "locator_index": 0,
+              "query_html": "",
+              "user_variables": "[]",
+              "optional_flag": false,
+              "max_retries": 0,
+              "retries_delay": 0,
+              "explicit_wait": 0,
+              "implicit_wait": 0,
+              "tab_index": "",
+              "tab_identifier": "",
+              "scroll_value": 1,
+              "scroll_direction": "",
+              "mi_scroll_payload": {},
+              "sleep_duration": 0,
+              "app_id": "",
+              "manual_interaction_tag": "",
+              "string_to_float_list": [],
+              "js_snippet": "",
+              "code_error": "",
+              "hide": false,
+              "dismiss_dialog": false,
+              "use_v2_mobile_tagging": false,
+              "multiple_inputs": false,
+              "dialog_action": "",
+              "dialog_type": "",
+              "is_coordinates_used_for_interaction": false,
+              "element_coordinates_ratio": [],
+              "element_bounds_ratio": [],
+              "x_coord": null,
+              "y_coord": null,
+              "target_x_coord": null,
+              "target_y_coord": null,
+              "source_description": null,
+              "target_description": null,
+              "use_coordinates": false,
+              "kaneaiMobileTaggingImageLimit": 1,
+              "clicks_order_code": "se_js_ac",
+              "selector": "",
+              "selector_target": "",
+              "math_result_variable_name": "",
+              "math_result_variable_value": "",
+              "expression_tree": {},
+              "assertion_tree": {},
+              "assertion_tree_simplified": {},
+              "network_throttle": {},
+              "is_mobile_offline": false,
+              "autoheal": false,
+              "reprobe": false,
+              "click_modifier": null,
+              "db_query": "",
+              "db_details": {},
+              "db_query_decoded": "",
+              "is_global_variable": false,
+              "is_global_variable_persist": false,
+              "global_variable_id": "",
+              "wait_for_element_timeout": 0,
+              "failure_condition": "",
+              "screenshot_command": "",
+              "smartui_contents": {},
+              "smartui_results": {},
+              "result_type": "",
+              "result_hint": "",
+              "drag_offset": {},
+              "drag_displacement": {},
+              "hold_duration_ms": null,
+              "move_duration_ms": null,
+              "hold_at_destination_ms": null,
+              "start_coordinates": {},
+              "end_coordinates": {},
+              "element_rect": null,
+              "is_canvas": false,
+              "until_condition": "",
+              "until_max_retries": 0,
+              "until_settle_ms": 0,
+              "api_data": {},
+              "output_variables": {},
+              "visual_context": null,
+              "reasoning": "PRIMARY: wait 1000 ms after submitting Cora's RSVP"
+            }
+          ],
+          "status": "success",
+          "start_timestamp": "2026-10-24T22:57:43.684254+00:00",
+          "end_timestamp": "2026-10-24T22:57:44.693Z",
+          "type": "agent_generated",
+          "tags": [],
+          "html_paths": [],
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "content_type": "instruction",
+          "js_snippet": "",
+          "user_variables": "[]",
+          "api_data": {},
+          "params_used": false,
+          "hard_assertion": false,
+          "expected_outcome": "",
+          "module_execution_index": 0,
+          "module_version": null,
+          "network_throttle": {},
+          "isEdited": false,
+          "use_query_assertion_v2": false,
+          "db_query": "",
+          "db_details": {},
+          "network_assertion_content": {},
+          "screenshot_command": "",
+          "smartui_contents": {},
+          "generative_id": "09303f15825f42d58d744070985e93b8",
+          "plan_id": "",
+          "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "title": "",
+          "used_variables": [],
+          "reasoning": "PRIMARY: wait 1000 ms after submitting Cora's RSVP"
+        },
+        {
+          "instruction_id": "4a252e56-f5e6-4485-92a7-acb928c7865e",
+          "instruction_class": "driver_action",
+          "module_id": "",
+          "instruction": "Checking whether Cora appears with Yes in the guest list",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -4183,11 +4356,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "4b6d908c-6bf5-46b5-b307-6ece66a47c85",
-              "instruction_id": "cd6f9c85-8d99-4c61-9032-c699eebee8d1",
-              "instruction": "Checking for Cora's Yes entry in the guest list",
-              "intent": "Checking for Cora's Yes entry in the guest list",
-              "operation_start": "2026-10-24T22:49:44.797746+00:00",
+              "operation_id": "56b2f98c-12ef-40bb-9c9f-2e5f16850eea",
+              "instruction_id": "4a252e56-f5e6-4485-92a7-acb928c7865e",
+              "instruction": "Checking whether Cora appears with Yes in the guest list",
+              "intent": "Checking whether Cora appears with Yes in the guest list",
+              "operation_start": "2026-10-24T22:57:51.366378+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -4202,7 +4375,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking for Cora's Yes entry in the guest list\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Cora alongside Yes in the guest list is present (in the guest list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(26).innerText.trim() === 'Cora — Yes'\",\"wrapped_js\":\"(els) => {\\n  const __m = {26: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(26).innerText.trim() === 'Cora — Yes');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Cora — Yes\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Cora alongside Yes in the guest list is present (in the guest list)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Cora appears alongside Yes in the guest list.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether Cora appears with Yes in the guest list\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Cora alongside Yes in the guest list is present (in the guest list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(25).innerText.split('\\\\n').some(x => x.trim() === 'Cora — Yes')\",\"wrapped_js\":\"(els) => {\\n  const __m = {25: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(25).innerText.split('\\\\n').some(x => x.trim() === 'Cora — Yes'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=region[name=\\\"RSVP\\\"i] >> internal:role=list\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Cora alongside Yes in the guest list is present (in the guest list)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Cora appears alongside Yes in the guest list.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4213,7 +4386,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4b6d908c-6bf5-46b5-b307-6ece66a47c85.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/56b2f98c-12ef-40bb-9c9f-2e5f16850eea.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4313,7 +4486,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:44.797746+00:00",
+          "start_timestamp": "2026-10-24T22:57:51.366378+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -4340,7 +4513,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -4351,7 +4524,7 @@
           "reasoning": "whether Cora alongside Yes in the guest list is present (in the guest list)"
         },
         {
-          "instruction_id": "8f69bb85-28ca-4305-872f-f393ffa4146f",
+          "instruction_id": "2f46431c-2a31-4d7a-a9c2-0cfa7702e018",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Reading the RSVP counts",
@@ -4362,11 +4535,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "7c1b91f1-d3db-41c9-98f1-ceaed5877c2b",
-              "instruction_id": "8f69bb85-28ca-4305-872f-f393ffa4146f",
+              "operation_id": "ac24886e-3887-4491-8631-99f53d27de17",
+              "instruction_id": "2f46431c-2a31-4d7a-a9c2-0cfa7702e018",
               "instruction": "Reading the RSVP counts",
               "intent": "Reading the RSVP counts",
-              "operation_start": "2026-10-24T22:49:44.798136+00:00",
+              "operation_start": "2026-10-24T22:57:51.366578+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -4381,7 +4554,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the RSVP counts\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the RSVP counts displayed below the RSVP form\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(23).innerText.trim()\",\"wrapped_js\":\"(els) => {\\n  const __m = {23: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(23).innerText.trim());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Yes: 1 · No: 0 · Maybe:\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the RSVP counts displayed below the RSVP form\",\"expected_value\":\"Yes: 1 · No: 0 · Maybe: 0\",\"needs_unit_conversion\":false,\"condition\":\"The counts read 'Yes: 1 · No: 0 · Maybe: 0'.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the RSVP counts\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the RSVP counts displayed below the RSVP form\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(23).textContent.trim()\",\"wrapped_js\":\"(els) => {\\n  const __m = {23: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(23).textContent.trim());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Yes: 1 · No: 0 · Maybe:\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the RSVP counts displayed below the RSVP form\",\"expected_value\":\"Yes: 1 · No: 0 · Maybe: 0\",\"needs_unit_conversion\":false,\"condition\":\"The counts read 'Yes: 1 · No: 0 · Maybe: 0'.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4392,7 +4565,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7c1b91f1-d3db-41c9-98f1-ceaed5877c2b.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ac24886e-3887-4491-8631-99f53d27de17.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4492,7 +4665,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:44.798136+00:00",
+          "start_timestamp": "2026-10-24T22:57:51.366578+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -4519,7 +4692,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -4530,7 +4703,7 @@
           "reasoning": "the RSVP counts displayed below the RSVP form"
         },
         {
-          "instruction_id": "d8a31d3c-7b1a-4f0c-8ead-24fc30ed1cfd",
+          "instruction_id": "aa279f82-9679-4904-9a89-5bec15039104",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -4612,11 +4785,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "c02686d4-51ec-4845-8a19-59b8fbdbccf5",
-              "instruction_id": "d8a31d3c-7b1a-4f0c-8ead-24fc30ed1cfd",
+              "operation_id": "7d3d0a05-b9c5-4885-8593-802133c7cc19",
+              "instruction_id": "aa279f82-9679-4904-9a89-5bec15039104",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:49:45.395949+00:00",
+              "operation_start": "2026-10-24T22:57:51.959632+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -4642,7 +4815,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c02686d4-51ec-4845-8a19-59b8fbdbccf5.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7d3d0a05-b9c5-4885-8593-802133c7cc19.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4796,7 +4969,7 @@
                 ],
                 "composite_operator": "and",
                 "passed": true,
-                "step": 7,
+                "step": 8,
                 "is_final": true,
                 "verification": "The guest list shows Cora alongside Yes, and the RSVP counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
                 "error_message": null,
@@ -4840,7 +5013,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:49:45.395949+00:00",
+          "start_timestamp": "2026-10-24T22:57:51.959632+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -4867,7 +5040,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "2128b2e8ede7444a8b7f6b483cc90e43",
+          "generative_id": "09303f15825f42d58d744070985e93b8",
           "plan_id": "",
           "generative_objective": "On the event page's RSVP section, submit guest name 'Cora' with Yes, then assert Cora appears alongside Yes in the guest list and the counts read 'Yes: 1 · No: 0 · Maybe: 0'.",
           "error_message": "",
@@ -4883,9 +5056,9 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Submitted an RSVP for Cora with the response Yes on the event page.",
-        "Confirmed that the guest list shows “Cora — Yes.”",
-        "The RSVP totals now read “Yes: 1 · No: 0 · Maybe: 0.”"
+        "Submitted an RSVP for Cora with a response of Yes on the event page.",
+        "Confirmed that Cora appears in the guest list with Yes.",
+        "The RSVP totals show Yes: 1 · No: 0 · Maybe: 0."
       ],
       "one_liner": null
     }
@@ -4893,13 +5066,13 @@
   "modules": [],
   "uploaded_files": [],
   "test_params": [],
-  "test_level_variables": "[{\"name\":\"yes_offered\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"no_offered\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"maybe_offered\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"yes_selected\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"no_selected\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"maybe_selected\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"cora_yes_guest_list_entry\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_counts\",\"value\":\"Yes: 1 · No: 0 · Maybe: 0\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
+  "test_level_variables": "[{\"name\":\"rsvp_yes_offered\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_no_offered\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_maybe_offered\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_yes_selected\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_no_selected\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_maybe_selected\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"cora_yes_guest_list_entry\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"rsvp_counts\",\"value\":\"Yes: 1 · No: 0 · Maybe: 0\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
   "test_global_variables": [
     {
       "id": 464833,
       "name": "start_url",
-      "value": "http://localhost:4103",
-      "session_value": "http://localhost:4103",
+      "value": "http://localhost:4100",
+      "session_value": "http://localhost:4100",
       "is_persist": false,
       "environment_id": 0,
       "environment_name": "No Env"

@@ -2,24 +2,24 @@
   "test_id": "9a3b2fb3-a3d7-416e-b2fd-d613ea7e87af",
   "version": "v4",
   "auto_heal_version": "AH2",
-  "session_id": "7018934f-380b-4b8c-b7d2-1929b511846b",
+  "session_id": "93e55608-4817-427c-a09e-c0546bf71e65",
   "org_id": "3398072",
   "user_id": "3574171",
   "url": "",
-  "start_timestamp": "2026-10-24T22:43:11.734Z",
-  "end_timestamp": "2026-10-24T22:45:15.034Z",
+  "start_timestamp": "2026-10-24T23:17:35.516Z",
+  "end_timestamp": "2026-10-24T23:18:57.623Z",
   "status": "success",
-  "commit_id": "7018934f-380b-4b8c-b7d2-1929b511846b",
+  "commit_id": "93e55608-4817-427c-a09e-c0546bf71e65",
   "instructions": [
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_5b33ec3633f446faabe154af6d592523",
-      "generative_id": "5b33ec3633f446faabe154af6d592523",
+      "instruction_id": "generative_block_f2ee322a7d244625bc1b2a2997cfaaaf",
+      "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
       "objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "88f0185e-ad41-4ae2-83d2-89580f60975c",
+          "instruction_id": "5fd2ec29-702b-4a24-a299-b5ea2645c2fa",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Navigate to {{global.start_url}}",
@@ -31,11 +31,11 @@
           "operations": [
             {
               "operation_id": "170f2f0a-98c5-4d70-82d0-c7b51fc276c8",
-              "instruction_id": "88f0185e-ad41-4ae2-83d2-89580f60975c",
+              "instruction_id": "5fd2ec29-702b-4a24-a299-b5ea2645c2fa",
               "instruction": "Navigate to {{global.start_url}}",
               "intent": "Navigate to {{global.start_url}}",
-              "operation_start": "2026-10-24T22:43:18.578126+00:00",
-              "operation_end": "2026-10-24T22:43:18.613Z",
+              "operation_start": "2026-10-24T23:18:03.268154+00:00",
+              "operation_end": "2026-10-24T23:18:03.285Z",
               "status": "success",
               "command": "OPEN",
               "name": "",
@@ -158,8 +158,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:18.578126+00:00",
-          "end_timestamp": "2026-10-24T22:43:18.613Z",
+          "start_timestamp": "2026-10-24T23:18:03.268154+00:00",
+          "end_timestamp": "2026-10-24T23:18:03.285Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -185,7 +185,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "5b33ec3633f446faabe154af6d592523",
+          "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -196,7 +196,7 @@
           "reasoning": "Navigate to {{global.start_url}}"
         },
         {
-          "instruction_id": "d4a4b475-66cf-4dcc-8f85-42b20afe7f3a",
+          "instruction_id": "e1c4a3f9-e0c2-4bee-8cfb-69100827ed7c",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Waiting for the create event form to be visible with title, date, and host fields",
@@ -208,11 +208,11 @@
           "operations": [
             {
               "operation_id": "b3ea0680-6d54-43ee-b0cb-934a15b66561",
-              "instruction_id": "d4a4b475-66cf-4dcc-8f85-42b20afe7f3a",
+              "instruction_id": "e1c4a3f9-e0c2-4bee-8cfb-69100827ed7c",
               "instruction": "Waiting for the create event form to be visible with title, date, and host fields",
               "intent": "Waiting for the create event form to be visible with title, date, and host fields",
-              "operation_start": "2026-10-24T22:43:25.419567+00:00",
-              "operation_end": "2026-10-24T22:43:26.423Z",
+              "operation_start": "2026-10-24T23:18:04.347944+00:00",
+              "operation_end": "2026-10-24T23:18:05.350Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -335,8 +335,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:25.419567+00:00",
-          "end_timestamp": "2026-10-24T22:43:26.423Z",
+          "start_timestamp": "2026-10-24T23:18:04.347944+00:00",
+          "end_timestamp": "2026-10-24T23:18:05.350Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -362,7 +362,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "5b33ec3633f446faabe154af6d592523",
+          "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -373,7 +373,7 @@
           "reasoning": "PRIMARY: Create event form is visible with Event title, date, and Host name fields; role=form | HINTS: container=main page"
         },
         {
-          "instruction_id": "333eb6eb-ed78-439e-9519-c15f861a7c56",
+          "instruction_id": "e91155cc-47fd-4338-8b74-4c868af56348",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the event title field is present",
@@ -385,11 +385,11 @@
           "operations": [
             {
               "operation_id": "0243db4b-1bd6-4170-b5f8-436c8d209acb",
-              "instruction_id": "333eb6eb-ed78-439e-9519-c15f861a7c56",
+              "instruction_id": "e91155cc-47fd-4338-8b74-4c868af56348",
               "instruction": "Checking whether the event title field is present",
               "intent": "Checking whether the event title field is present",
-              "operation_start": "2026-10-24T22:43:39.643016+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:04.425279+00:00",
+              "operation_end": "2026-10-24T23:18:04.444Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -514,8 +514,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:39.643016+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:04.425279+00:00",
+          "end_timestamp": "2026-10-24T23:18:04.444Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -541,7 +541,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "5b33ec3633f446faabe154af6d592523",
+          "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -552,7 +552,7 @@
           "reasoning": "whether the Create event form event title field is present (in the Create event form)"
         },
         {
-          "instruction_id": "e4986e75-5fd8-469e-9048-d4a26237f6a2",
+          "instruction_id": "eaaa986f-caf6-41ce-9b7a-694a8636611e",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the date field is present",
@@ -564,11 +564,11 @@
           "operations": [
             {
               "operation_id": "13e14f17-d4fb-4736-b3f1-a54ed4edc735",
-              "instruction_id": "e4986e75-5fd8-469e-9048-d4a26237f6a2",
+              "instruction_id": "eaaa986f-caf6-41ce-9b7a-694a8636611e",
               "instruction": "Checking whether the date field is present",
               "intent": "Checking whether the date field is present",
-              "operation_start": "2026-10-24T22:43:39.643393+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:04.496143+00:00",
+              "operation_end": "2026-10-24T23:18:04.509Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -693,8 +693,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:39.643393+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:04.496143+00:00",
+          "end_timestamp": "2026-10-24T23:18:04.509Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -720,7 +720,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "5b33ec3633f446faabe154af6d592523",
+          "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -731,7 +731,7 @@
           "reasoning": "whether the Create event form date field is present (in the Create event form)"
         },
         {
-          "instruction_id": "24553dc5-caa7-422f-b108-e21c8db165b7",
+          "instruction_id": "994da6c2-dfc3-4b96-8d28-c9b4b83c8570",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the host name field is present",
@@ -743,11 +743,11 @@
           "operations": [
             {
               "operation_id": "f107819c-c812-45d8-be8c-fdc0ce772429",
-              "instruction_id": "24553dc5-caa7-422f-b108-e21c8db165b7",
+              "instruction_id": "994da6c2-dfc3-4b96-8d28-c9b4b83c8570",
               "instruction": "Checking whether the host name field is present",
               "intent": "Checking whether the host name field is present",
-              "operation_start": "2026-10-24T22:43:39.643521+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:04.568604+00:00",
+              "operation_end": "2026-10-24T23:18:04.579Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -872,8 +872,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:39.643521+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:04.568604+00:00",
+          "end_timestamp": "2026-10-24T23:18:04.579Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -899,7 +899,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "5b33ec3633f446faabe154af6d592523",
+          "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -910,7 +910,7 @@
           "reasoning": "whether the Create event form host name field is present (in the Create event form)"
         },
         {
-          "instruction_id": "9d62298d-4442-465f-b51a-fb3b25e1573f",
+          "instruction_id": "2e91e99c-030d-4517-99d4-0041a8279a29",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -1010,11 +1010,11 @@
           "operations": [
             {
               "operation_id": "d6317dfa-3e89-4ea4-b849-dea22589b11f",
-              "instruction_id": "9d62298d-4442-465f-b51a-fb3b25e1573f",
+              "instruction_id": "2e91e99c-030d-4517-99d4-0041a8279a29",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:43:40.251210+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:04.622376+00:00",
+              "operation_end": "2026-10-24T23:18:04.623Z",
               "status": "success",
               "command": "ASSERTION",
               "name": "",
@@ -1047,7 +1047,7 @@
               "navigation_direction": "",
               "tagified_image_url": "",
               "query_variable_name": "",
-              "query_variable_value": "",
+              "query_variable_value": "{'status': 'passed', 'composite_operator': 'and', 'sub_results': [{'description': 'the Create event form has an event title field', 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}, {'description': 'the Create event form has a date field', 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}, {'description': 'the Create event form has a host name field', 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}]}",
               "query_variable_type": "",
               "expected_value": "",
               "queried_value": "",
@@ -1225,7 +1225,48 @@
                 "is_final": true,
                 "verification": "the Create event form shows the event title field, date field, and host name field",
                 "error_message": null,
-                "duration_ms": 0
+                "duration_ms": 0,
+                "sub_checks": [
+                  {
+                    "description": "the Create event form has an event title field",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{event_title_field_present}}",
+                    "store_key": "event_title_field_present",
+                    "variable_refs": {
+                      "{{event_title_field_present}}": "true"
+                    },
+                    "expected_value": "true"
+                  },
+                  {
+                    "description": "the Create event form has a date field",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{date_field_present}}",
+                    "store_key": "date_field_present",
+                    "variable_refs": {
+                      "{{date_field_present}}": "true"
+                    },
+                    "expected_value": "true"
+                  },
+                  {
+                    "description": "the Create event form has a host name field",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{host_name_field_present}}",
+                    "store_key": "host_name_field_present",
+                    "variable_refs": {
+                      "{{host_name_field_present}}": "true"
+                    },
+                    "expected_value": "true"
+                  }
+                ]
               },
               "assertion_tree_simplified": {},
               "network_throttle": {},
@@ -1265,8 +1306,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:40.251210+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:04.622376+00:00",
+          "end_timestamp": "2026-10-24T23:18:04.623Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1292,7 +1333,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "5b33ec3633f446faabe154af6d592523",
+          "generative_id": "f2ee322a7d244625bc1b2a2997cfaaaf",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -1305,23 +1346,20 @@
       ],
       "error_message": null,
       "error_code": null,
-      "result_code": null,
+      "result_code": 100,
       "bifurcation_context": [],
-      "approach_reason": [
-        "Opened the Potluck Planner home page as requested.",
-        "Reached the Create event form and confirmed that it includes fields for the event title, date, and host name."
-      ],
+      "approach_reason": [],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_4c44dfa9f37d4c41b804962cec1c8113",
-      "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+      "instruction_id": "generative_block_556790a1da0744b58aa731ac8a1b4c06",
+      "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
       "objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "8a6fcd6f-8b41-411c-8c9c-c4c773ff80c4",
+          "instruction_id": "50d3872c-74d9-45a9-ade3-0bbe8ade899a",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Waiting for the next step in the event creation flow",
@@ -1333,11 +1371,11 @@
           "operations": [
             {
               "operation_id": "09b69bb1-96d5-4b82-8a37-dbd36cb4e8a1",
-              "instruction_id": "8a6fcd6f-8b41-411c-8c9c-c4c773ff80c4",
+              "instruction_id": "50d3872c-74d9-45a9-ade3-0bbe8ade899a",
               "instruction": "Waiting for the next step in the event creation flow",
               "intent": "Waiting for the next step in the event creation flow",
-              "operation_start": "2026-10-24T22:43:54.025578+00:00",
-              "operation_end": "2026-10-24T22:43:55.040Z",
+              "operation_start": "2026-10-24T23:18:05.691189+00:00",
+              "operation_end": "2026-10-24T23:18:06.693Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -1460,8 +1498,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:54.025578+00:00",
-          "end_timestamp": "2026-10-24T22:43:55.040Z",
+          "start_timestamp": "2026-10-24T23:18:05.691189+00:00",
+          "end_timestamp": "2026-10-24T23:18:06.693Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1487,7 +1525,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -1498,7 +1536,7 @@
           "reasoning": "queued plan (4 steps): type \"Event title\"; type \"Date\"; type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "afac1d0e-b949-4aeb-867d-50a64dce7fd7",
+          "instruction_id": "e4a9ec86-42ab-4b13-ab8b-e9bc15ca7b6d",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Assurance Future Potluck 39817\" into \"Event title\"",
@@ -1510,11 +1548,11 @@
           "operations": [
             {
               "operation_id": "f44f085c-ca17-4467-ba1b-fce42c3c03d2",
-              "instruction_id": "afac1d0e-b949-4aeb-867d-50a64dce7fd7",
+              "instruction_id": "e4a9ec86-42ab-4b13-ab8b-e9bc15ca7b6d",
               "instruction": "Type \"Assurance Future Potluck 39817\" into \"Event title\"",
               "intent": "Type \"Assurance Future Potluck 39817\" into \"Event title\"",
-              "operation_start": "2026-10-24T22:43:54.690445+00:00",
-              "operation_end": "2026-10-24T22:43:54.723Z",
+              "operation_start": "2026-10-24T23:18:05.806566+00:00",
+              "operation_end": "2026-10-24T23:18:05.857Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -1662,8 +1700,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:54.690445+00:00",
-          "end_timestamp": "2026-10-24T22:43:54.723Z",
+          "start_timestamp": "2026-10-24T23:18:05.806566+00:00",
+          "end_timestamp": "2026-10-24T23:18:05.857Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1689,7 +1727,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -1700,7 +1738,7 @@
           "reasoning": "PRIMARY: event title input; role=textbox; text=\"Event title\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "b8d12b37-9e5d-4a86-bac7-86cf895353e8",
+          "instruction_id": "6530b9ea-ea2b-4165-9444-e2ec39421d76",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"2026-10-25\" into \"Date\"",
@@ -1712,11 +1750,11 @@
           "operations": [
             {
               "operation_id": "71021855-b1e9-4315-a40c-382b68f033d2",
-              "instruction_id": "b8d12b37-9e5d-4a86-bac7-86cf895353e8",
+              "instruction_id": "6530b9ea-ea2b-4165-9444-e2ec39421d76",
               "instruction": "Type \"2026-10-25\" into \"Date\"",
               "intent": "Type \"2026-10-25\" into \"Date\"",
-              "operation_start": "2026-10-24T22:43:55.410778+00:00",
-              "operation_end": "2026-10-24T22:43:55.439Z",
+              "operation_start": "2026-10-24T23:18:06.007107+00:00",
+              "operation_end": "2026-10-24T23:18:06.065Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -1864,8 +1902,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:43:55.410778+00:00",
-          "end_timestamp": "2026-10-24T22:43:55.439Z",
+          "start_timestamp": "2026-10-24T23:18:06.007107+00:00",
+          "end_timestamp": "2026-10-24T23:18:06.065Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1891,7 +1929,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -1902,7 +1940,7 @@
           "reasoning": "PRIMARY: event date input; role=date; text=\"Date\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "96713b00-6432-4ec4-8d99-94b8c136642f",
+          "instruction_id": "1eb94bb4-c400-494e-acfa-458212f7555c",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Waiting for the queued steps to run",
@@ -1914,11 +1952,11 @@
           "operations": [
             {
               "operation_id": "8288ba5e-4116-4e98-bea1-d58fe2cabdbf",
-              "instruction_id": "96713b00-6432-4ec4-8d99-94b8c136642f",
+              "instruction_id": "1eb94bb4-c400-494e-acfa-458212f7555c",
               "instruction": "Waiting for the queued steps to run",
               "intent": "Waiting for the queued steps to run",
-              "operation_start": "2026-10-24T22:44:00.695661+00:00",
-              "operation_end": "2026-10-24T22:44:01.705Z",
+              "operation_start": "2026-10-24T23:18:07.156447+00:00",
+              "operation_end": "2026-10-24T23:18:08.160Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -2041,8 +2079,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:00.695661+00:00",
-          "end_timestamp": "2026-10-24T22:44:01.705Z",
+          "start_timestamp": "2026-10-24T23:18:07.156447+00:00",
+          "end_timestamp": "2026-10-24T23:18:08.160Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2068,7 +2106,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -2079,7 +2117,7 @@
           "reasoning": "queued plan (2 steps): type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "cd8e36dd-69e6-4893-b6df-4978eaaf5f23",
+          "instruction_id": "e180dd3b-1f0f-42f5-8303-8a68965cf428",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Assurance Host\" into \"Host name\"",
@@ -2091,11 +2129,11 @@
           "operations": [
             {
               "operation_id": "ea0286e2-f7e9-4e7a-b4b8-806c6567445f",
-              "instruction_id": "cd8e36dd-69e6-4893-b6df-4978eaaf5f23",
+              "instruction_id": "e180dd3b-1f0f-42f5-8303-8a68965cf428",
               "instruction": "Type \"Assurance Host\" into \"Host name\"",
               "intent": "Type \"Assurance Host\" into \"Host name\"",
-              "operation_start": "2026-10-24T22:44:01.349894+00:00",
-              "operation_end": "2026-10-24T22:44:01.375Z",
+              "operation_start": "2026-10-24T23:18:07.280956+00:00",
+              "operation_end": "2026-10-24T23:18:07.343Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -2243,8 +2281,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:01.349894+00:00",
-          "end_timestamp": "2026-10-24T22:44:01.375Z",
+          "start_timestamp": "2026-10-24T23:18:07.280956+00:00",
+          "end_timestamp": "2026-10-24T23:18:07.343Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2270,7 +2308,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -2281,7 +2319,7 @@
           "reasoning": "PRIMARY: host name input; role=textbox; text=\"Host name\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "ba5908ed-5e18-44f6-aaae-1255a886c34f",
+          "instruction_id": "880fb514-ef44-4d77-ad51-92c071ad0cca",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Clicking Create event submit button",
@@ -2293,11 +2331,11 @@
           "operations": [
             {
               "operation_id": "a1100d51-cc7a-4e03-aa3f-24396f26ea40",
-              "instruction_id": "ba5908ed-5e18-44f6-aaae-1255a886c34f",
+              "instruction_id": "880fb514-ef44-4d77-ad51-92c071ad0cca",
               "instruction": "Clicking Create event submit button",
               "intent": "Clicking Create event submit button",
-              "operation_start": "2026-10-24T22:44:05.232905+00:00",
-              "operation_end": "2026-10-24T22:44:05.260Z",
+              "operation_start": "2026-10-24T23:18:07.468298+00:00",
+              "operation_end": "2026-10-24T23:18:07.512Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -2445,8 +2483,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:05.232905+00:00",
-          "end_timestamp": "2026-10-24T22:44:05.260Z",
+          "start_timestamp": "2026-10-24T23:18:07.468298+00:00",
+          "end_timestamp": "2026-10-24T23:18:07.512Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2472,7 +2510,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -2483,7 +2521,7 @@
           "reasoning": "PRIMARY: create event submit button; role=button; text=\"Create event\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "8f90449b-96e2-4d3d-80ba-4919da206024",
+          "instruction_id": "eaa04247-d786-48e8-a1fe-6bf8e4e72581",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Waiting for the event page to finish loading",
@@ -2495,11 +2533,11 @@
           "operations": [
             {
               "operation_id": "ca1e530e-b3f3-4390-bb5d-54e7be6fbe4b",
-              "instruction_id": "8f90449b-96e2-4d3d-80ba-4919da206024",
+              "instruction_id": "eaa04247-d786-48e8-a1fe-6bf8e4e72581",
               "instruction": "Waiting for the event page to finish loading",
               "intent": "Waiting for the event page to finish loading",
-              "operation_start": "2026-10-24T22:44:09.314033+00:00",
-              "operation_end": "2026-10-24T22:44:10.121Z",
+              "operation_start": "2026-10-24T23:18:08.936479+00:00",
+              "operation_end": "2026-10-24T23:18:09.739Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -2622,8 +2660,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:09.314033+00:00",
-          "end_timestamp": "2026-10-24T22:44:10.121Z",
+          "start_timestamp": "2026-10-24T23:18:08.936479+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.739Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2649,7 +2687,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -2660,7 +2698,7 @@
           "reasoning": "PRIMARY: wait 800 ms for the newly opened event page to finish loading"
         },
         {
-          "instruction_id": "2bd3125a-df04-4e82-bf21-0cc2948dfdbc",
+          "instruction_id": "ad07ea02-3730-44fa-946e-72abe862c320",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether an event is present",
@@ -2672,11 +2710,11 @@
           "operations": [
             {
               "operation_id": "37cc6ab8-3a3a-4f36-a388-52ae687cf540",
-              "instruction_id": "2bd3125a-df04-4e82-bf21-0cc2948dfdbc",
+              "instruction_id": "ad07ea02-3730-44fa-946e-72abe862c320",
               "instruction": "Checking whether an event is present",
               "intent": "Checking whether an event is present",
-              "operation_start": "2026-10-24T22:44:29.097109+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.019846+00:00",
+              "operation_end": "2026-10-24T23:18:09.038Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -2801,8 +2839,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.097109+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.019846+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.038Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2828,7 +2866,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -2839,7 +2877,7 @@
           "reasoning": "whether an event is present (on the event detail page)"
         },
         {
-          "instruction_id": "74336617-8f4d-4be0-ae7f-05c8a5563881",
+          "instruction_id": "952864fe-644d-47c4-8491-4a37f5ef6a3e",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether its event page is present",
@@ -2851,11 +2889,11 @@
           "operations": [
             {
               "operation_id": "e49c4ffa-9713-4474-9eb7-14696722f9e6",
-              "instruction_id": "74336617-8f4d-4be0-ae7f-05c8a5563881",
+              "instruction_id": "952864fe-644d-47c4-8491-4a37f5ef6a3e",
               "instruction": "Checking whether its event page is present",
               "intent": "Checking whether its event page is present",
-              "operation_start": "2026-10-24T22:44:29.097652+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.090173+00:00",
+              "operation_end": "2026-10-24T23:18:09.103Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -2980,8 +3018,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.097652+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.090173+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.103Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3007,7 +3045,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -3018,7 +3056,7 @@
           "reasoning": "whether its event page is present (on the open event detail page)"
         },
         {
-          "instruction_id": "36f41a95-dfb1-4ccb-aec5-285348ea97e0",
+          "instruction_id": "cefa4442-b430-449c-805f-350722b0216f",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the event title is present",
@@ -3030,11 +3068,11 @@
           "operations": [
             {
               "operation_id": "e8e6d9c8-2ad7-474a-8735-6ca720aec1b3",
-              "instruction_id": "36f41a95-dfb1-4ccb-aec5-285348ea97e0",
+              "instruction_id": "cefa4442-b430-449c-805f-350722b0216f",
               "instruction": "Checking whether the event title is present",
               "intent": "Checking whether the event title is present",
-              "operation_start": "2026-10-24T22:44:29.097805+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.164020+00:00",
+              "operation_end": "2026-10-24T23:18:09.178Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -3159,8 +3197,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.097805+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.164020+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.178Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3186,7 +3224,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -3197,7 +3235,7 @@
           "reasoning": "whether the event page text 'Assurance Future Potluck 39817' is present (in the event page heading)"
         },
         {
-          "instruction_id": "044ab466-c602-42d3-b4d7-141b52e8597c",
+          "instruction_id": "4648164c-d18d-4e4e-87ce-b8819b158510",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the host text is present",
@@ -3209,11 +3247,11 @@
           "operations": [
             {
               "operation_id": "8cffb07f-be6f-42f2-81eb-3d18d35dbdb5",
-              "instruction_id": "044ab466-c602-42d3-b4d7-141b52e8597c",
+              "instruction_id": "4648164c-d18d-4e4e-87ce-b8819b158510",
               "instruction": "Checking whether the host text is present",
               "intent": "Checking whether the host text is present",
-              "operation_start": "2026-10-24T22:44:29.097932+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.243764+00:00",
+              "operation_end": "2026-10-24T23:18:09.260Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -3338,8 +3376,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.097932+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.243764+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.260Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3365,7 +3403,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -3376,7 +3414,7 @@
           "reasoning": "whether the event page text 'Hosted by Assurance Host' is present (in the event details)"
         },
         {
-          "instruction_id": "64a472db-3742-45d0-a7cd-7806a45a6923",
+          "instruction_id": "d7d0d2c8-4e10-456f-a10f-9184b8fda3b9",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Reading the event date offset from today",
@@ -3388,11 +3426,11 @@
           "operations": [
             {
               "operation_id": "abdb0793-158f-49c5-a14e-edfc76bdf0e3",
-              "instruction_id": "64a472db-3742-45d0-a7cd-7806a45a6923",
+              "instruction_id": "d7d0d2c8-4e10-456f-a10f-9184b8fda3b9",
               "instruction": "Reading the event date offset from today",
               "intent": "Reading the event date offset from today",
-              "operation_start": "2026-10-24T22:44:29.098060+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.327505+00:00",
+              "operation_end": "2026-10-24T23:18:09.345Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -3517,8 +3555,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.098060+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.327505+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.345Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3544,7 +3582,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -3555,7 +3593,7 @@
           "reasoning": "the number of calendar days from today to the event date in the event details"
         },
         {
-          "instruction_id": "4d060612-0db5-4ec2-966b-804ee0de287e",
+          "instruction_id": "a2a79492-c7cd-4b46-bed6-665c6e51071e",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking the event date validity",
@@ -3567,11 +3605,11 @@
           "operations": [
             {
               "operation_id": "c966dcdf-171a-4ff4-995d-c5770f5486d4",
-              "instruction_id": "4d060612-0db5-4ec2-966b-804ee0de287e",
+              "instruction_id": "a2a79492-c7cd-4b46-bed6-665c6e51071e",
               "instruction": "Checking the event date validity",
               "intent": "Checking the event date validity",
-              "operation_start": "2026-10-24T22:44:29.098206+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.401360+00:00",
+              "operation_end": "2026-10-24T23:18:09.418Z",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
               "name": "",
@@ -3696,8 +3734,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.098206+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.401360+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.418Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3723,7 +3761,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -3734,7 +3772,7 @@
           "reasoning": "whether the event date in the event details is today or later"
         },
         {
-          "instruction_id": "7b195b93-b81b-4a9f-a69d-251937639d97",
+          "instruction_id": "0cdd38eb-d788-4ddb-af24-3995598b9cf5",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -3901,11 +3939,11 @@
           "operations": [
             {
               "operation_id": "7e97aae1-2fa0-4a04-b84d-f462bddec1f6",
-              "instruction_id": "7b195b93-b81b-4a9f-a69d-251937639d97",
+              "instruction_id": "0cdd38eb-d788-4ddb-af24-3995598b9cf5",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:44:29.723496+00:00",
-              "operation_end": "",
+              "operation_start": "2026-10-24T23:18:09.461334+00:00",
+              "operation_end": "2026-10-24T23:18:09.462Z",
               "status": "success",
               "command": "ASSERTION",
               "name": "",
@@ -3938,7 +3976,7 @@
               "navigation_direction": "",
               "tagified_image_url": "",
               "query_variable_name": "",
-              "query_variable_value": "",
+              "query_variable_value": "{'status': 'passed', 'composite_operator': 'and', 'sub_results': [{'description': 'An event was created.', 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}, {'description': 'Its event page is opened.', 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}, {'description': \"The event page shows 'Assurance Future Potluck 39817'.\", 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}, {'description': \"The event page shows tomorrow's date.\", 'passed': True, 'operator': 'equals', 'transforms': ['string_to_float'], 'expected': '1', 'extracted_value': '1'}, {'description': \"The event page shows 'Hosted by Assurance Host'.\", 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}, {'description': 'The event has a valid date no earlier than today.', 'passed': True, 'operator': 'equals', 'transforms': [], 'expected': 'true', 'extracted_value': 'true'}]}",
               "query_variable_type": "",
               "expected_value": "",
               "queried_value": "",
@@ -4224,7 +4262,89 @@
                 "is_final": true,
                 "verification": "The created event and its opened event page details.",
                 "error_message": null,
-                "duration_ms": 0
+                "duration_ms": 0,
+                "sub_checks": [
+                  {
+                    "description": "An event was created.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{event_created}}",
+                    "store_key": "event_created",
+                    "variable_refs": {
+                      "{{event_created}}": "true"
+                    },
+                    "expected_value": "true"
+                  },
+                  {
+                    "description": "Its event page is opened.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{event_page_opened}}",
+                    "store_key": "event_page_opened",
+                    "variable_refs": {
+                      "{{event_page_opened}}": "true"
+                    },
+                    "expected_value": "true"
+                  },
+                  {
+                    "description": "The event page shows 'Assurance Future Potluck 39817'.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{event_title_shown}}",
+                    "store_key": "event_title_shown",
+                    "variable_refs": {
+                      "{{event_title_shown}}": "true"
+                    },
+                    "expected_value": "true"
+                  },
+                  {
+                    "description": "The event page shows tomorrow's date.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [
+                      "string_to_float"
+                    ],
+                    "json_path": null,
+                    "extracted_value": "{{event_date_tomorrow}}",
+                    "store_key": "event_date_tomorrow",
+                    "variable_refs": {
+                      "{{event_date_tomorrow}}": "1"
+                    },
+                    "expected_value": "1"
+                  },
+                  {
+                    "description": "The event page shows 'Hosted by Assurance Host'.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{hosted_by_assurance_host}}",
+                    "store_key": "hosted_by_assurance_host",
+                    "variable_refs": {
+                      "{{hosted_by_assurance_host}}": "true"
+                    },
+                    "expected_value": "true"
+                  },
+                  {
+                    "description": "The event has a valid date no earlier than today.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "extracted_value": "{{event_date_validity}}",
+                    "store_key": "event_date_validity",
+                    "variable_refs": {
+                      "{{event_date_validity}}": "true"
+                    },
+                    "expected_value": "true"
+                  }
+                ]
               },
               "assertion_tree_simplified": {},
               "network_throttle": {},
@@ -4264,8 +4384,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:29.723496+00:00",
-          "end_timestamp": "",
+          "start_timestamp": "2026-10-24T23:18:09.461334+00:00",
+          "end_timestamp": "2026-10-24T23:18:09.462Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -4291,7 +4411,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "4c44dfa9f37d4c41b804962cec1c8113",
+          "generative_id": "556790a1da0744b58aa731ac8a1b4c06",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Future Potluck 39817', tomorrow's calendar date, and host name 'Assurance Host', then assert an event was created and its event page opened showing 'Assurance Future Potluck 39817', tomorrow's date and 'Hosted by Assurance Host', with a valid date no earlier than today.",
           "error_message": "",
@@ -4304,27 +4424,23 @@
       ],
       "error_message": null,
       "error_code": null,
-      "result_code": null,
+      "result_code": 100,
       "bifurcation_context": [],
-      "approach_reason": [
-        "Created the requested event, “Assurance Future Potluck 39817,” using tomorrow’s date and listing Assurance Host as the host.",
-        "Opened the new event’s details page, where the title, tomorrow’s date, and “Hosted by Assurance Host” were shown.",
-        "The event date was confirmed to be valid and not earlier than today."
-      ],
+      "approach_reason": [],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_6cf863f6533d4dff8b390549f076660b",
-      "generative_id": "6cf863f6533d4dff8b390549f076660b",
+      "instruction_id": "generative_block_16dc09d8e5f64430a5e6bf4c68940c8c",
+      "generative_id": "16dc09d8e5f64430a5e6bf4c68940c8c",
       "objective": "Return to the Potluck Planner home page and locate the created event in its event list, then assert the exact title 'Assurance Future Potluck 39817' is listed there.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "91fb9c14-6768-4aae-919e-b306c33bd46c",
+          "instruction_id": "7160a4de-a303-40c9-83a8-af4c2cc4927b",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Clicking Back home link to return to Potluck Planner home",
+          "instruction": "Clicking Potluck Planner home link",
           "command": "CLICK",
           "error": null,
           "parent_instruction_id": "",
@@ -4332,12 +4448,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "95c7377b-5204-4849-bc23-499230a92cba",
-              "instruction_id": "91fb9c14-6768-4aae-919e-b306c33bd46c",
-              "instruction": "Clicking Back home link to return to Potluck Planner home",
-              "intent": "Clicking Back home link to return to Potluck Planner home",
-              "operation_start": "2026-10-24T22:44:39.320404+00:00",
-              "operation_end": "2026-10-24T22:44:39.379Z",
+              "operation_id": "b0f5a9b5-28f5-43a8-9351-dc04958e689d",
+              "instruction_id": "7160a4de-a303-40c9-83a8-af4c2cc4927b",
+              "instruction": "Clicking Potluck Planner home link",
+              "intent": "Clicking Potluck Planner home link",
+              "operation_start": "2026-10-24T23:18:17.197325+00:00",
+              "operation_end": "2026-10-24T23:18:17.244Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -4351,7 +4467,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Clicking Back home link to return to Potluck Planner home\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: return to Potluck Planner home link; role=link; text=\\\"Back home\\\" | HINTS: position=top of event details page\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Clicking Potluck Planner home link\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: Potluck Planner home link; role=link; text=\\\"🥘 Potluck Planner\\\" | HINTS: position=top-left header\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4362,7 +4478,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/95c7377b-5204-4849-bc23-499230a92cba.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b0f5a9b5-28f5-43a8-9351-dc04958e689d.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4418,7 +4534,7 @@
               "clicks_order_code": "se_js_ac",
               "selector": [
                 {
-                  "selector": "internal:role=link[name=\"Back home\"i]",
+                  "selector": "internal:role=link[name=\"🥘 Potluck Planner\"i]",
                   "score": 100,
                   "isXPath": false,
                   "type": "css"
@@ -4463,30 +4579,30 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": {
-                "x": 656,
-                "y": 87,
+                "x": 94,
+                "y": 25,
                 "confidence": 0,
                 "bbox": {
-                  "x": 616,
-                  "y": 78,
-                  "width": 80,
+                  "x": 24,
+                  "y": 16,
+                  "width": 141,
                   "height": 19
                 },
                 "bbox_source": "accessibility_tree",
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/95c7377b-5204-4849-bc23-499230a92cba.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b0f5a9b5-28f5-43a8-9351-dc04958e689d.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: return to Potluck Planner home link; role=link; text=\"Back home\" | HINTS: position=top of event details page"
+              "reasoning": "PRIMARY: Potluck Planner home link; role=link; text=\"🥘 Potluck Planner\" | HINTS: position=top-left header"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:39.320404+00:00",
-          "end_timestamp": "2026-10-24T22:44:39.379Z",
+          "start_timestamp": "2026-10-24T23:18:17.197325+00:00",
+          "end_timestamp": "2026-10-24T23:18:17.244Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -4512,7 +4628,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "6cf863f6533d4dff8b390549f076660b",
+          "generative_id": "16dc09d8e5f64430a5e6bf4c68940c8c",
           "plan_id": "",
           "generative_objective": "Return to the Potluck Planner home page and locate the created event in its event list, then assert the exact title 'Assurance Future Potluck 39817' is listed there.",
           "error_message": "",
@@ -4520,13 +4636,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: return to Potluck Planner home link; role=link; text=\"Back home\" | HINTS: position=top of event details page"
+          "reasoning": "PRIMARY: Potluck Planner home link; role=link; text=\"🥘 Potluck Planner\" | HINTS: position=top-left header"
         },
         {
-          "instruction_id": "6efc15c4-b8b8-42a0-a2b6-b7756bb9781e",
+          "instruction_id": "0787c58e-4b76-4df8-ba26-ac77a85affbd",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the Potluck Planner home event list to settle with Assurance visible",
+          "instruction": "Waiting for the Potluck Planner home event list to settle with the event visible",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -4534,12 +4650,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "62297a35-7f74-4f37-93a6-678d8ac015eb",
-              "instruction_id": "6efc15c4-b8b8-42a0-a2b6-b7756bb9781e",
-              "instruction": "Waiting for the Potluck Planner home event list to settle with Assurance visible",
-              "intent": "Waiting for the Potluck Planner home event list to settle with Assurance visible",
-              "operation_start": "2026-10-24T22:44:43.695531+00:00",
-              "operation_end": "2026-10-24T22:44:44.204Z",
+              "operation_id": "ce141bc3-1d71-429f-8fce-638a94bf5928",
+              "instruction_id": "0787c58e-4b76-4df8-ba26-ac77a85affbd",
+              "instruction": "Waiting for the Potluck Planner home event list to settle with the event visible",
+              "intent": "Waiting for the Potluck Planner home event list to settle with the event visible",
+              "operation_start": "2026-10-24T23:18:22.191860+00:00",
+              "operation_end": "2026-10-24T23:18:22.697Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -4553,7 +4669,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the Potluck Planner home event list to settle with Assurance visible\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: confirm the Potluck Planner home event list is settled with \\\"Assurance Future Potluck 39817\\\" visible\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the Potluck Planner home event list to settle with the event visible\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: confirm the Potluck Planner home event list is settled with the created event visible\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4564,7 +4680,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/62297a35-7f74-4f37-93a6-678d8ac015eb.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ce141bc3-1d71-429f-8fce-638a94bf5928.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4658,12 +4774,12 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": null,
-              "reasoning": "PRIMARY: confirm the Potluck Planner home event list is settled with \"Assurance Future Potluck 39817\" visible"
+              "reasoning": "PRIMARY: confirm the Potluck Planner home event list is settled with the created event visible"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:43.695531+00:00",
-          "end_timestamp": "2026-10-24T22:44:44.204Z",
+          "start_timestamp": "2026-10-24T23:18:22.191860+00:00",
+          "end_timestamp": "2026-10-24T23:18:22.697Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -4689,7 +4805,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "6cf863f6533d4dff8b390549f076660b",
+          "generative_id": "16dc09d8e5f64430a5e6bf4c68940c8c",
           "plan_id": "",
           "generative_objective": "Return to the Potluck Planner home page and locate the created event in its event list, then assert the exact title 'Assurance Future Potluck 39817' is listed there.",
           "error_message": "",
@@ -4697,13 +4813,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: confirm the Potluck Planner home event list is settled with \"Assurance Future Potluck 39817\" visible"
+          "reasoning": "PRIMARY: confirm the Potluck Planner home event list is settled with the created event visible"
         },
         {
-          "instruction_id": "d52eb7b8-c1c2-415b-8a2d-bb9bc617c880",
+          "instruction_id": "c52f8f60-e6ed-483a-b0a5-e987c30f99b5",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Checking whether the exact event title is listed",
+          "instruction": "Checking whether the exact potluck title is listed",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -4711,11 +4827,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "8264e73d-0d9d-4c6d-b7fd-3c0c6ce025ce",
-              "instruction_id": "d52eb7b8-c1c2-415b-8a2d-bb9bc617c880",
-              "instruction": "Checking whether the exact event title is listed",
-              "intent": "Checking whether the exact event title is listed",
-              "operation_start": "2026-10-24T22:44:50.303552+00:00",
+              "operation_id": "69b3885c-5c06-4f00-a2c9-e443c1d42e15",
+              "instruction_id": "c52f8f60-e6ed-483a-b0a5-e987c30f99b5",
+              "instruction": "Checking whether the exact potluck title is listed",
+              "intent": "Checking whether the exact potluck title is listed",
+              "operation_start": "2026-10-24T23:18:29.007638+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -4730,7 +4846,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the exact event title is listed\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the exact title 'Assurance Future Potluck 39817' in the event list is present (in the event list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(27).textContent.trim() === 'Assurance Future Potluck 39817'\",\"wrapped_js\":\"(els) => {\\n  const __m = {27: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(27).textContent.trim() === 'Assurance Future Potluck 39817');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=link[name=\\\"Assurance Future Potluck\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the exact title 'Assurance Future Potluck 39817' in the event list is present (in the event list)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the exact title 'Assurance Future Potluck 39817' is listed in the event list\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the exact potluck title is listed\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the exact title 'Assurance Future Potluck 39817' in the Potluck Planner event list is present (in the Potluck Planner event list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(24).textContent.trim() === 'Assurance Future Potluck 39817'\",\"wrapped_js\":\"(els) => {\\n  const __m = {24: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(24).textContent.trim() === 'Assurance Future Potluck 39817');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=link[name=\\\"Assurance Future Potluck\\\"i] >> nth=0\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the exact title 'Assurance Future Potluck 39817' in the Potluck Planner event list is present (in the Potluck Planner event list)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4741,7 +4857,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8264e73d-0d9d-4c6d-b7fd-3c0c6ce025ce.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/69b3885c-5c06-4f00-a2c9-e443c1d42e15.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4837,11 +4953,11 @@
                 "assurance_future_potluck_39817_listed": "true"
               },
               "visual_context": null,
-              "reasoning": "whether the exact title 'Assurance Future Potluck 39817' in the event list is present (in the event list)"
+              "reasoning": "whether the exact title 'Assurance Future Potluck 39817' in the Potluck Planner event list is present (in the Potluck Planner event list)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:50.303552+00:00",
+          "start_timestamp": "2026-10-24T23:18:29.007638+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -4868,7 +4984,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "6cf863f6533d4dff8b390549f076660b",
+          "generative_id": "16dc09d8e5f64430a5e6bf4c68940c8c",
           "plan_id": "",
           "generative_objective": "Return to the Potluck Planner home page and locate the created event in its event list, then assert the exact title 'Assurance Future Potluck 39817' is listed there.",
           "error_message": "",
@@ -4876,10 +4992,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether the exact title 'Assurance Future Potluck 39817' in the event list is present (in the event list)"
+          "reasoning": "whether the exact title 'Assurance Future Potluck 39817' in the Potluck Planner event list is present (in the Potluck Planner event list)"
         },
         {
-          "instruction_id": "39c7471a-fc8a-4d3f-804f-be94ce112ac7",
+          "instruction_id": "3712749e-74ba-4b92-8c84-a7edbc2e5927",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -4895,7 +5011,7 @@
                 "assertion_tree": {
                   "sub_results": [
                     {
-                      "description": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                      "description": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -4910,7 +5026,7 @@
                   ],
                   "sub_checks": [
                     {
-                      "description": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                      "description": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                       "store_key": "assurance_future_potluck_39817_listed",
                       "expected_value": "true",
                       "extracted_value": "{{assurance_future_potluck_39817_listed}}",
@@ -4920,7 +5036,7 @@
                   ],
                   "composite_operator": "and",
                   "verification": "",
-                  "claim": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                  "claim": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                   "operator": [],
                   "assertion_operands": [],
                   "left_operand": null,
@@ -4936,11 +5052,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "837d8833-ca5c-4d5d-9ca1-873d66b7f6f0",
-              "instruction_id": "39c7471a-fc8a-4d3f-804f-be94ce112ac7",
+              "operation_id": "0a28ced6-b1ff-4b3d-a482-209bf9ef7a86",
+              "instruction_id": "3712749e-74ba-4b92-8c84-a7edbc2e5927",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:44:50.925152+00:00",
+              "operation_start": "2026-10-24T23:18:29.602988+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -4966,7 +5082,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/837d8833-ca5c-4d5d-9ca1-873d66b7f6f0.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/0a28ced6-b1ff-4b3d-a482-209bf9ef7a86.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5032,7 +5148,7 @@
                 "operands": [],
                 "sub_results": [
                   {
-                    "description": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                    "description": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -5047,7 +5163,7 @@
                 ],
                 "sub_checks": [
                   {
-                    "description": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                    "description": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                     "store_key": "assurance_future_potluck_39817_listed",
                     "expected_value": "true",
                     "extracted_value": "{{assurance_future_potluck_39817_listed}}",
@@ -5056,16 +5172,16 @@
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "The Potluck Planner home page event list contains the exact title 'Assurance Future Potluck 39817'.",
-                "claim": "the exact title 'Assurance Future Potluck 39817' is listed in the event list"
+                "verification": "The Potluck Planner event list contains the exact title 'Assurance Future Potluck 39817'.",
+                "claim": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list."
               },
               "assertion_tree": {
                 "assertion_id": "assert_cp_1",
                 "status": "passed",
-                "description": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                "description": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                 "sub_results": [
                   {
-                    "description": "the exact title 'Assurance Future Potluck 39817' is listed in the event list",
+                    "description": "the exact title 'Assurance Future Potluck 39817' is listed in the Potluck Planner event list.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -5082,7 +5198,7 @@
                 "passed": true,
                 "step": 4,
                 "is_final": true,
-                "verification": "The Potluck Planner home page event list contains the exact title 'Assurance Future Potluck 39817'.",
+                "verification": "The Potluck Planner event list contains the exact title 'Assurance Future Potluck 39817'.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -5124,7 +5240,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:44:50.925152+00:00",
+          "start_timestamp": "2026-10-24T23:18:29.602988+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -5151,7 +5267,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "6cf863f6533d4dff8b390549f076660b",
+          "generative_id": "16dc09d8e5f64430a5e6bf4c68940c8c",
           "plan_id": "",
           "generative_objective": "Return to the Potluck Planner home page and locate the created event in its event list, then assert the exact title 'Assurance Future Potluck 39817' is listed there.",
           "error_message": "",
@@ -5168,23 +5284,23 @@
       "bifurcation_context": [],
       "approach_reason": [
         "Returned to the Potluck Planner home page as requested.",
-        "Located the event “Assurance Future Potluck 39817” in the event list.",
-        "The event was confirmed as listed successfully."
+        "Located the created event in the event list.",
+        "Confirmed that the event title \"Assurance Future Potluck 39817\" is listed."
       ],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_832f2be0cd524a89bda9bb128f5f8ab1",
-      "generative_id": "832f2be0cd524a89bda9bb128f5f8ab1",
+      "instruction_id": "generative_block_4bc00e3296ef44248eb048b6caecd322",
+      "generative_id": "4bc00e3296ef44248eb048b6caecd322",
       "objective": "On the Potluck Planner home page, open the listed event title 'Assurance Future Potluck 39817', then assert the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "d05b4aab-b373-431a-9214-70e59a5cad1e",
+          "instruction_id": "6e5cdd09-2870-45bb-95f5-82958bc7d527",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Clicking Assurance Future Potluck 39817 link",
+          "instruction": "Clicking Assurance Future Potluck 39817 in the events list",
           "command": "CLICK",
           "error": null,
           "parent_instruction_id": "",
@@ -5192,12 +5308,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "b76687c6-e078-4f1f-bcef-56f1bb0da38c",
-              "instruction_id": "d05b4aab-b373-431a-9214-70e59a5cad1e",
-              "instruction": "Clicking Assurance Future Potluck 39817 link",
-              "intent": "Clicking Assurance Future Potluck 39817 link",
-              "operation_start": "2026-10-24T22:45:01.722143+00:00",
-              "operation_end": "2026-10-24T22:45:01.782Z",
+              "operation_id": "86e9cfbe-02ee-4910-8e15-20f4dff367c0",
+              "instruction_id": "6e5cdd09-2870-45bb-95f5-82958bc7d527",
+              "instruction": "Clicking Assurance Future Potluck 39817 in the events list",
+              "intent": "Clicking Assurance Future Potluck 39817 in the events list",
+              "operation_start": "2026-10-24T23:18:40.800258+00:00",
+              "operation_end": "2026-10-24T23:18:40.860Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -5211,7 +5327,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Clicking Assurance Future Potluck 39817 link\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: event title link; role=link; text=\\\"Assurance Future Potluck 39817\\\" | HINTS: container=Events list\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Clicking Assurance Future Potluck 39817 in the events list\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: listed event title link; role=link; text=\\\"Assurance Future Potluck 39817\\\" | HINTS: container=Events list; first matching entry dated 2026-10-25\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5222,7 +5338,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b76687c6-e078-4f1f-bcef-56f1bb0da38c.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/86e9cfbe-02ee-4910-8e15-20f4dff367c0.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5278,7 +5394,7 @@
               "clicks_order_code": "se_js_ac",
               "selector": [
                 {
-                  "selector": "internal:role=link[name=\"Assurance Future Potluck\"i]",
+                  "selector": "internal:role=link[name=\"Assurance Future Potluck\"i] >> nth=0",
                   "score": 100,
                   "isXPath": false,
                   "type": "css"
@@ -5324,11 +5440,11 @@
               "output_variables": {},
               "visual_context": {
                 "x": 772,
-                "y": 530,
+                "y": 511,
                 "confidence": 0,
                 "bbox": {
                   "x": 655,
-                  "y": 521,
+                  "y": 502,
                   "width": 234,
                   "height": 19
                 },
@@ -5336,17 +5452,17 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b76687c6-e078-4f1f-bcef-56f1bb0da38c.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/86e9cfbe-02ee-4910-8e15-20f4dff367c0.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: event title link; role=link; text=\"Assurance Future Potluck 39817\" | HINTS: container=Events list"
+              "reasoning": "PRIMARY: listed event title link; role=link; text=\"Assurance Future Potluck 39817\" | HINTS: container=Events list; first matching entry dated 2026-10-25"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:45:01.722143+00:00",
-          "end_timestamp": "2026-10-24T22:45:01.782Z",
+          "start_timestamp": "2026-10-24T23:18:40.800258+00:00",
+          "end_timestamp": "2026-10-24T23:18:40.860Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -5372,7 +5488,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "832f2be0cd524a89bda9bb128f5f8ab1",
+          "generative_id": "4bc00e3296ef44248eb048b6caecd322",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, open the listed event title 'Assurance Future Potluck 39817', then assert the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title.",
           "error_message": "",
@@ -5380,13 +5496,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: event title link; role=link; text=\"Assurance Future Potluck 39817\" | HINTS: container=Events list"
+          "reasoning": "PRIMARY: listed event title link; role=link; text=\"Assurance Future Potluck 39817\" | HINTS: container=Events list; first matching entry dated 2026-10-25"
         },
         {
-          "instruction_id": "7b3d4e0f-f8dd-4fb7-8eee-c7927895b3c2",
+          "instruction_id": "33eb4b69-b1e1-4956-9585-3d9555703632",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the event details page to finish loading",
+          "instruction": "Waiting for the event page to finish loading",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -5394,17 +5510,17 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "7ff45c3b-1af4-4f2c-aebf-9d21d331d6de",
-              "instruction_id": "7b3d4e0f-f8dd-4fb7-8eee-c7927895b3c2",
-              "instruction": "Waiting for the event details page to finish loading",
-              "intent": "Waiting for the event details page to finish loading",
-              "operation_start": "2026-10-24T22:45:06.196333+00:00",
-              "operation_end": "2026-10-24T22:45:06.951Z",
+              "operation_id": "12cb717c-2653-41ff-823c-90aa3d1c648d",
+              "instruction_id": "33eb4b69-b1e1-4956-9585-3d9555703632",
+              "instruction": "Waiting for the event page to finish loading",
+              "intent": "Waiting for the event page to finish loading",
+              "operation_start": "2026-10-24T23:18:45.786203+00:00",
+              "operation_end": "2026-10-24T23:18:46.790Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
               "target": "",
-              "value": "750",
+              "value": "1000",
               "message": "",
               "operation_dict": "",
               "frame": "",
@@ -5413,7 +5529,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the event details page to finish loading\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: wait for the event details page to finish loading\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the event page to finish loading\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: wait 1000 ms for the event page to finish loading\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5424,7 +5540,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7ff45c3b-1af4-4f2c-aebf-9d21d331d6de.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/12cb717c-2653-41ff-823c-90aa3d1c648d.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5518,12 +5634,12 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": null,
-              "reasoning": "PRIMARY: wait for the event details page to finish loading"
+              "reasoning": "PRIMARY: wait 1000 ms for the event page to finish loading"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:45:06.196333+00:00",
-          "end_timestamp": "2026-10-24T22:45:06.951Z",
+          "start_timestamp": "2026-10-24T23:18:45.786203+00:00",
+          "end_timestamp": "2026-10-24T23:18:46.790Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -5549,7 +5665,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "832f2be0cd524a89bda9bb128f5f8ab1",
+          "generative_id": "4bc00e3296ef44248eb048b6caecd322",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, open the listed event title 'Assurance Future Potluck 39817', then assert the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title.",
           "error_message": "",
@@ -5557,28 +5673,28 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: wait for the event details page to finish loading"
+          "reasoning": "PRIMARY: wait 1000 ms for the event page to finish loading"
         },
         {
-          "instruction_id": "95ac29f6-00da-4586-a57a-524cf1208155",
+          "instruction_id": "1900f707-a21b-491a-8a55-ed9e99ee4684",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Extracting the current page title",
-          "command": "GET_TITLE",
+          "instruction": "Checking whether the event page is present",
+          "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
           "classification_layer_resp": [],
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "aa43b521-d512-4ef0-936e-b1eccbf0a8ea",
-              "instruction_id": "95ac29f6-00da-4586-a57a-524cf1208155",
-              "instruction": "Extracting the current page title",
-              "intent": "Extracting the current page title",
-              "operation_start": "2026-10-24T22:45:12.437990+00:00",
+              "operation_id": "ad0d88b9-4e51-44f3-83b7-941391e9b7af",
+              "instruction_id": "1900f707-a21b-491a-8a55-ed9e99ee4684",
+              "instruction": "Checking whether the event page is present",
+              "intent": "Checking whether the event page is present",
+              "operation_start": "2026-10-24T23:18:55.003813+00:00",
               "operation_end": "",
               "status": "success",
-              "command": "GET_TITLE",
+              "command": "TEXTUAL_ANALYZER",
               "name": "",
               "target": "",
               "value": "",
@@ -5590,7 +5706,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Extracting the current page title\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"GET_TITLE\"},\"reasoning\":\"the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the event page is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the event's page is present (in the main event heading)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(5).textContent.trim() === 'Assurance Future Potluck 39817'\",\"wrapped_js\":\"(els) => {\\n  const __m = {5: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(5).textContent.trim() === 'Assurance Future Potluck 39817');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=heading[name=\\\"Assurance Future Potluck\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the event's page is present (in the main event heading)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the page now on screen is that event's page\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5601,15 +5717,15 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/aa43b521-d512-4ef0-936e-b1eccbf0a8ea.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ad0d88b9-4e51-44f3-83b7-941391e9b7af.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "event_page_title",
-              "query_variable_value": "Assurance Future Potluck 39817",
+              "query_variable_name": "event_page_check",
+              "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
               "queried_value": "",
@@ -5694,14 +5810,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "event_page_title": "Assurance Future Potluck 39817"
+                "event_page_check": "true"
               },
               "visual_context": null,
-              "reasoning": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title"
+              "reasoning": "whether the event's page is present (in the main event heading)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:45:12.437990+00:00",
+          "start_timestamp": "2026-10-24T23:18:55.003813+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -5728,7 +5844,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "832f2be0cd524a89bda9bb128f5f8ab1",
+          "generative_id": "4bc00e3296ef44248eb048b6caecd322",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, open the listed event title 'Assurance Future Potluck 39817', then assert the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title.",
           "error_message": "",
@@ -5736,10 +5852,189 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title"
+          "reasoning": "whether the event's page is present (in the main event heading)"
         },
         {
-          "instruction_id": "0ffda930-69e5-4e09-bb6a-b716db237b6e",
+          "instruction_id": "359f1a22-1bc2-4bee-a175-ffeb0539d12c",
+          "instruction_class": "driver_action",
+          "module_id": "",
+          "instruction": "Extracting the current page title",
+          "command": "GET_TITLE",
+          "error": null,
+          "parent_instruction_id": "",
+          "classification_layer_resp": [],
+          "classification_error": {},
+          "operations": [
+            {
+              "operation_id": "8e23ff50-a889-4e17-8e7d-64e8c9b46315",
+              "instruction_id": "359f1a22-1bc2-4bee-a175-ffeb0539d12c",
+              "instruction": "Extracting the current page title",
+              "intent": "Extracting the current page title",
+              "operation_start": "2026-10-24T23:18:55.004059+00:00",
+              "operation_end": "",
+              "status": "success",
+              "command": "GET_TITLE",
+              "name": "",
+              "target": "",
+              "value": "",
+              "message": "",
+              "operation_dict": "",
+              "frame": "",
+              "surface": "",
+              "frame_path": "",
+              "grounded_by": "",
+              "error_message": "",
+              "code_snippet": "",
+              "sub_instruction_obj": "{\"operation\":\"Extracting the current page title\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"GET_TITLE\"},\"reasoning\":\"the page shows 'Assurance Future Potluck 39817' as its title\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "test_id": "",
+              "test_version": "",
+              "action": "",
+              "string_to_float": false,
+              "feedback_msg": "",
+              "time_taken": "",
+              "create_time_stamp": "",
+              "update_time_stamp": "",
+              "locator_variable": "",
+              "locator_variable_name": "",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8e23ff50-a889-4e17-8e7d-64e8c9b46315.webp",
+              "alternative_xpaths": [],
+              "attribute": "",
+              "value_description": "",
+              "url": "",
+              "navigation_direction": "",
+              "tagified_image_url": "",
+              "query_variable_name": "event_title_check",
+              "query_variable_value": "Assurance Future Potluck 39817 · Potluck Planner",
+              "query_variable_type": "",
+              "expected_value": "",
+              "queried_value": "",
+              "operator": "",
+              "assertion_status": "",
+              "query_info_dict": {},
+              "query_content_confidence": "none",
+              "debugging_logs": [],
+              "locator_index": 0,
+              "query_html": "",
+              "user_variables": "[]",
+              "optional_flag": false,
+              "max_retries": 0,
+              "retries_delay": 0,
+              "explicit_wait": 0,
+              "implicit_wait": 0,
+              "tab_index": "",
+              "tab_identifier": "",
+              "scroll_value": 1,
+              "scroll_direction": "",
+              "mi_scroll_payload": {},
+              "sleep_duration": 0,
+              "app_id": "",
+              "manual_interaction_tag": "",
+              "string_to_float_list": [],
+              "js_snippet": "",
+              "code_error": "",
+              "hide": false,
+              "dismiss_dialog": false,
+              "use_v2_mobile_tagging": false,
+              "multiple_inputs": false,
+              "dialog_action": "",
+              "dialog_type": "",
+              "is_coordinates_used_for_interaction": false,
+              "element_coordinates_ratio": [],
+              "element_bounds_ratio": [],
+              "x_coord": null,
+              "y_coord": null,
+              "target_x_coord": null,
+              "target_y_coord": null,
+              "source_description": null,
+              "target_description": null,
+              "use_coordinates": false,
+              "kaneaiMobileTaggingImageLimit": 1,
+              "clicks_order_code": "se_js_ac",
+              "selector": "",
+              "selector_target": "",
+              "math_result_variable_name": "",
+              "math_result_variable_value": "",
+              "expression_tree": {},
+              "assertion_tree": {},
+              "assertion_tree_simplified": {},
+              "network_throttle": {},
+              "is_mobile_offline": false,
+              "autoheal": false,
+              "reprobe": false,
+              "click_modifier": null,
+              "db_query": "",
+              "db_details": {},
+              "db_query_decoded": "",
+              "is_global_variable": false,
+              "is_global_variable_persist": false,
+              "global_variable_id": "",
+              "wait_for_element_timeout": 0,
+              "failure_condition": "",
+              "screenshot_command": "",
+              "smartui_contents": {},
+              "smartui_results": {},
+              "result_type": "",
+              "result_hint": "",
+              "drag_offset": {},
+              "drag_displacement": {},
+              "hold_duration_ms": null,
+              "move_duration_ms": null,
+              "hold_at_destination_ms": null,
+              "start_coordinates": {},
+              "end_coordinates": {},
+              "element_rect": null,
+              "is_canvas": false,
+              "until_condition": "",
+              "until_max_retries": 0,
+              "until_settle_ms": 0,
+              "api_data": {},
+              "output_variables": {
+                "event_title_check": "Assurance Future Potluck 39817 · Potluck Planner"
+              },
+              "visual_context": null,
+              "reasoning": "the page shows 'Assurance Future Potluck 39817' as its title"
+            }
+          ],
+          "status": "success",
+          "start_timestamp": "2026-10-24T23:18:55.004059+00:00",
+          "end_timestamp": "",
+          "type": "agent_generated",
+          "tags": [],
+          "html_paths": [],
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "content_type": "instruction",
+          "js_snippet": "",
+          "user_variables": "[]",
+          "api_data": {},
+          "params_used": false,
+          "hard_assertion": false,
+          "expected_outcome": "",
+          "module_execution_index": 0,
+          "module_version": null,
+          "network_throttle": {},
+          "isEdited": false,
+          "use_query_assertion_v2": false,
+          "db_query": "",
+          "db_details": {},
+          "network_assertion_content": {},
+          "screenshot_command": "",
+          "smartui_contents": {},
+          "generative_id": "4bc00e3296ef44248eb048b6caecd322",
+          "plan_id": "",
+          "generative_objective": "On the Potluck Planner home page, open the listed event title 'Assurance Future Potluck 39817', then assert the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title.",
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "title": "",
+          "used_variables": [],
+          "reasoning": "the page shows 'Assurance Future Potluck 39817' as its title"
+        },
+        {
+          "instruction_id": "505b07cd-8687-43ac-b0ae-a2c11064a57a",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -5755,25 +6050,46 @@
                 "assertion_tree": {
                   "sub_results": [
                     {
-                      "description": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title",
+                      "description": "the page now on screen is that event's page",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
-                      "expected": "Assurance Future Potluck 39817",
-                      "extracted_value": "{{event_page_title}}",
-                      "store_key": "event_page_title",
+                      "expected": "true",
+                      "extracted_value": "{{event_page_check}}",
+                      "store_key": "event_page_check",
                       "variable_refs": {
-                        "{{event_page_title}}": "Assurance Future Potluck 39817"
+                        "{{event_page_check}}": "true"
+                      }
+                    },
+                    {
+                      "description": "the page shows 'Assurance Future Potluck 39817' as its title",
+                      "passed": true,
+                      "operator": "equals",
+                      "transforms": [],
+                      "json_path": null,
+                      "expected": "Assurance Future Potluck 39817 · Potluck Planner",
+                      "extracted_value": "{{event_title_check}}",
+                      "store_key": "event_title_check",
+                      "variable_refs": {
+                        "{{event_title_check}}": "Assurance Future Potluck 39817 · Potluck Planner"
                       }
                     }
                   ],
                   "sub_checks": [
                     {
-                      "description": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title",
-                      "store_key": "event_page_title",
-                      "expected_value": "Assurance Future Potluck 39817",
-                      "extracted_value": "{{event_page_title}}",
+                      "description": "the page now on screen is that event's page",
+                      "store_key": "event_page_check",
+                      "expected_value": "true",
+                      "extracted_value": "{{event_page_check}}",
+                      "operator": "equals",
+                      "transforms": []
+                    },
+                    {
+                      "description": "the page shows 'Assurance Future Potluck 39817' as its title",
+                      "store_key": "event_title_check",
+                      "expected_value": "Assurance Future Potluck 39817 · Potluck Planner",
+                      "extracted_value": "{{event_title_check}}",
                       "operator": "equals",
                       "transforms": []
                     }
@@ -5796,11 +6112,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "38d0d309-8680-4829-b35b-3a4a52ad7d74",
-              "instruction_id": "0ffda930-69e5-4e09-bb6a-b716db237b6e",
+              "operation_id": "9ae4b98e-d8a8-4075-94fc-d8a2e548a1a0",
+              "instruction_id": "505b07cd-8687-43ac-b0ae-a2c11064a57a",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:45:13.043059+00:00",
+              "operation_start": "2026-10-24T23:18:55.595542+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -5826,7 +6142,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/38d0d309-8680-4829-b35b-3a4a52ad7d74.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/9ae4b98e-d8a8-4075-94fc-d8a2e548a1a0.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5892,31 +6208,52 @@
                 "operands": [],
                 "sub_results": [
                   {
-                    "description": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title",
+                    "description": "the page now on screen is that event's page",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
-                    "expected": "Assurance Future Potluck 39817",
-                    "extracted_value": "{{event_page_title}}",
-                    "store_key": "event_page_title",
+                    "expected": "true",
+                    "extracted_value": "{{event_page_check}}",
+                    "store_key": "event_page_check",
                     "variable_refs": {
-                      "{{event_page_title}}": "Assurance Future Potluck 39817"
+                      "{{event_page_check}}": "true"
+                    }
+                  },
+                  {
+                    "description": "the page shows 'Assurance Future Potluck 39817' as its title",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "expected": "Assurance Future Potluck 39817 · Potluck Planner",
+                    "extracted_value": "{{event_title_check}}",
+                    "store_key": "event_title_check",
+                    "variable_refs": {
+                      "{{event_title_check}}": "Assurance Future Potluck 39817 · Potluck Planner"
                     }
                   }
                 ],
                 "sub_checks": [
                   {
-                    "description": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title",
-                    "store_key": "event_page_title",
-                    "expected_value": "Assurance Future Potluck 39817",
-                    "extracted_value": "{{event_page_title}}",
+                    "description": "the page now on screen is that event's page",
+                    "store_key": "event_page_check",
+                    "expected_value": "true",
+                    "extracted_value": "{{event_page_check}}",
+                    "operator": "equals",
+                    "transforms": []
+                  },
+                  {
+                    "description": "the page shows 'Assurance Future Potluck 39817' as its title",
+                    "store_key": "event_title_check",
+                    "expected_value": "Assurance Future Potluck 39817 · Potluck Planner",
+                    "extracted_value": "{{event_title_check}}",
                     "operator": "equals",
                     "transforms": []
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "The event page currently on screen shows 'Assurance Future Potluck 39817' as its title.",
+                "verification": "The current page is the event page and displays 'Assurance Future Potluck 39817' as its title.",
                 "claim": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title"
               },
               "assertion_tree": {
@@ -5925,16 +6262,29 @@
                 "description": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title",
                 "sub_results": [
                   {
-                    "description": "the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title",
+                    "description": "the page now on screen is that event's page",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
-                    "expected": "Assurance Future Potluck 39817",
-                    "extracted_value": "{{event_page_title}}",
-                    "store_key": "event_page_title",
+                    "expected": "true",
+                    "extracted_value": "{{event_page_check}}",
+                    "store_key": "event_page_check",
                     "variable_refs": {
-                      "{{event_page_title}}": "Assurance Future Potluck 39817"
+                      "{{event_page_check}}": "true"
+                    }
+                  },
+                  {
+                    "description": "the page shows 'Assurance Future Potluck 39817' as its title",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "expected": "Assurance Future Potluck 39817 · Potluck Planner",
+                    "extracted_value": "{{event_title_check}}",
+                    "store_key": "event_title_check",
+                    "variable_refs": {
+                      "{{event_title_check}}": "Assurance Future Potluck 39817 · Potluck Planner"
                     }
                   }
                 ],
@@ -5942,7 +6292,7 @@
                 "passed": true,
                 "step": 4,
                 "is_final": true,
-                "verification": "The event page currently on screen shows 'Assurance Future Potluck 39817' as its title.",
+                "verification": "The current page is the event page and displays 'Assurance Future Potluck 39817' as its title.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -5984,7 +6334,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:45:13.043059+00:00",
+          "start_timestamp": "2026-10-24T23:18:55.595542+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -6011,7 +6361,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "832f2be0cd524a89bda9bb128f5f8ab1",
+          "generative_id": "4bc00e3296ef44248eb048b6caecd322",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, open the listed event title 'Assurance Future Potluck 39817', then assert the page now on screen is that event's page showing 'Assurance Future Potluck 39817' as its title.",
           "error_message": "",
@@ -6036,13 +6386,13 @@
   "modules": [],
   "uploaded_files": [],
   "test_params": [],
-  "test_level_variables": "[{\"name\":\"event_title_field_present\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_field_present\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"host_name_field_present\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_created\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_page_opened\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_title_shown\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"hosted_by_assurance_host\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_date_tomorrow\",\"value\":\"1\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_date_validity\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"assurance_future_potluck_39817_listed\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_page_title\",\"value\":\"Assurance Future Potluck 39817\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
+  "test_level_variables": "[{\"name\":\"event_title_field_present\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_field_present\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"host_name_field_present\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_created\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_page_opened\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_title_shown\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"hosted_by_assurance_host\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_date_tomorrow\",\"value\":\"1\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_date_validity\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"assurance_future_potluck_39817_listed\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_page_check\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_title_check\",\"value\":\"Assurance Future Potluck 39817 · Potluck Planner\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
   "test_global_variables": [
     {
       "id": 464833,
       "name": "start_url",
-      "value": "http://localhost:4103",
-      "session_value": "http://localhost:4103",
+      "value": "http://localhost:4102",
+      "session_value": "http://localhost:4102",
       "is_persist": false,
       "environment_id": 0,
       "environment_name": "No Env"

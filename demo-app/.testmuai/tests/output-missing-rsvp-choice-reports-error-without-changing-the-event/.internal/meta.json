@@ -1,5 +1,5 @@
 {
-  "commit_id": "23ef57f1-5d62-402f-81c6-a1501bf821cf",
+  "commit_id": "aa96123a-ebff-4ae2-857c-bd2887b1f87e",
   "test_id": "c4f9ae7a-ee1e-4452-b1c1-28193c5ba04f",
   "testcase_id": "01M5QS5R127AYRTYCG813VNS8E",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,12 +8,12 @@
   "session_name": "missing-rsvp-choice-reports-error-without-changing-the-event",
   "executions": [
     {
-      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
+      "execution_id": "88eb3a7c-6fcb-4a5b-bad7-4b74a867cad3",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T22:52:09.341Z"
+      "at": "2026-10-24T22:58:24.943Z"
     }
   ]
 }

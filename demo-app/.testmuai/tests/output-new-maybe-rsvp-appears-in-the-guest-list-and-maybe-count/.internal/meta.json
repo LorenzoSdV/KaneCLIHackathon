@@ -1,5 +1,5 @@
 {
-  "commit_id": "5e2b7897-1b32-41ed-a072-14cdea692c2d",
+  "commit_id": "435761be-23bb-47c1-a0d9-41290ebf197a",
   "test_id": "f8550abe-b451-4286-8140-40380792fdd5",
   "testcase_id": "01M5QS6E1PVRWRJ3RVT518E3PC",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,12 +8,12 @@
   "session_name": "new-maybe-rsvp-appears-in-the-guest-list-and-maybe-count",
   "executions": [
     {
-      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
+      "execution_id": "88eb3a7c-6fcb-4a5b-bad7-4b74a867cad3",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T22:52:09.342Z"
+      "at": "2026-10-24T22:58:24.944Z"
     }
   ]
 }

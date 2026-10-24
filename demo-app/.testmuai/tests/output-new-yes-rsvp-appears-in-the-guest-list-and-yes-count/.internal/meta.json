@@ -1,5 +1,5 @@
 {
-  "commit_id": "71173dda-9f1c-45be-ae98-853c9b437bf4",
+  "commit_id": "c5f3d033-5ab9-454d-ac64-62f1e9c72cbc",
   "test_id": "39736582-4d0c-4c2d-9430-d102dd1a3cfa",
   "testcase_id": "01M5QS7R2FZAV2PKHT6CQMZASR",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,12 +8,12 @@
   "session_name": "new-yes-rsvp-appears-in-the-guest-list-and-yes-count",
   "executions": [
     {
-      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
+      "execution_id": "88eb3a7c-6fcb-4a5b-bad7-4b74a867cad3",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T22:52:09.344Z"
+      "at": "2026-10-24T22:58:24.945Z"
     }
   ]
 }
