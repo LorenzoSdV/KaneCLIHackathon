@@ -1,7 +1,7 @@
 {
   "uc-1": [
     "demo-app/.testmuai/tests/all-required-field-errors-appear-without-opening-an-event_test.md",
-    "demo-app/.testmuai/tests/create-future-event-and-open-it-again-from-home_test.md",
+    "demo-app/.testmuai/tests/create-future-event-and-open-it-again-from-home-2_test.md",
     "demo-app/.testmuai/tests/empty-date-gets-required-error-and-keeps-other-inputs-2_test.md",
     "demo-app/.testmuai/tests/invalid-calendar-date-cannot-create-an-event_test.md",
     "demo-app/.testmuai/tests/past-event-date-is-rejected-without-losing-entered-values_test.md",
