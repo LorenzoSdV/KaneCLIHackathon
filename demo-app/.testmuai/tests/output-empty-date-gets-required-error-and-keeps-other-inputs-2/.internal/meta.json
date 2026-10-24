@@ -1,0 +1,25 @@
+{
+  "test_id": "de70bac8-f10c-4378-a681-68647b813908",
+  "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
+  "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
+  "org_id": "3398072",
+  "session_name": "empty-date-gets-required-error-and-keeps-other-inputs-2",
+  "commit_id": "51ab0d47-c00e-4fe6-95df-ed48902ef7aa",
+  "testcase_id": "01M5QTCGC2V7BV1Y9AD2S4C778",
+  "executions": [
+    {
+      "execution_id": "19b2a056-3186-4ae2-a8d5-363aac4f8a1f",
+      "run_kind": "author",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-10-24T20:43:36.138Z"
+    },
+    {
+      "execution_id": "8908a085-ccc9-490a-9a1e-93d17db25c56",
+      "run_kind": "author",
+      "status": "passed",
+      "at": "2026-10-24T20:43:46.469Z",
+      "uploaded": true
+    }
+  ]
+}

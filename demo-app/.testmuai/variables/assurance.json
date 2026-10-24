@@ -1,0 +1,7 @@
+{
+  "start_url": {
+    "value": "http://localhost:4100",
+    "secret": false,
+    "description": "Local base URL for the running Potluck Planner web app; required to open each browser test."
+  }
+}

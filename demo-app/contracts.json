@@ -1,0 +1,24 @@
+{
+  "uc-1": [
+    "demo-app/.testmuai/tests/all-required-field-errors-appear-without-opening-an-event_test.md",
+    "demo-app/.testmuai/tests/create-future-event-and-open-it-again-from-home_test.md",
+    "demo-app/.testmuai/tests/empty-date-gets-required-error-and-keeps-other-inputs-2_test.md",
+    "demo-app/.testmuai/tests/invalid-calendar-date-cannot-create-an-event_test.md",
+    "demo-app/.testmuai/tests/past-event-date-is-rejected-without-losing-entered-values_test.md",
+    "demo-app/.testmuai/tests/today-s-date-is-accepted-for-a-created-event_test.md"
+  ],
+  "uc-2": [
+    "demo-app/.testmuai/tests/case-insensitive-rsvp-replacement-keeps-latest-choice-and_test.md",
+    "demo-app/.testmuai/tests/empty-rsvp-name-reports-error-without-changing-the-event_test.md",
+    "demo-app/.testmuai/tests/missing-rsvp-choice-reports-error-without-changing-the-event_test.md",
+    "demo-app/.testmuai/tests/new-maybe-rsvp-appears-in-the-guest-list-and-maybe-count_test.md",
+    "demo-app/.testmuai/tests/new-no-rsvp-appears-in-the-guest-list-and-no-count_test.md",
+    "demo-app/.testmuai/tests/new-yes-rsvp-appears-in-the-guest-list-and-yes-count_test.md"
+  ],
+  "uc-3": [
+    "demo-app/.testmuai/tests/empty-guest-name-cannot-claim-a-dish_test.md",
+    "demo-app/.testmuai/tests/five-claims-fill-the-dish-roster_test.md",
+    "demo-app/.testmuai/tests/guest-claims-an-available-dish-category_test.md",
+    "demo-app/.testmuai/tests/stale-dish-claim-leaves-the-original-claimant-intact_test.md"
+  ]
+}
