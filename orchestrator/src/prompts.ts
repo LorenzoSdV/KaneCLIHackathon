@@ -48,7 +48,7 @@ RULES
 - No npm dependencies. Plain HTML forms with POST + redirect are fine; keep it server-rendered.
 - Put the feature on the event page (/events/:id). Use visible text and labels that match the spec wording,
   so a browser agent reading the page can find and verify them.
-- Check your work: start the app with \`PORT=4999 node demo-app/server.js\` and exercise it with curl
+- Check your work: start the app with \`PORT=${feature.port + 800} node demo-app/server.js\` and exercise it with curl
   (create an event via POST /events with title, a future date and host, then use your feature).
   Stop the server when done.
 - Finish with a short summary of what you changed.`;
