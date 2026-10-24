@@ -10,7 +10,8 @@
     "smoke": "node orchestrator/src/smoke.ts",
     "suite": "node orchestrator/src/suite.ts",
     "build": "node orchestrator/src/build.ts",
-    "merge": "node orchestrator/src/merge.ts"
+    "merge": "node orchestrator/src/merge.ts",
+    "dashboard": "node dashboard/server.js"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",

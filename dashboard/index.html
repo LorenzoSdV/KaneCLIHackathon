@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spec Contract</title>
+<style>
+  :root {
+    --bg: #f6f5f2; --panel: #ffffff; --panel-2: #f1efea; --text: #1d1c1a; --muted: #6d6a63; --border: #e4e0d8;
+    --pass: #15803d; --pass-bg: #dcfce7; --fail: #b91c1c; --fail-bg: #fee2e2; --run: #1d4ed8; --run-bg: #dbeafe;
+    --warn: #a16207; --warn-bg: #fef3c7; --idle-bg: #ece9e3;
+    --core: #6b7280; --rsvp: #7c3aed; --dish: #c2410c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413; --panel: #1d1c1a; --panel-2: #262522; --text: #ecebe7; --muted: #a29f97; --border: #34322e;
+      --pass: #4ade80; --pass-bg: #14301f; --fail: #f87171; --fail-bg: #3b1717; --run: #93c5fd; --run-bg: #172a46;
+      --warn: #fbbf24; --warn-bg: #3a2c0c; --idle-bg: #2b2a27;
+      --core: #9ca3af; --rsvp: #a78bfa; --dish: #fb923c;
+    }
+  }
+  * { box-sizing: border-box; }
+  /* Long paths and commands from Codex must wrap instead of running past the column edge. */
+  .col, .block, .tile, .summary, .merge-row, .note, details.prev { min-width: 0; overflow-wrap: anywhere; }
+  html, body { overflow-x: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, sans-serif; }
+  header { padding: 18px 24px; border-bottom: 1px solid var(--border); background: var(--panel); display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+  h1 { font-size: 20px; margin: 0; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .stats { display: flex; gap: 10px; flex-wrap: wrap; }
+  .stat { background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 6px 12px; min-width: 96px; }
+  .stat b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .mode { font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 999px; background: var(--idle-bg); }
+  .mode.live { background: var(--pass-bg); color: var(--pass); }
+  .mode.replay { background: var(--warn-bg); color: var(--warn); }
+  main { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 16px 24px 32px; align-items: start; }
+  @media (max-width: 1100px) { main { grid-template-columns: 1fr; } }
+  .col { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+  .col-head { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+  .col-head h2 { font-size: 16px; margin: 0; }
+  .col-head .meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .pill { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; background: var(--idle-bg); color: var(--muted); }
+  .pill.passed { background: var(--pass-bg); color: var(--pass); }
+  .pill.blocked, .pill.failed { background: var(--fail-bg); color: var(--fail); }
+  .pill.codex, .pill.kane, .pill.merging { background: var(--run-bg); color: var(--run); }
+  .body { padding: 12px 16px 16px; display: grid; gap: 12px; }
+  .empty { color: var(--muted); font-size: 13px; padding: 8px 0; }
+  .block { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--panel-2); }
+  .block h3 { font-size: 13px; margin: 0 0 6px; display: flex; justify-content: space-between; gap: 8px; }
+  .block h3 .r { color: var(--muted); font-weight: 500; }
+  .attempt-title { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin: 4px 0 -4px; }
+  .who { font-weight: 700; }
+  details.prev { border: 1px dashed var(--border); border-radius: 10px; padding: 8px 12px; }
+  details.prev summary { cursor: pointer; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  details.prev[open] summary { margin-bottom: 8px; }
+  details.prev > .block + .block { margin-top: 8px; }
+  .summary { font-size: 13px; white-space: pre-wrap; }
+  .cmd { font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
+  .tile { border-radius: 8px; padding: 6px 8px; font-size: 12px; background: var(--panel); border: 1px solid var(--border); border-left: 4px solid var(--core); }
+  .tile.uc-2 { border-left-color: var(--rsvp); } .tile.uc-3 { border-left-color: var(--dish); }
+  .tile .st { font-weight: 700; }
+  .tile.running { background: var(--run-bg); } .tile.running .st { color: var(--run); }
+  .tile.passed .st { color: var(--pass); }
+  .tile.failed, .tile.broken, .tile.interrupted { background: var(--fail-bg); } .tile.failed .st { color: var(--fail); }
+  .tile .why { color: var(--fail); margin-top: 3px; }
+  .legend { display: flex; gap: 12px; color: var(--muted); font-size: 12px; flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .note { font-size: 12px; color: var(--warn); }
+  .merge-row { font-size: 13px; }
+  .spin { display: inline-block; width: 10px; height: 10px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; vertical-align: -1px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  footer { color: var(--muted); font-size: 12px; padding: 0 24px 24px; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Spec Contract <span id="mode" class="mode">connecting…</span></h1>
+    <div class="sub">PRD → Kane-designed tests → one Codex agent per feature, gated by its Kane contract → merge → full suite</div>
+    <div class="legend" style="margin-top:6px">
+      <span><i style="background:var(--core)"></i>Core (create event)</span>
+      <span><i style="background:var(--rsvp)"></i>RSVP contract</span>
+      <span><i style="background:var(--dish)"></i>Dish claims contract</span>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="s-codex">0</b><span>Codex attempts</span></div>
+    <div class="stat"><b id="s-runs">0</b><span>Kane suite runs</span></div>
+    <div class="stat"><b id="s-tests">0</b><span>Kane test runs</span></div>
+    <div class="stat"><b id="s-final">–</b><span>Merged contract</span></div>
+  </div>
+</header>
+<main id="cols"></main>
+<footer id="foot"></footer>
+
+<script>
+const COLUMNS = [
+  { tag: "feat-a", title: "Feature A · RSVP", agent: "Codex agent A" },
+  { tag: "feat-b", title: "Feature B · Dish claims", agent: "Codex agent B" },
+  { tag: "integration", title: "Integration · merge A + B", agent: "Codex integrator" },
+];
+const params = new URLSearchParams(location.search);
+const ucOfTest = new Map(); // test basename -> use case
+const state = Object.fromEntries(COLUMNS.map((c) => [c.tag, newSession()]));
+const totals = { codexAttempts: 0, kaneRuns: 0, kaneTests: 0 };
+let renderQueued = false;
+const openAttempts = new Set(); // expanded earlier attempts survive re-renders
+document.addEventListener("toggle", (ev) => {
+  const key = ev.target.dataset?.key;
+  if (key) ev.target.open ? openAttempts.add(key) : openAttempts.delete(key);
+}, true);
+
+function newSession(extra = {}) {
+  return { status: "idle", branch: "", port: "", attempts: [], merges: [], resolver: null, notes: [], sessions: 0, ...extra };
+}
+const base = (p) => String(p ?? "").split("/").pop().replace(/_test\.md$/, "");
+// "today-s-date-is-accepted-2" -> "today's date is accepted"
+const pretty = (name) => name.replace(/-\d+$/, "").replace(/-s-/g, "'s-").replaceAll("-", " ");
+const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const codexBlock = () => ({ state: "running", commands: 0, files: new Set(), lastCmd: "", summary: "" });
+const kaneBlock = () => ({ state: "running", tests: new Map(), totals: null });
+
+function current(s) { return s.attempts.at(-1); }
+
+function apply(e) {
+  if (e.type === "stream_mode") return setMode(e);
+  if (e.type === "stream_replay_done") { document.getElementById("foot").textContent = "Replay finished."; return; }
+  const s = state[e.tag];
+  if (!s) return;
+
+  // A new worktree_ready starts a new session for that column (a fresh run of build/merge).
+  if (e.type === "worktree_ready") {
+    state[e.tag] = newSession({ status: "starting", branch: e.branch, port: e.port, sessions: s.sessions + 1 });
+    return;
+  }
+  const a = current(s);
+
+  switch (e.source) {
+    case "gate":
+      if (e.type === "gate_attempt_start") { s.attempts.push({ n: e.attempt, max: e.maxAttempts, codex: null, kane: null, result: null }); s.status = "codex"; }
+      else if (e.type === "gate_check_first") { s.notes.push("Kane checked the branch first (planted-bug test)"); }
+      // A Kane-only re-check of the feature's unchanged code (after its contract was fixed).
+      else if (e.type === "contract_recheck_start") { s.attempts.push({ recheck: true, codex: null, kane: null, result: null }); s.status = "kane"; }
+      else if (e.type === "contract_recheck_end" && a) { a.result = e; if (a.kane) a.kane.state = "done"; s.status = e.status; s.notes = s.notes.filter((n) => !n.startsWith("Stopped")); }
+      else if (e.type === "gate_attempt_end" && a) { a.result = e; if (a.kane) a.kane.state = "done"; }
+      else if (e.type === "gate_end") { s.status = e.status; if (e.reason) s.notes.push(`Stopped: ${e.reason.replaceAll("_", " ")}`); }
+      else if (e.type === "contract_tamper_reverted") { s.notes.push(`Undid ${e.files.length} change(s) to the contract files`); }
+      return;
+    case "merge":
+      if (e.type === "merge_start") { s.status = "merging"; s.merges.push({ branch: e.branch, state: "running", recordings: 0, code: [] }); }
+      else if (e.type === "merge_conflicts") Object.assign(s.merges.at(-1), { recordings: e.recordings, code: e.code });
+      else if (e.type === "merge_end") s.merges.at(-1).state = "done";
+      else if (e.type === "merge_blocked") { s.merges.at(-1).state = "blocked"; s.status = "blocked"; }
+      else if (e.type === "merge_refused") { s.status = "blocked"; for (const f of e.features) s.notes.push(`Not merging ${f.id}: latest contract result is "${f.result}"`); }
+      return;
+    case "codex": {
+      // Codex events before the first gate attempt belong to the merge-conflict resolver.
+      const holder = a ?? (s.resolver ??= { label: "Resolve merge conflicts" });
+      if (e.type === "thread.started" || e.type === "turn.started") {
+        if (!holder.codex || holder.codex.state === "done") { holder.codex = codexBlock(); if (a) totals.codexAttempts++; }
+        s.status = "codex";
+      }
+      const c = holder.codex ??= codexBlock();
+      if (e.type === "item.started" && e.item?.type === "command_execution") c.lastCmd = String(e.item.command ?? "").replace(/^\/bin\/zsh -lc /, "");
+      if (e.type === "item.completed" && e.item?.type === "command_execution") c.commands++;
+      if (e.type === "item.completed" && e.item?.type === "file_change") for (const ch of e.item.changes ?? []) c.files.add(base(ch.path));
+      if (e.type === "item.completed" && e.item?.type === "agent_message") c.summary = e.item.text;
+      if (e.type === "turn.completed") c.state = "done";
+      if (e.type === "codex_exit") { c.state = "done"; c.summary ||= `Codex exited with code ${e.code}`; }
+      return;
+    }
+    default: break;
+  }
+
+  // Kane (testrun) events: no `source` field.
+  if (!e.type?.startsWith("testrun_") || !a) return;
+  if (e.type === "testrun_plan") {
+    a.kane = kaneBlock(); s.status = "kane"; totals.kaneRuns++;
+    if (a.codex) a.codex.state = "done";
+    for (const m of e.members ?? []) a.kane.tests.set(base(m.path), { status: "queued" });
+  }
+  const k = a.kane;
+  if (!k) return;
+  if (/member_start$/.test(e.type)) { (k.tests.get(base(e.path)) ?? k.tests.set(base(e.path), {}).get(base(e.path))).status = "running"; }
+  if (/member_end$/.test(e.type)) { k.tests.set(base(e.path), { status: e.status, failure: e.failure?.message, secs: e.duration_s }); totals.kaneTests++; }
+  if (e.type === "testrun_summary") k.totals = e.totals;
+}
+
+function setMode(e) {
+  const el = document.getElementById("mode");
+  el.className = `mode ${e.mode}`;
+  el.textContent = e.mode === "live" ? "LIVE" : `REPLAY ×${e.speed}`;
+  document.getElementById("foot").innerHTML = e.mode === "live"
+    ? `Following <code>.contract/events.jsonl</code>. <a href="?replay=demo&speed=8">Replay today's run</a>`
+    : `Replaying a recording of today's runs (in real order, gaps shortened). <a href="/">Back to live</a>`;
+}
+
+function tiles(k) {
+  return `<div class="tiles">${[...k.tests].map(([name, t]) => {
+    const uc = ucOfTest.get(name) ?? "uc-1";
+    const icon = { passed: "✓ pass", failed: "✗ fail", broken: "✗ broken", interrupted: "✗ stopped", running: "", queued: "· queued" }[t.status] ?? t.status;
+    return `<div class="tile ${uc} ${t.status}" title="${esc(name)}${t.failure ? "\n" + esc(t.failure) : ""}">
+      <div class="st">${t.status === "running" ? '<span class="spin"></span> running' : icon}${t.secs ? ` <span style="font-weight:400;color:var(--muted)">${Math.round(t.secs)}s</span>` : ""}</div>
+      <div>${esc(pretty(name))}</div>
+      ${t.failure ? `<div class="why">${esc(t.failure.slice(0, 140))}</div>` : ""}
+    </div>`;
+  }).join("")}</div>`;
+}
+
+function codexHtml(c, label) {
+  if (!c) return "";
+  const files = [...c.files].join(", ");
+  return `<div class="block"><h3><span class="who">🤖 ${esc(label)}</span><span class="r">${c.state === "running" ? '<span class="spin"></span> working' : "done"} · ${plural(c.commands, "command")}</span></h3>
+    ${files ? `<div class="cmd">edited: ${esc(files)}</div>` : ""}
+    ${c.state === "running" && c.lastCmd ? `<div class="cmd">$ ${esc(c.lastCmd.slice(0, 160))}</div>` : ""}
+    ${c.summary ? `<div class="summary">${esc(c.summary.slice(0, 500))}</div>` : ""}</div>`;
+}
+
+function kaneHtml(k, result) {
+  if (!k) return "";
+  const done = [...k.tests.values()].filter((t) => ["passed", "failed", "broken", "interrupted"].includes(t.status)).length;
+  const head = result ? `${result.passed}/${result.total} passed` : `${done}/${k.tests.size} done`;
+  return `<div class="block"><h3><span class="who">🧪 Kane contract</span><span class="r">${k.state === "running" ? '<span class="spin"></span> ' : ""}${head}</span></h3>${tiles(k)}</div>`;
+}
+
+function render() {
+  renderQueued = false;
+  document.getElementById("cols").innerHTML = COLUMNS.map(({ tag, title, agent }) => {
+    const s = state[tag];
+    const label = { idle: "waiting", starting: "starting", codex: "Codex working", kane: "Kane testing", merging: "merging", passed: "contract passed", blocked: "blocked" }[s.status] ?? s.status;
+    const merges = s.merges.map((m) => `<div class="merge-row">${m.state === "running" ? '<span class="spin"></span>' : m.state === "blocked" ? "⛔" : "✓"} merge <b>${esc(m.branch)}</b>
+      ${m.recordings || m.code.length ? `<span class="sub"> · ${m.recordings} Kane recording conflicts (auto) · ${m.code.length ? `${m.code.length} code conflicts → Codex` : "no code conflicts"}</span>` : ""}</div>`).join("");
+    // Earlier attempts collapse to a one-line summary (click to expand); the latest stays open.
+    const attempts = s.attempts.map((a, i) => {
+      const inner = `${codexHtml(a.codex, agent)}${kaneHtml(a.kane, a.result)}`;
+      const label = a.recheck ? "Re-check · Kane only, code unchanged, after the contract was fixed" : `Attempt ${a.n} of ${a.max}`;
+      if (i === s.attempts.length - 1) return `<div class="attempt-title">${label}</div>${inner}`;
+      const res = a.result ? `${a.result.passed}/${a.result.total} passed` : "";
+      const key = `${tag}:${s.sessions}:${i}`;
+      return `<details class="prev" data-key="${key}"${openAttempts.has(key) ? " open" : ""}><summary>${label}${res ? ` · ${res}` : ""}</summary>${inner}</details>`;
+    }).join("");
+    return `<section class="col" data-tag="${tag}">
+      <div class="col-head"><div><h2>${esc(title)}</h2><div class="meta">${s.branch ? `branch ${esc(s.branch)} · port ${esc(s.port)}` : "not started"}${s.sessions > 1 ? ` · run ${s.sessions}` : ""}</div></div>
+      <span class="pill ${s.status}">${label}</span></div>
+      <div class="body">
+        ${merges ? `<div class="block">${merges}</div>` : ""}
+        ${s.resolver?.codex ? codexHtml(s.resolver.codex, `${agent} · resolve conflicts`) : ""}
+        ${attempts || (merges ? "" : '<div class="empty">No run yet.</div>')}
+        ${s.notes.map((n) => `<div class="note">⚠ ${esc(n)}</div>`).join("")}
+      </div></section>`;
+  }).join("");
+
+  document.getElementById("s-codex").textContent = totals.codexAttempts;
+  document.getElementById("s-runs").textContent = totals.kaneRuns;
+  document.getElementById("s-tests").textContent = totals.kaneTests;
+  const last = current(state.integration)?.result;
+  document.getElementById("s-final").textContent = last ? `${last.passed}/${last.total}` : "–";
+}
+
+function queueRender() { if (!renderQueued) { renderQueued = true; requestAnimationFrame(render); } }
+
+async function start() {
+  try {
+    const contracts = await (await fetch("/contracts")).json();
+    for (const [uc, files] of Object.entries(contracts)) for (const f of files) ucOfTest.set(base(f), uc);
+  } catch { /* tiles fall back to core colour */ }
+  render();
+  const q = params.get("replay") ? `?replay=${encodeURIComponent(params.get("replay"))}&speed=${encodeURIComponent(params.get("speed") ?? "8")}` : "";
+  const es = new EventSource(`/stream${q}`);
+  es.onmessage = (m) => { try { apply(JSON.parse(m.data)); } catch (err) { console.error(err); } queueRender(); };
+  if (q) es.addEventListener("error", () => es.close());
+}
+start();
+</script>
+</body>
+</html>
