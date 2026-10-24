@@ -8,12 +8,12 @@
   "session_name": "create-future-event-and-open-it-again-from-home",
   "executions": [
     {
-      "execution_id": "0ec6bd8f-2668-44a4-9ccb-a4d5eb50c836",
+      "execution_id": "e407abe8-cd3e-46f4-bd8e-85a5c17d1097",
       "run_kind": "author",
-      "status": "passed",
+      "status": "failed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T21:16:47.811Z"
+      "at": "2026-10-24T21:22:31.299Z"
     }
   ]
 }
