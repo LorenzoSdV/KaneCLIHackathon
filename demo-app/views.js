@@ -6,13 +6,13 @@ export function escape(value) {
     .replaceAll('"', "&quot;");
 }
 
-export function layout(title, body) {
+export function layout(title, body, documentTitle = `${title} · Potluck Planner`) {
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escape(title)} · Potluck Planner</title>
+  <title>${escape(documentTitle)}</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -85,7 +85,8 @@ export function eventPage({ event, errors = {}, values = {} }) {
   <p>${counts}</p>
   <h3>Guest list</h3>
   ${event.guests.length ? `<ul class="guests">${event.guests.map((guest) => `<li>${escape(guest.name)} — ${escape(guest.choice)}</li>`).join("")}</ul>` : `<p class="muted">No RSVPs yet.</p>`}
-</section>`
+</section>`,
+    event.title
   );
 }
 
