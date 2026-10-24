@@ -1,6 +1,6 @@
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
-import { createEvent, getEvent, listEvents } from "./store.js";
+import { createEvent, getEvent, listEvents, saveRsvp } from "./store.js";
 import { homePage, eventPage, notFoundPage } from "./views.js";
 
 const PORT = Number(process.env.PORT ?? 4100);
@@ -59,6 +59,23 @@ const server = createServer(async (req, res) => {
         return send(res, 400, homePage({ events: listEvents(), errors, values: form }));
       }
       const event = createEvent({ title, date, host });
+      return redirect(res, `/events/${event.id}`);
+    }
+
+    const rsvpMatch = path.match(/^\/events\/([^/]+)\/rsvp$/);
+    if (req.method === "POST" && rsvpMatch) {
+      const event = getEvent(rsvpMatch[1]);
+      if (!event) return send(res, 404, notFoundPage());
+      const form = await readForm(req);
+      const name = (form.name ?? "").trim();
+      const choice = form.choice;
+      const errors = {};
+      if (!name) errors.name = "Name is required";
+      if (!["Yes", "No", "Maybe"].includes(choice)) errors.choice = "Choose Yes, No, or Maybe";
+      if (Object.keys(errors).length) {
+        return send(res, 400, eventPage({ event, errors, values: form }));
+      }
+      saveRsvp(event, { name, choice });
       return redirect(res, `/events/${event.id}`);
     }
 
