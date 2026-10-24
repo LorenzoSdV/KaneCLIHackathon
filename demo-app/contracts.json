@@ -1,4 +1,10 @@
 {
+  "uc-3": [
+    "demo-app/.testmuai/tests/empty-guest-name-cannot-claim-a-dish_test.md",
+    "demo-app/.testmuai/tests/five-claims-fill-the-dish-roster_test.md",
+    "demo-app/.testmuai/tests/guest-claims-an-available-dish-category_test.md",
+    "demo-app/.testmuai/tests/stale-dish-claim-leaves-the-original-claimant-intact-2_test.md"
+  ],
   "uc-1": [
     "demo-app/.testmuai/tests/all-required-field-errors-appear-without-opening-an-event_test.md",
     "demo-app/.testmuai/tests/create-future-event-and-open-it-again-from-home-2_test.md",
@@ -6,6 +12,12 @@
     "demo-app/.testmuai/tests/invalid-calendar-date-cannot-create-an-event_test.md",
     "demo-app/.testmuai/tests/past-event-date-is-rejected-without-losing-entered-values_test.md",
     "demo-app/.testmuai/tests/today-s-date-is-accepted-for-a-created-event_test.md"
+  ],
+  "uc-4": [
+    "demo-app/.testmuai/tests/empty-comment-reports-error-without-posting-a-comment_test.md",
+    "demo-app/.testmuai/tests/empty-guest-name-reports-error-without-posting-a-comment_test.md",
+    "demo-app/.testmuai/tests/first-named-comment-changes-fresh-event-count-from-zero-to_test.md",
+    "demo-app/.testmuai/tests/two-named-comments-appear-in-posting-order_test.md"
   ],
   "uc-2": [
     "demo-app/.testmuai/tests/case-insensitive-rsvp-replacement-keeps-latest-choice-and_test.md",
@@ -15,10 +27,10 @@
     "demo-app/.testmuai/tests/new-no-rsvp-appears-in-the-guest-list-and-no-count_test.md",
     "demo-app/.testmuai/tests/new-yes-rsvp-appears-in-the-guest-list-and-yes-count_test.md"
   ],
-  "uc-3": [
-    "demo-app/.testmuai/tests/empty-guest-name-cannot-claim-a-dish_test.md",
-    "demo-app/.testmuai/tests/five-claims-fill-the-dish-roster_test.md",
-    "demo-app/.testmuai/tests/guest-claims-an-available-dish-category_test.md",
-    "demo-app/.testmuai/tests/stale-dish-claim-leaves-the-original-claimant-intact-2_test.md"
+  "uc-5": [
+    "demo-app/.testmuai/tests/differently-cased-dietary-resave-replaces-entry-and-totals_test.md",
+    "demo-app/.testmuai/tests/each-dietary-choice-adds-a-named-guest-and-updates-totals_test.md",
+    "demo-app/.testmuai/tests/empty-guest-name-leaves-dietary-needs-unchanged_test.md",
+    "demo-app/.testmuai/tests/missing-choice-leaves-dietary-needs-unchanged_test.md"
   ]
 }

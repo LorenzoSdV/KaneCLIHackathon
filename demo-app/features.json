@@ -1,0 +1,46 @@
+{
+  "core": {
+    "useCase": "uc-1",
+    "title": "Create an event"
+  },
+  "features": [
+    {
+      "id": "feat-a",
+      "title": "RSVP",
+      "useCase": "uc-2",
+      "branch": "feat/a",
+      "port": 4101,
+      "prdSection": "Feature A",
+      "decisionSections": [
+        "An RSVP needs a choice"
+      ]
+    },
+    {
+      "id": "feat-b",
+      "title": "Dish claims",
+      "useCase": "uc-3",
+      "branch": "feat/b",
+      "port": 4102,
+      "prdSection": "Feature B",
+      "decisionSections": []
+    },
+    {
+      "id": "feat-c",
+      "title": "Comments",
+      "useCase": "uc-4",
+      "branch": "feat/c",
+      "port": 4104,
+      "prdSection": "Feature C",
+      "decisionSections": []
+    },
+    {
+      "id": "feat-d",
+      "title": "Dietary needs",
+      "useCase": "uc-5",
+      "branch": "feat/d",
+      "port": 4105,
+      "prdSection": "Feature D",
+      "decisionSections": []
+    }
+  ]
+}
