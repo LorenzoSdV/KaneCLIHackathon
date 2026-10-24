@@ -65,7 +65,8 @@ export function eventPage({ event, errors = {}, values = {} }) {
   const counts = choices.map((choice) => `${choice}: ${event.guests.filter((guest) => guest.choice === choice).length}`).join(" · ");
   return layout(
     event.title,
-    `<section class="card">
+    `<nav aria-label="Event navigation"><a href="/">Back home</a></nav>
+<section class="card">
   <h1>${escape(event.title)}</h1>
   <p class="date">${escape(event.date)}</p>
   <p class="host">Hosted by ${escape(event.host)}</p>

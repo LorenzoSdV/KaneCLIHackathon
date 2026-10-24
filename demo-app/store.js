@@ -13,7 +13,7 @@ export function getEvent(id) {
 }
 
 export function saveRsvp(event, { name, choice }) {
-  const guest = event.guests.find((guest) => guest.name === name);
+  const guest = event.guests.find((guest) => guest.name.toLowerCase() === name.toLowerCase());
   if (guest) {
     guest.name = name;
     guest.choice = choice;
