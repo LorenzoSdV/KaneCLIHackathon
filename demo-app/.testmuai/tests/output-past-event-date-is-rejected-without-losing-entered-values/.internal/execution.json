@@ -2,24 +2,24 @@
   "test_id": "cb1629dc-3d40-4f0e-a9be-c115945d051d",
   "version": "v4",
   "auto_heal_version": "AH2",
-  "session_id": "0d28855a-9f7f-4987-b6f7-3d6fee8b345e",
+  "session_id": "5e237438-9ea8-433b-bad5-ae8e191036da",
   "org_id": "3398072",
   "user_id": "3574171",
   "url": "",
-  "start_timestamp": "2026-10-24T20:22:40.666Z",
-  "end_timestamp": "2026-10-24T20:24:05.452Z",
+  "start_timestamp": "2026-10-24T21:46:17.058Z",
+  "end_timestamp": "2026-10-24T21:47:37.041Z",
   "status": "success",
-  "commit_id": "0d28855a-9f7f-4987-b6f7-3d6fee8b345e",
+  "commit_id": "5e237438-9ea8-433b-bad5-ae8e191036da",
   "instructions": [
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_3eaf6916d62b48858ea6589374cacb0a",
-      "generative_id": "3eaf6916d62b48858ea6589374cacb0a",
+      "instruction_id": "generative_block_3c00959fcc1f4595bc73bdb6eae2cd3c",
+      "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
       "objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "8c798419-e0f4-473f-9949-c53535f3e920",
+          "instruction_id": "9e929533-bb5c-48ec-9a41-32a5a90d3258",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Navigate to {{global.start_url}}",
@@ -30,12 +30,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "6a7d4a56-50de-4451-ac1a-4cb2faca7705",
-              "instruction_id": "8c798419-e0f4-473f-9949-c53535f3e920",
+              "operation_id": "476cdbd4-a637-4193-b928-9609e6ab1f0c",
+              "instruction_id": "9e929533-bb5c-48ec-9a41-32a5a90d3258",
               "instruction": "Navigate to {{global.start_url}}",
               "intent": "Navigate to {{global.start_url}}",
-              "operation_start": "2026-10-24T20:22:46.237273+00:00",
-              "operation_end": "2026-10-24T20:22:46.290Z",
+              "operation_start": "2026-10-24T21:46:22.257123+00:00",
+              "operation_end": "2026-10-24T21:46:22.295Z",
               "status": "success",
               "command": "OPEN",
               "name": "",
@@ -60,7 +60,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6a7d4a56-50de-4451-ac1a-4cb2faca7705.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/476cdbd4-a637-4193-b928-9609e6ab1f0c.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -158,8 +158,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:22:46.237273+00:00",
-          "end_timestamp": "2026-10-24T20:22:46.290Z",
+          "start_timestamp": "2026-10-24T21:46:22.257123+00:00",
+          "end_timestamp": "2026-10-24T21:46:22.295Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -185,7 +185,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "3eaf6916d62b48858ea6589374cacb0a",
+          "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -196,7 +196,184 @@
           "reasoning": "Navigate to {{global.start_url}}"
         },
         {
-          "instruction_id": "78db4e52-a345-4013-9285-89f46836984e",
+          "instruction_id": "317886d4-116a-4b6a-b2ef-8d89d03768ee",
+          "instruction_class": "driver_action",
+          "module_id": "",
+          "instruction": "Waiting for the Create event form to appear",
+          "command": "WAIT",
+          "error": null,
+          "parent_instruction_id": "",
+          "classification_layer_resp": [],
+          "classification_error": {},
+          "operations": [
+            {
+              "operation_id": "5ce581a3-5b18-4ca8-9db7-5755796438ba",
+              "instruction_id": "317886d4-116a-4b6a-b2ef-8d89d03768ee",
+              "instruction": "Waiting for the Create event form to appear",
+              "intent": "Waiting for the Create event form to appear",
+              "operation_start": "2026-10-24T21:46:28.868135+00:00",
+              "operation_end": "2026-10-24T21:46:29.876Z",
+              "status": "success",
+              "command": "WAIT",
+              "name": "",
+              "target": "",
+              "value": "1000",
+              "message": "",
+              "operation_dict": "",
+              "frame": "",
+              "surface": "",
+              "frame_path": "",
+              "grounded_by": "",
+              "error_message": "",
+              "code_snippet": "",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the Create event form to appear\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: confirm the Create event form is present; role=text | HINTS: container=top Create event panel\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "test_id": "",
+              "test_version": "",
+              "action": "",
+              "string_to_float": false,
+              "feedback_msg": "",
+              "time_taken": "",
+              "create_time_stamp": "",
+              "update_time_stamp": "",
+              "locator_variable": "",
+              "locator_variable_name": "",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/5ce581a3-5b18-4ca8-9db7-5755796438ba.png",
+              "alternative_xpaths": [],
+              "attribute": "",
+              "value_description": "",
+              "url": "",
+              "navigation_direction": "",
+              "tagified_image_url": "",
+              "query_variable_name": "",
+              "query_variable_value": "",
+              "query_variable_type": "",
+              "expected_value": "",
+              "queried_value": "",
+              "operator": "",
+              "assertion_status": "",
+              "query_info_dict": {},
+              "query_content_confidence": "none",
+              "debugging_logs": [],
+              "locator_index": 0,
+              "query_html": "",
+              "user_variables": "[]",
+              "optional_flag": false,
+              "max_retries": 0,
+              "retries_delay": 0,
+              "explicit_wait": 0,
+              "implicit_wait": 0,
+              "tab_index": "",
+              "tab_identifier": "",
+              "scroll_value": 1,
+              "scroll_direction": "",
+              "mi_scroll_payload": {},
+              "sleep_duration": 0,
+              "app_id": "",
+              "manual_interaction_tag": "",
+              "string_to_float_list": [],
+              "js_snippet": "",
+              "code_error": "",
+              "hide": false,
+              "dismiss_dialog": false,
+              "use_v2_mobile_tagging": false,
+              "multiple_inputs": false,
+              "dialog_action": "",
+              "dialog_type": "",
+              "is_coordinates_used_for_interaction": false,
+              "element_coordinates_ratio": [],
+              "element_bounds_ratio": [],
+              "x_coord": null,
+              "y_coord": null,
+              "target_x_coord": null,
+              "target_y_coord": null,
+              "source_description": null,
+              "target_description": null,
+              "use_coordinates": false,
+              "kaneaiMobileTaggingImageLimit": 1,
+              "clicks_order_code": "se_js_ac",
+              "selector": "",
+              "selector_target": "",
+              "math_result_variable_name": "",
+              "math_result_variable_value": "",
+              "expression_tree": {},
+              "assertion_tree": {},
+              "assertion_tree_simplified": {},
+              "network_throttle": {},
+              "is_mobile_offline": false,
+              "autoheal": false,
+              "reprobe": false,
+              "click_modifier": null,
+              "db_query": "",
+              "db_details": {},
+              "db_query_decoded": "",
+              "is_global_variable": false,
+              "is_global_variable_persist": false,
+              "global_variable_id": "",
+              "wait_for_element_timeout": 0,
+              "failure_condition": "",
+              "screenshot_command": "",
+              "smartui_contents": {},
+              "smartui_results": {},
+              "result_type": "",
+              "result_hint": "",
+              "drag_offset": {},
+              "drag_displacement": {},
+              "hold_duration_ms": null,
+              "move_duration_ms": null,
+              "hold_at_destination_ms": null,
+              "start_coordinates": {},
+              "end_coordinates": {},
+              "element_rect": null,
+              "is_canvas": false,
+              "until_condition": "",
+              "until_max_retries": 0,
+              "until_settle_ms": 0,
+              "api_data": {},
+              "output_variables": {},
+              "visual_context": null,
+              "reasoning": "PRIMARY: confirm the Create event form is present; role=text | HINTS: container=top Create event panel"
+            }
+          ],
+          "status": "success",
+          "start_timestamp": "2026-10-24T21:46:28.868135+00:00",
+          "end_timestamp": "2026-10-24T21:46:29.876Z",
+          "type": "agent_generated",
+          "tags": [],
+          "html_paths": [],
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "content_type": "instruction",
+          "js_snippet": "",
+          "user_variables": "[]",
+          "api_data": {},
+          "params_used": false,
+          "hard_assertion": false,
+          "expected_outcome": "",
+          "module_execution_index": 0,
+          "module_version": null,
+          "network_throttle": {},
+          "isEdited": false,
+          "use_query_assertion_v2": false,
+          "db_query": "",
+          "db_details": {},
+          "network_assertion_content": {},
+          "screenshot_command": "",
+          "smartui_contents": {},
+          "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
+          "plan_id": "",
+          "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "title": "",
+          "used_variables": [],
+          "reasoning": "PRIMARY: confirm the Create event form is present; role=text | HINTS: container=top Create event panel"
+        },
+        {
+          "instruction_id": "76fd15aa-b88a-4128-a6b3-650ad4bbd931",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the event title field is present",
@@ -207,11 +384,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "0b3dd3d9-df9e-4e76-a30b-5f153a6676f1",
-              "instruction_id": "78db4e52-a345-4013-9285-89f46836984e",
+              "operation_id": "038a878e-fb1d-4620-a4db-ec394f36594b",
+              "instruction_id": "76fd15aa-b88a-4128-a6b3-650ad4bbd931",
               "instruction": "Checking whether the event title field is present",
               "intent": "Checking whether the event title field is present",
-              "operation_start": "2026-10-24T20:23:04.934018+00:00",
+              "operation_start": "2026-10-24T21:46:35.926387+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -226,7 +403,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the event title field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Create event form event title field is present (in the Create event form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(7).textContent.trim() === 'Event title' && el(7).querySelector('input, textarea') !== null\",\"wrapped_js\":\"(els) => {\\n  const __m = {7: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(7).textContent.trim() === 'Event title' && el(7).querySelector('input, textarea') !== null);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Event title\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Create event form event title field is present (in the Create event form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Create event form has an event title field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the event title field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Create event form event title field is present (in the Create event form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(8).tagName === 'INPUT' && (el(8).type === 'text' || el(8).getAttribute('aria-label') === 'Event title')\",\"wrapped_js\":\"(els) => {\\n  const __m = {8: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(8).tagName === 'INPUT' && (el(8).type === 'text' || el(8).getAttribute('aria-label') === 'Event title'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Event title\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Create event form event title field is present (in the Create event form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Create event form has an event title field\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -237,14 +414,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/0b3dd3d9-df9e-4e76-a30b-5f153a6676f1.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/038a878e-fb1d-4620-a4db-ec394f36594b.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "event_title_field_visible",
+              "query_variable_name": "event_title_field",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -330,14 +507,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "event_title_field_visible": "true"
+                "event_title_field": "true"
               },
               "visual_context": null,
               "reasoning": "whether the Create event form event title field is present (in the Create event form)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:04.934018+00:00",
+          "start_timestamp": "2026-10-24T21:46:35.926387+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -364,7 +541,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "3eaf6916d62b48858ea6589374cacb0a",
+          "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -375,7 +552,7 @@
           "reasoning": "whether the Create event form event title field is present (in the Create event form)"
         },
         {
-          "instruction_id": "39b9158c-8166-4442-aabc-c2dedded6e42",
+          "instruction_id": "1a266299-1400-42a0-8ef4-e0e1c09e029d",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the date field is present",
@@ -386,11 +563,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "aa385d1c-2f7a-476b-a72e-8e9cb609c769",
-              "instruction_id": "39b9158c-8166-4442-aabc-c2dedded6e42",
+              "operation_id": "8064016b-1d2a-48b8-aa7c-fddf7c274040",
+              "instruction_id": "1a266299-1400-42a0-8ef4-e0e1c09e029d",
               "instruction": "Checking whether the date field is present",
               "intent": "Checking whether the date field is present",
-              "operation_start": "2026-10-24T20:23:04.934505+00:00",
+              "operation_start": "2026-10-24T21:46:35.927427+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -405,7 +582,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the date field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Create event form date field is present (in the Create event form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(9).textContent.includes('Date') && el(9).querySelector('input[type=\\\"date\\\"]') !== null\",\"wrapped_js\":\"(els) => {\\n  const __m = {9: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(9).textContent.includes('Date') && el(9).querySelector('input[type=\\\"date\\\"]') !== null);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Date\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Create event form date field is present (in the Create event form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Create event form has a date field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the date field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Create event form date field is present (in the Create event form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(10).tagName === 'INPUT' && el(10).type === 'date'\",\"wrapped_js\":\"(els) => {\\n  const __m = {10: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(10).tagName === 'INPUT' && el(10).type === 'date');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Date\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Create event form date field is present (in the Create event form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Create event form has a date field\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -416,14 +593,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/aa385d1c-2f7a-476b-a72e-8e9cb609c769.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8064016b-1d2a-48b8-aa7c-fddf7c274040.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "date_field_visible",
+              "query_variable_name": "date_field",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -509,14 +686,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "date_field_visible": "true"
+                "date_field": "true"
               },
               "visual_context": null,
               "reasoning": "whether the Create event form date field is present (in the Create event form)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:04.934505+00:00",
+          "start_timestamp": "2026-10-24T21:46:35.927427+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -543,7 +720,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "3eaf6916d62b48858ea6589374cacb0a",
+          "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -554,7 +731,7 @@
           "reasoning": "whether the Create event form date field is present (in the Create event form)"
         },
         {
-          "instruction_id": "399a5176-5429-4096-a4c2-a365262555e4",
+          "instruction_id": "0688b796-ce9d-4d58-9bd5-c046f12da506",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the host name field is present",
@@ -565,11 +742,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "59317b60-c35b-4d72-8eb2-1948d79368a0",
-              "instruction_id": "399a5176-5429-4096-a4c2-a365262555e4",
+              "operation_id": "2b26c1ab-cd1f-444c-a071-d46f4b2e45d6",
+              "instruction_id": "0688b796-ce9d-4d58-9bd5-c046f12da506",
               "instruction": "Checking whether the host name field is present",
               "intent": "Checking whether the host name field is present",
-              "operation_start": "2026-10-24T20:23:04.934626+00:00",
+              "operation_start": "2026-10-24T21:46:35.927553+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -584,7 +761,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the host name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Create event form host name field is present (in the Create event form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(16).textContent.trim() === 'Host name' && el(16).querySelector('input, textarea') !== null\",\"wrapped_js\":\"(els) => {\\n  const __m = {16: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(16).textContent.trim() === 'Host name' && el(16).querySelector('input, textarea') !== null);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Host name\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Create event form host name field is present (in the Create event form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Create event form has a host name field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the host name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Create event form host name field is present (in the Create event form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(17).tagName === 'INPUT' && (el(17).type === 'text' || el(17).getAttribute('aria-label') === 'Host name')\",\"wrapped_js\":\"(els) => {\\n  const __m = {17: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(17).tagName === 'INPUT' && (el(17).type === 'text' || el(17).getAttribute('aria-label') === 'Host name'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Host name\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Create event form host name field is present (in the Create event form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Create event form has a host name field\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -595,14 +772,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/59317b60-c35b-4d72-8eb2-1948d79368a0.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/2b26c1ab-cd1f-444c-a071-d46f4b2e45d6.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "host_name_field_visible",
+              "query_variable_name": "host_name_field",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -688,14 +865,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "host_name_field_visible": "true"
+                "host_name_field": "true"
               },
               "visual_context": null,
               "reasoning": "whether the Create event form host name field is present (in the Create event form)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:04.934626+00:00",
+          "start_timestamp": "2026-10-24T21:46:35.927553+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -722,7 +899,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "3eaf6916d62b48858ea6589374cacb0a",
+          "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -733,7 +910,7 @@
           "reasoning": "whether the Create event form host name field is present (in the Create event form)"
         },
         {
-          "instruction_id": "f7b3f470-b961-4954-9f45-69cfcf970236",
+          "instruction_id": "ead7bcb3-61db-486a-850c-6e63a37783be",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -755,10 +932,10 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{event_title_field_visible}}",
-                      "store_key": "event_title_field_visible",
+                      "extracted_value": "{{event_title_field}}",
+                      "store_key": "event_title_field",
                       "variable_refs": {
-                        "{{event_title_field_visible}}": "true"
+                        "{{event_title_field}}": "true"
                       }
                     },
                     {
@@ -768,10 +945,10 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{date_field_visible}}",
-                      "store_key": "date_field_visible",
+                      "extracted_value": "{{date_field}}",
+                      "store_key": "date_field",
                       "variable_refs": {
-                        "{{date_field_visible}}": "true"
+                        "{{date_field}}": "true"
                       }
                     },
                     {
@@ -781,35 +958,35 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{host_name_field_visible}}",
-                      "store_key": "host_name_field_visible",
+                      "extracted_value": "{{host_name_field}}",
+                      "store_key": "host_name_field",
                       "variable_refs": {
-                        "{{host_name_field_visible}}": "true"
+                        "{{host_name_field}}": "true"
                       }
                     }
                   ],
                   "sub_checks": [
                     {
                       "description": "the Create event form has an event title field",
-                      "store_key": "event_title_field_visible",
+                      "store_key": "event_title_field",
                       "expected_value": "true",
-                      "extracted_value": "{{event_title_field_visible}}",
+                      "extracted_value": "{{event_title_field}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
                       "description": "the Create event form has a date field",
-                      "store_key": "date_field_visible",
+                      "store_key": "date_field",
                       "expected_value": "true",
-                      "extracted_value": "{{date_field_visible}}",
+                      "extracted_value": "{{date_field}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
                       "description": "the Create event form has a host name field",
-                      "store_key": "host_name_field_visible",
+                      "store_key": "host_name_field",
                       "expected_value": "true",
-                      "extracted_value": "{{host_name_field_visible}}",
+                      "extracted_value": "{{host_name_field}}",
                       "operator": "equals",
                       "transforms": []
                     }
@@ -832,11 +1009,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "1df9682c-bead-4472-9c7f-005973e9e592",
-              "instruction_id": "f7b3f470-b961-4954-9f45-69cfcf970236",
+              "operation_id": "4a955d3a-9037-4d91-912d-dfda4150144a",
+              "instruction_id": "ead7bcb3-61db-486a-850c-6e63a37783be",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T20:23:05.549485+00:00",
+              "operation_start": "2026-10-24T21:46:36.545596+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -862,7 +1039,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1df9682c-bead-4472-9c7f-005973e9e592.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4a955d3a-9037-4d91-912d-dfda4150144a.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -934,10 +1111,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{event_title_field_visible}}",
-                    "store_key": "event_title_field_visible",
+                    "extracted_value": "{{event_title_field}}",
+                    "store_key": "event_title_field",
                     "variable_refs": {
-                      "{{event_title_field_visible}}": "true"
+                      "{{event_title_field}}": "true"
                     }
                   },
                   {
@@ -947,10 +1124,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{date_field_visible}}",
-                    "store_key": "date_field_visible",
+                    "extracted_value": "{{date_field}}",
+                    "store_key": "date_field",
                     "variable_refs": {
-                      "{{date_field_visible}}": "true"
+                      "{{date_field}}": "true"
                     }
                   },
                   {
@@ -960,41 +1137,41 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{host_name_field_visible}}",
-                    "store_key": "host_name_field_visible",
+                    "extracted_value": "{{host_name_field}}",
+                    "store_key": "host_name_field",
                     "variable_refs": {
-                      "{{host_name_field_visible}}": "true"
+                      "{{host_name_field}}": "true"
                     }
                   }
                 ],
                 "sub_checks": [
                   {
                     "description": "the Create event form has an event title field",
-                    "store_key": "event_title_field_visible",
+                    "store_key": "event_title_field",
                     "expected_value": "true",
-                    "extracted_value": "{{event_title_field_visible}}",
+                    "extracted_value": "{{event_title_field}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
                     "description": "the Create event form has a date field",
-                    "store_key": "date_field_visible",
+                    "store_key": "date_field",
                     "expected_value": "true",
-                    "extracted_value": "{{date_field_visible}}",
+                    "extracted_value": "{{date_field}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
                     "description": "the Create event form has a host name field",
-                    "store_key": "host_name_field_visible",
+                    "store_key": "host_name_field",
                     "expected_value": "true",
-                    "extracted_value": "{{host_name_field_visible}}",
+                    "extracted_value": "{{host_name_field}}",
                     "operator": "equals",
                     "transforms": []
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "the Create event form displays event title, date and host name fields",
+                "verification": "The Create event form displays event title, date, and host name fields.",
                 "claim": "the Create event form has event title, date and host name fields"
               },
               "assertion_tree": {
@@ -1009,10 +1186,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{event_title_field_visible}}",
-                    "store_key": "event_title_field_visible",
+                    "extracted_value": "{{event_title_field}}",
+                    "store_key": "event_title_field",
                     "variable_refs": {
-                      "{{event_title_field_visible}}": "true"
+                      "{{event_title_field}}": "true"
                     }
                   },
                   {
@@ -1022,10 +1199,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{date_field_visible}}",
-                    "store_key": "date_field_visible",
+                    "extracted_value": "{{date_field}}",
+                    "store_key": "date_field",
                     "variable_refs": {
-                      "{{date_field_visible}}": "true"
+                      "{{date_field}}": "true"
                     }
                   },
                   {
@@ -1035,18 +1212,18 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{host_name_field_visible}}",
-                    "store_key": "host_name_field_visible",
+                    "extracted_value": "{{host_name_field}}",
+                    "store_key": "host_name_field",
                     "variable_refs": {
-                      "{{host_name_field_visible}}": "true"
+                      "{{host_name_field}}": "true"
                     }
                   }
                 ],
                 "composite_operator": "and",
                 "passed": true,
-                "step": 3,
+                "step": 4,
                 "is_final": true,
-                "verification": "the Create event form displays event title, date and host name fields",
+                "verification": "The Create event form displays event title, date, and host name fields.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -1088,7 +1265,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:05.549485+00:00",
+          "start_timestamp": "2026-10-24T21:46:36.545596+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -1115,7 +1292,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "3eaf6916d62b48858ea6589374cacb0a",
+          "generative_id": "3c00959fcc1f4595bc73bdb6eae2cd3c",
           "plan_id": "",
           "generative_objective": "Open {{global.start_url}} in the browser and reach the Potluck Planner home page's Create event form, then assert it has event title, date and host name fields.",
           "error_message": "",
@@ -1131,24 +1308,24 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Opened the Potluck Planner home page as requested.",
-        "Reached the Create event form, which includes fields for Event title, Date, and Host name.",
-        "The requested form is ready to use."
+        "Opened the Potluck Planner home page and reached the Create event form.",
+        "Confirmed that the form includes fields for an event title, date, and host name.",
+        "The requested page was reached successfully."
       ],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_731ea5a6bb5d4840a5bc926d9713afa7",
-      "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+      "instruction_id": "generative_block_2e8d763fd49c4b8d8b76fce9a7d1f0d1",
+      "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
       "objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "3d8fa784-7ec2-4877-b789-b0ccca252531",
+          "instruction_id": "17f4c74b-6d79-453a-a451-ed0251d5f530",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the event details to be entered",
+          "instruction": "Waiting for the event form to be ready",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -1156,12 +1333,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "e3cba8ae-264d-4849-8efd-9be573ab3ff9",
-              "instruction_id": "3d8fa784-7ec2-4877-b789-b0ccca252531",
-              "instruction": "Waiting for the event details to be entered",
-              "intent": "Waiting for the event details to be entered",
-              "operation_start": "2026-10-24T20:23:19.341450+00:00",
-              "operation_end": "2026-10-24T20:23:20.353Z",
+              "operation_id": "cf301dc0-c1d7-4cb7-b39c-d6329479690c",
+              "instruction_id": "17f4c74b-6d79-453a-a451-ed0251d5f530",
+              "instruction": "Waiting for the event form to be ready",
+              "intent": "Waiting for the event form to be ready",
+              "operation_start": "2026-10-24T21:46:49.908373+00:00",
+              "operation_end": "2026-10-24T21:46:50.912Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -1175,7 +1352,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the event details to be entered\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (4 steps): type \\\"Event title\\\"; type \\\"Date\\\"; type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the event form to be ready\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (4 steps): type \\\"Event title\\\"; type \\\"Date\\\"; type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1186,7 +1363,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e3cba8ae-264d-4849-8efd-9be573ab3ff9.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/cf301dc0-c1d7-4cb7-b39c-d6329479690c.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1284,8 +1461,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:19.341450+00:00",
-          "end_timestamp": "2026-10-24T20:23:20.353Z",
+          "start_timestamp": "2026-10-24T21:46:49.908373+00:00",
+          "end_timestamp": "2026-10-24T21:46:50.912Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1311,7 +1488,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -1322,7 +1499,7 @@
           "reasoning": "queued plan (4 steps): type \"Event title\"; type \"Date\"; type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "43594767-47f1-4ea6-beaa-80c9dcb3bd05",
+          "instruction_id": "a95ba433-dffc-4938-b00b-202ab1501a1b",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Assurance Past Potluck 39817\" into \"Event title\"",
@@ -1333,12 +1510,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "8901e0ec-f7c3-44a2-abc9-6a6c5d8bd38f",
-              "instruction_id": "43594767-47f1-4ea6-beaa-80c9dcb3bd05",
+              "operation_id": "05f78d55-4530-44e8-bdd5-c63629233120",
+              "instruction_id": "a95ba433-dffc-4938-b00b-202ab1501a1b",
               "instruction": "Type \"Assurance Past Potluck 39817\" into \"Event title\"",
               "intent": "Type \"Assurance Past Potluck 39817\" into \"Event title\"",
-              "operation_start": "2026-10-24T20:23:20.017972+00:00",
-              "operation_end": "2026-10-24T20:23:20.047Z",
+              "operation_start": "2026-10-24T21:46:50.558147+00:00",
+              "operation_end": "2026-10-24T21:46:50.582Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -1363,7 +1540,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8901e0ec-f7c3-44a2-abc9-6a6c5d8bd38f.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/05f78d55-4530-44e8-bdd5-c63629233120.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1477,7 +1654,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8901e0ec-f7c3-44a2-abc9-6a6c5d8bd38f.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/05f78d55-4530-44e8-bdd5-c63629233120.png",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -1486,8 +1663,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:20.017972+00:00",
-          "end_timestamp": "2026-10-24T20:23:20.047Z",
+          "start_timestamp": "2026-10-24T21:46:50.558147+00:00",
+          "end_timestamp": "2026-10-24T21:46:50.582Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1513,7 +1690,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -1524,7 +1701,7 @@
           "reasoning": "PRIMARY: event title input; role=textbox; text=\"Event title\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "45badd14-c352-45af-a1c3-d00e6c23bb03",
+          "instruction_id": "355205c1-12fc-44d8-b80e-7160e697262a",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"2026-10-23\" into \"Date\"",
@@ -1535,12 +1712,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "1bf08fcb-1b5e-409d-8436-c2f64d0ae0af",
-              "instruction_id": "45badd14-c352-45af-a1c3-d00e6c23bb03",
+              "operation_id": "58450a8b-a188-4437-9237-6700eb05a760",
+              "instruction_id": "355205c1-12fc-44d8-b80e-7160e697262a",
               "instruction": "Type \"2026-10-23\" into \"Date\"",
               "intent": "Type \"2026-10-23\" into \"Date\"",
-              "operation_start": "2026-10-24T20:23:20.745404+00:00",
-              "operation_end": "2026-10-24T20:23:20.764Z",
+              "operation_start": "2026-10-24T21:46:51.287907+00:00",
+              "operation_end": "2026-10-24T21:46:51.308Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -1565,7 +1742,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1bf08fcb-1b5e-409d-8436-c2f64d0ae0af.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/58450a8b-a188-4437-9237-6700eb05a760.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1679,7 +1856,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1bf08fcb-1b5e-409d-8436-c2f64d0ae0af.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/58450a8b-a188-4437-9237-6700eb05a760.png",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -1688,8 +1865,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:20.745404+00:00",
-          "end_timestamp": "2026-10-24T20:23:20.764Z",
+          "start_timestamp": "2026-10-24T21:46:51.287907+00:00",
+          "end_timestamp": "2026-10-24T21:46:51.308Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1715,7 +1892,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -1726,10 +1903,10 @@
           "reasoning": "PRIMARY: event date input; role=date; text=\"Date\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "052690a4-a0a2-4720-befd-92df74a470bc",
+          "instruction_id": "d00792cd-496c-4ba4-993f-dd7b533904ce",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the next step to load",
+          "instruction": "Waiting for the next step in the queued plan",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -1737,12 +1914,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "04ddb2bc-68f7-4a14-9dc3-4207a46cdeeb",
-              "instruction_id": "052690a4-a0a2-4720-befd-92df74a470bc",
-              "instruction": "Waiting for the next step to load",
-              "intent": "Waiting for the next step to load",
-              "operation_start": "2026-10-24T20:23:26.133480+00:00",
-              "operation_end": "2026-10-24T20:23:27.142Z",
+              "operation_id": "fe2b7f4d-4009-42f5-afa7-df47866bde85",
+              "instruction_id": "d00792cd-496c-4ba4-993f-dd7b533904ce",
+              "instruction": "Waiting for the next step in the queued plan",
+              "intent": "Waiting for the next step in the queued plan",
+              "operation_start": "2026-10-24T21:46:56.106252+00:00",
+              "operation_end": "2026-10-24T21:46:57.111Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -1756,7 +1933,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the next step to load\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (2 steps): type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the next step in the queued plan\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (2 steps): type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1767,7 +1944,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/04ddb2bc-68f7-4a14-9dc3-4207a46cdeeb.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/fe2b7f4d-4009-42f5-afa7-df47866bde85.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1865,8 +2042,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:26.133480+00:00",
-          "end_timestamp": "2026-10-24T20:23:27.142Z",
+          "start_timestamp": "2026-10-24T21:46:56.106252+00:00",
+          "end_timestamp": "2026-10-24T21:46:57.111Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1892,7 +2069,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -1903,7 +2080,7 @@
           "reasoning": "queued plan (2 steps): type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "b667931a-89fa-45b9-aaa2-546e9843a4e6",
+          "instruction_id": "f92d1383-d130-44dd-8b6d-6507f6732011",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Assurance Host\" into \"Host name\"",
@@ -1914,12 +2091,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "f0245ffa-0e67-4b6b-a8f4-1c67b74c8d3b",
-              "instruction_id": "b667931a-89fa-45b9-aaa2-546e9843a4e6",
+              "operation_id": "87110482-28ce-44b4-9834-b19a3b9d058d",
+              "instruction_id": "f92d1383-d130-44dd-8b6d-6507f6732011",
               "instruction": "Type \"Assurance Host\" into \"Host name\"",
               "intent": "Type \"Assurance Host\" into \"Host name\"",
-              "operation_start": "2026-10-24T20:23:26.798779+00:00",
-              "operation_end": "2026-10-24T20:23:26.818Z",
+              "operation_start": "2026-10-24T21:46:56.774742+00:00",
+              "operation_end": "2026-10-24T21:46:56.798Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -1944,7 +2121,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/f0245ffa-0e67-4b6b-a8f4-1c67b74c8d3b.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/87110482-28ce-44b4-9834-b19a3b9d058d.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2058,7 +2235,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/f0245ffa-0e67-4b6b-a8f4-1c67b74c8d3b.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/87110482-28ce-44b4-9834-b19a3b9d058d.png",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -2067,8 +2244,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:26.798779+00:00",
-          "end_timestamp": "2026-10-24T20:23:26.818Z",
+          "start_timestamp": "2026-10-24T21:46:56.774742+00:00",
+          "end_timestamp": "2026-10-24T21:46:56.798Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2094,7 +2271,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -2105,7 +2282,7 @@
           "reasoning": "PRIMARY: host name input; role=textbox; text=\"Host name\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "9f116724-9c9c-4d68-85b8-0d2b2ae69dfb",
+          "instruction_id": "6372fd84-bebb-41b0-b148-bd8c710bfa05",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Click \"Create event\"",
@@ -2116,12 +2293,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "7908915c-19fd-40bf-b839-b79449affba0",
-              "instruction_id": "9f116724-9c9c-4d68-85b8-0d2b2ae69dfb",
+              "operation_id": "485e1047-4dc1-4809-ab61-eb872daa4e6e",
+              "instruction_id": "6372fd84-bebb-41b0-b148-bd8c710bfa05",
               "instruction": "Click \"Create event\"",
               "intent": "Click \"Create event\"",
-              "operation_start": "2026-10-24T20:23:27.545763+00:00",
-              "operation_end": "2026-10-24T20:23:27.574Z",
+              "operation_start": "2026-10-24T21:46:57.494793+00:00",
+              "operation_end": "2026-10-24T21:46:57.517Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -2135,7 +2312,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Click \\\"Create event\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: create event submit button; role=button; text=\\\"Create event\\\" | HINTS: container=Create event form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Click \\\"Create event\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: Create event submit button; role=button; text=\\\"Create event\\\" | HINTS: container=Create event form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2146,7 +2323,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7908915c-19fd-40bf-b839-b79449affba0.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/485e1047-4dc1-4809-ab61-eb872daa4e6e.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2260,17 +2437,17 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7908915c-19fd-40bf-b839-b79449affba0.webp",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/485e1047-4dc1-4809-ab61-eb872daa4e6e.png",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: create event submit button; role=button; text=\"Create event\" | HINTS: container=Create event form"
+              "reasoning": "PRIMARY: Create event submit button; role=button; text=\"Create event\" | HINTS: container=Create event form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:27.545763+00:00",
-          "end_timestamp": "2026-10-24T20:23:27.574Z",
+          "start_timestamp": "2026-10-24T21:46:57.494793+00:00",
+          "end_timestamp": "2026-10-24T21:46:57.517Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -2296,7 +2473,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -2304,10 +2481,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: create event submit button; role=button; text=\"Create event\" | HINTS: container=Create event form"
+          "reasoning": "PRIMARY: Create event submit button; role=button; text=\"Create event\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "c656c0ef-58cb-4425-8fc8-4c09a97b8669",
+          "instruction_id": "371d4f28-c911-4609-85eb-ddd4a2dc550e",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Reading the date validation error message",
@@ -2318,11 +2495,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "d38cc1a6-ca3f-414a-8262-a728db754067",
-              "instruction_id": "c656c0ef-58cb-4425-8fc8-4c09a97b8669",
+              "operation_id": "0fee31f4-21fa-46ef-bc61-c23b0bfcf86a",
+              "instruction_id": "371d4f28-c911-4609-85eb-ddd4a2dc550e",
               "instruction": "Reading the date validation error message",
               "intent": "Reading the date validation error message",
-              "operation_start": "2026-10-24T20:23:39.184885+00:00",
+              "operation_start": "2026-10-24T21:47:08.739355+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2348,7 +2525,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/d38cc1a6-ca3f-414a-8262-a728db754067.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/0fee31f4-21fa-46ef-bc61-c23b0bfcf86a.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2448,7 +2625,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:39.184885+00:00",
+          "start_timestamp": "2026-10-24T21:47:08.739355+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2475,7 +2652,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -2486,10 +2663,10 @@
           "reasoning": "the date validation error message"
         },
         {
-          "instruction_id": "f2cdb3f6-97f1-4bf5-a885-befdace6f29a",
+          "instruction_id": "7b945ed3-cbc7-4d7f-8d76-bd572a7bc048",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Reading the event title field value",
+          "instruction": "Reading the retained event title",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -2497,11 +2674,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "1949cd6b-b780-44fb-9c93-855995e96868",
-              "instruction_id": "f2cdb3f6-97f1-4bf5-a885-befdace6f29a",
-              "instruction": "Reading the event title field value",
-              "intent": "Reading the event title field value",
-              "operation_start": "2026-10-24T20:23:39.185079+00:00",
+              "operation_id": "dc2c3bb9-7fb9-4342-a1ca-d51b69b44be4",
+              "instruction_id": "7b945ed3-cbc7-4d7f-8d76-bd572a7bc048",
+              "instruction": "Reading the retained event title",
+              "intent": "Reading the retained event title",
+              "operation_start": "2026-10-24T21:47:08.740512+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2516,7 +2693,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the event title field value\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the event title form field value\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(10).value\",\"wrapped_js\":\"(els) => {\\n  const __m = {10: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(10).value);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Event title\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"the event title form field value\",\"expected_value\":\"Assurance Past Potluck 39817\",\"needs_unit_conversion\":false,\"condition\":\"the title 'Assurance Past Potluck 39817' remains in its form field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the retained event title\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the value retained in the event title field\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(10).value\",\"wrapped_js\":\"(els) => {\\n  const __m = {10: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(10).value);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Event title\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"the value retained in the event title field\",\"expected_value\":\"Assurance Past Potluck 39817\",\"needs_unit_conversion\":false,\"condition\":\"the title field retains 'Assurance Past Potluck 39817'\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2527,14 +2704,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1949cd6b-b780-44fb-9c93-855995e96868.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/dc2c3bb9-7fb9-4342-a1ca-d51b69b44be4.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "event_title_field_value",
+              "query_variable_name": "title_field_value",
               "query_variable_value": "Assurance Past Potluck 39817",
               "query_variable_type": "",
               "expected_value": "",
@@ -2620,14 +2797,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "event_title_field_value": "Assurance Past Potluck 39817"
+                "title_field_value": "Assurance Past Potluck 39817"
               },
               "visual_context": null,
-              "reasoning": "the event title form field value"
+              "reasoning": "the value retained in the event title field"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:39.185079+00:00",
+          "start_timestamp": "2026-10-24T21:47:08.740512+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2654,7 +2831,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -2662,13 +2839,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "the event title form field value"
+          "reasoning": "the value retained in the event title field"
         },
         {
-          "instruction_id": "d769ea59-1b06-40c4-b285-7e79908997a6",
+          "instruction_id": "0e964b01-d38f-4353-9c24-a67d1ff774e0",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Reading the event date field value",
+          "instruction": "Reading the retained event date",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -2676,11 +2853,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "33e4823b-edcf-41c2-8a8e-d11c2572aeb9",
-              "instruction_id": "d769ea59-1b06-40c4-b285-7e79908997a6",
-              "instruction": "Reading the event date field value",
-              "intent": "Reading the event date field value",
-              "operation_start": "2026-10-24T20:23:39.185190+00:00",
+              "operation_id": "54992a44-e39c-415e-a67e-2ba0c58256a4",
+              "instruction_id": "0e964b01-d38f-4353-9c24-a67d1ff774e0",
+              "instruction": "Reading the retained event date",
+              "intent": "Reading the retained event date",
+              "operation_start": "2026-10-24T21:47:08.740620+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2695,7 +2872,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the event date field value\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the event date form field value\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(12).value\",\"wrapped_js\":\"(els) => {\\n  const __m = {12: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(12).value);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Date\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"the event date form field value\",\"expected_value\":\"2026-10-23\",\"needs_unit_conversion\":false,\"condition\":\"yesterday's calendar date remains in its form field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the retained event date\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the value retained in the event date field\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(12).value\",\"wrapped_js\":\"(els) => {\\n  const __m = {12: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(12).value);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Date\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"the value retained in the event date field\",\"expected_value\":\"2026-10-23\",\"needs_unit_conversion\":false,\"condition\":\"the date field retains yesterday's calendar date\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2706,14 +2883,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/33e4823b-edcf-41c2-8a8e-d11c2572aeb9.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/54992a44-e39c-415e-a67e-2ba0c58256a4.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "event_date_field_value",
+              "query_variable_name": "date_field_value",
               "query_variable_value": "2026-10-23",
               "query_variable_type": "",
               "expected_value": "",
@@ -2799,14 +2976,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "event_date_field_value": "2026-10-23"
+                "date_field_value": "2026-10-23"
               },
               "visual_context": null,
-              "reasoning": "the event date form field value"
+              "reasoning": "the value retained in the event date field"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:39.185190+00:00",
+          "start_timestamp": "2026-10-24T21:47:08.740620+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2833,7 +3010,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -2841,13 +3018,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "the event date form field value"
+          "reasoning": "the value retained in the event date field"
         },
         {
-          "instruction_id": "d5fbdd4c-57a5-4406-9b3a-78d8343cf88c",
+          "instruction_id": "b56e1d0d-8836-4847-be72-68faabb1b4ac",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Reading the host name field value",
+          "instruction": "Reading the retained host name",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -2855,11 +3032,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "ead78ce9-6bcb-4b7c-91c5-26338e67b614",
-              "instruction_id": "d5fbdd4c-57a5-4406-9b3a-78d8343cf88c",
-              "instruction": "Reading the host name field value",
-              "intent": "Reading the host name field value",
-              "operation_start": "2026-10-24T20:23:39.185297+00:00",
+              "operation_id": "a985275d-601e-4d0f-8375-73f2439036e7",
+              "instruction_id": "b56e1d0d-8836-4847-be72-68faabb1b4ac",
+              "instruction": "Reading the retained host name",
+              "intent": "Reading the retained host name",
+              "operation_start": "2026-10-24T21:47:08.740726+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2874,7 +3051,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the host name field value\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the host name form field value\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(19).value\",\"wrapped_js\":\"(els) => {\\n  const __m = {19: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(19).value);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Host name\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"the host name form field value\",\"expected_value\":\"Assurance Host\",\"needs_unit_conversion\":false,\"condition\":\"the host name 'Assurance Host' remains in its form field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the retained host name\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the value retained in the host name field\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(19).value\",\"wrapped_js\":\"(els) => {\\n  const __m = {19: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(19).value);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Host name\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"the value retained in the host name field\",\"expected_value\":\"Assurance Host\",\"needs_unit_conversion\":false,\"condition\":\"the host name field retains 'Assurance Host'\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2885,14 +3062,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ead78ce9-6bcb-4b7c-91c5-26338e67b614.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/a985275d-601e-4d0f-8375-73f2439036e7.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "event_host_name_field_value",
+              "query_variable_name": "host_name_field_value",
               "query_variable_value": "Assurance Host",
               "query_variable_type": "",
               "expected_value": "",
@@ -2978,14 +3155,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "event_host_name_field_value": "Assurance Host"
+                "host_name_field_value": "Assurance Host"
               },
               "visual_context": null,
-              "reasoning": "the host name form field value"
+              "reasoning": "the value retained in the host name field"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:39.185297+00:00",
+          "start_timestamp": "2026-10-24T21:47:08.740726+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3012,7 +3189,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -3020,10 +3197,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "the host name form field value"
+          "reasoning": "the value retained in the host name field"
         },
         {
-          "instruction_id": "d01f426b-7f5a-4008-a0a4-4f8cc730e439",
+          "instruction_id": "8e001cfa-e428-4654-b412-f9f75948d586",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -3054,42 +3231,42 @@
                       }
                     },
                     {
-                      "description": "the title 'Assurance Past Potluck 39817' remains in its form field",
+                      "description": "the title field retains 'Assurance Past Potluck 39817'",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
                       "expected": "Assurance Past Potluck 39817",
-                      "extracted_value": "{{event_title_field_value}}",
-                      "store_key": "event_title_field_value",
+                      "extracted_value": "{{title_field_value}}",
+                      "store_key": "title_field_value",
                       "variable_refs": {
-                        "{{event_title_field_value}}": "Assurance Past Potluck 39817"
+                        "{{title_field_value}}": "Assurance Past Potluck 39817"
                       }
                     },
                     {
-                      "description": "yesterday's calendar date remains in its form field",
+                      "description": "the date field retains yesterday's calendar date",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
                       "expected": "2026-10-23",
-                      "extracted_value": "{{event_date_field_value}}",
-                      "store_key": "event_date_field_value",
+                      "extracted_value": "{{date_field_value}}",
+                      "store_key": "date_field_value",
                       "variable_refs": {
-                        "{{event_date_field_value}}": "2026-10-23"
+                        "{{date_field_value}}": "2026-10-23"
                       }
                     },
                     {
-                      "description": "the host name 'Assurance Host' remains in its form field",
+                      "description": "the host name field retains 'Assurance Host'",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
                       "json_path": null,
                       "expected": "Assurance Host",
-                      "extracted_value": "{{event_host_name_field_value}}",
-                      "store_key": "event_host_name_field_value",
+                      "extracted_value": "{{host_name_field_value}}",
+                      "store_key": "host_name_field_value",
                       "variable_refs": {
-                        "{{event_host_name_field_value}}": "Assurance Host"
+                        "{{host_name_field_value}}": "Assurance Host"
                       }
                     }
                   ],
@@ -3105,33 +3282,33 @@
                       ]
                     },
                     {
-                      "description": "the title 'Assurance Past Potluck 39817' remains in its form field",
-                      "store_key": "event_title_field_value",
+                      "description": "the title field retains 'Assurance Past Potluck 39817'",
+                      "store_key": "title_field_value",
                       "expected_value": "Assurance Past Potluck 39817",
-                      "extracted_value": "{{event_title_field_value}}",
+                      "extracted_value": "{{title_field_value}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
-                      "description": "yesterday's calendar date remains in its form field",
-                      "store_key": "event_date_field_value",
+                      "description": "the date field retains yesterday's calendar date",
+                      "store_key": "date_field_value",
                       "expected_value": "2026-10-23",
-                      "extracted_value": "{{event_date_field_value}}",
+                      "extracted_value": "{{date_field_value}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
-                      "description": "the host name 'Assurance Host' remains in its form field",
-                      "store_key": "event_host_name_field_value",
+                      "description": "the host name field retains 'Assurance Host'",
+                      "store_key": "host_name_field_value",
                       "expected_value": "Assurance Host",
-                      "extracted_value": "{{event_host_name_field_value}}",
+                      "extracted_value": "{{host_name_field_value}}",
                       "operator": "equals",
                       "transforms": []
                     }
                   ],
                   "composite_operator": "and",
                   "verification": "",
-                  "claim": "the error reads 'Date must be today or later' and all three entered values remain in their form fields",
+                  "claim": "the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
                   "operator": [],
                   "assertion_operands": [],
                   "left_operand": null,
@@ -3147,11 +3324,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "b3a03d16-d9ba-49f5-9620-6bbad7792b6c",
-              "instruction_id": "d01f426b-7f5a-4008-a0a4-4f8cc730e439",
+              "operation_id": "be4ed1e0-81c3-45ae-92f5-0887feeac155",
+              "instruction_id": "8e001cfa-e428-4654-b412-f9f75948d586",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T20:23:39.784241+00:00",
+              "operation_start": "2026-10-24T21:47:09.348801+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -3177,7 +3354,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b3a03d16-d9ba-49f5-9620-6bbad7792b6c.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/be4ed1e0-81c3-45ae-92f5-0887feeac155.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3258,42 +3435,42 @@
                     }
                   },
                   {
-                    "description": "the title 'Assurance Past Potluck 39817' remains in its form field",
+                    "description": "the title field retains 'Assurance Past Potluck 39817'",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "Assurance Past Potluck 39817",
-                    "extracted_value": "{{event_title_field_value}}",
-                    "store_key": "event_title_field_value",
+                    "extracted_value": "{{title_field_value}}",
+                    "store_key": "title_field_value",
                     "variable_refs": {
-                      "{{event_title_field_value}}": "Assurance Past Potluck 39817"
+                      "{{title_field_value}}": "Assurance Past Potluck 39817"
                     }
                   },
                   {
-                    "description": "yesterday's calendar date remains in its form field",
+                    "description": "the date field retains yesterday's calendar date",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "2026-10-23",
-                    "extracted_value": "{{event_date_field_value}}",
-                    "store_key": "event_date_field_value",
+                    "extracted_value": "{{date_field_value}}",
+                    "store_key": "date_field_value",
                     "variable_refs": {
-                      "{{event_date_field_value}}": "2026-10-23"
+                      "{{date_field_value}}": "2026-10-23"
                     }
                   },
                   {
-                    "description": "the host name 'Assurance Host' remains in its form field",
+                    "description": "the host name field retains 'Assurance Host'",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "Assurance Host",
-                    "extracted_value": "{{event_host_name_field_value}}",
-                    "store_key": "event_host_name_field_value",
+                    "extracted_value": "{{host_name_field_value}}",
+                    "store_key": "host_name_field_value",
                     "variable_refs": {
-                      "{{event_host_name_field_value}}": "Assurance Host"
+                      "{{host_name_field_value}}": "Assurance Host"
                     }
                   }
                 ],
@@ -3309,38 +3486,38 @@
                     ]
                   },
                   {
-                    "description": "the title 'Assurance Past Potluck 39817' remains in its form field",
-                    "store_key": "event_title_field_value",
+                    "description": "the title field retains 'Assurance Past Potluck 39817'",
+                    "store_key": "title_field_value",
                     "expected_value": "Assurance Past Potluck 39817",
-                    "extracted_value": "{{event_title_field_value}}",
+                    "extracted_value": "{{title_field_value}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
-                    "description": "yesterday's calendar date remains in its form field",
-                    "store_key": "event_date_field_value",
+                    "description": "the date field retains yesterday's calendar date",
+                    "store_key": "date_field_value",
                     "expected_value": "2026-10-23",
-                    "extracted_value": "{{event_date_field_value}}",
+                    "extracted_value": "{{date_field_value}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
-                    "description": "the host name 'Assurance Host' remains in its form field",
-                    "store_key": "event_host_name_field_value",
+                    "description": "the host name field retains 'Assurance Host'",
+                    "store_key": "host_name_field_value",
                     "expected_value": "Assurance Host",
-                    "extracted_value": "{{event_host_name_field_value}}",
+                    "extracted_value": "{{host_name_field_value}}",
                     "operator": "equals",
                     "transforms": []
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "The Create event form shows the error and retains the entered title, yesterday's calendar date, and host name.",
-                "claim": "the error reads 'Date must be today or later' and all three entered values remain in their form fields"
+                "verification": "The Create event form displays the specified error and retains the entered title, date, and host name.",
+                "claim": "the error reads 'Date must be today or later' and all three entered values remain in their form fields."
               },
               "assertion_tree": {
                 "assertion_id": "assert_cp_1",
                 "status": "passed",
-                "description": "the error reads 'Date must be today or later' and all three entered values remain in their form fields",
+                "description": "the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
                 "sub_results": [
                   {
                     "description": "the error reads 'Date must be today or later'",
@@ -3358,42 +3535,42 @@
                     }
                   },
                   {
-                    "description": "the title 'Assurance Past Potluck 39817' remains in its form field",
+                    "description": "the title field retains 'Assurance Past Potluck 39817'",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "Assurance Past Potluck 39817",
-                    "extracted_value": "{{event_title_field_value}}",
-                    "store_key": "event_title_field_value",
+                    "extracted_value": "{{title_field_value}}",
+                    "store_key": "title_field_value",
                     "variable_refs": {
-                      "{{event_title_field_value}}": "Assurance Past Potluck 39817"
+                      "{{title_field_value}}": "Assurance Past Potluck 39817"
                     }
                   },
                   {
-                    "description": "yesterday's calendar date remains in its form field",
+                    "description": "the date field retains yesterday's calendar date",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "2026-10-23",
-                    "extracted_value": "{{event_date_field_value}}",
-                    "store_key": "event_date_field_value",
+                    "extracted_value": "{{date_field_value}}",
+                    "store_key": "date_field_value",
                     "variable_refs": {
-                      "{{event_date_field_value}}": "2026-10-23"
+                      "{{date_field_value}}": "2026-10-23"
                     }
                   },
                   {
-                    "description": "the host name 'Assurance Host' remains in its form field",
+                    "description": "the host name field retains 'Assurance Host'",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
                     "json_path": null,
                     "expected": "Assurance Host",
-                    "extracted_value": "{{event_host_name_field_value}}",
-                    "store_key": "event_host_name_field_value",
+                    "extracted_value": "{{host_name_field_value}}",
+                    "store_key": "host_name_field_value",
                     "variable_refs": {
-                      "{{event_host_name_field_value}}": "Assurance Host"
+                      "{{host_name_field_value}}": "Assurance Host"
                     }
                   }
                 ],
@@ -3401,7 +3578,7 @@
                 "passed": true,
                 "step": 9,
                 "is_final": true,
-                "verification": "The Create event form shows the error and retains the entered title, yesterday's calendar date, and host name.",
+                "verification": "The Create event form displays the specified error and retains the entered title, date, and host name.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -3443,7 +3620,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:39.784241+00:00",
+          "start_timestamp": "2026-10-24T21:47:09.348801+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3470,7 +3647,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "731ea5a6bb5d4840a5bc926d9713afa7",
+          "generative_id": "2e8d763fd49c4b8d8b76fce9a7d1f0d1",
           "plan_id": "",
           "generative_objective": "On the home page, submit the Create event form with title 'Assurance Past Potluck 39817', yesterday's calendar date and host name 'Assurance Host', then assert the error reads 'Date must be today or later' and all three entered values remain in their form fields.",
           "error_message": "",
@@ -3486,25 +3663,24 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Requested submission of the Create event form for “Assurance Past Potluck 39817” using yesterday’s date and host “Assurance Host.”",
-        "Submitted the form on the events page with the entered title, date, and host name.",
-        "The event was not created because the date is in the past; the page displayed “Date must be today or later.”",
-        "All entered values remained in the form: title “Assurance Past Potluck 39817,” date “2026-10-23,” and host name “Assurance Host.”"
+        "Submitted the Create event form with the title “Assurance Past Potluck 39817,” yesterday’s date, and host name “Assurance Host.”",
+        "The event was not created because the date was in the past; the page displayed “Date must be today or later.”",
+        "All entered values remained in the form so they can be corrected and resubmitted."
       ],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_c3488041d7984fd08e29166391201947",
-      "generative_id": "c3488041d7984fd08e29166391201947",
+      "instruction_id": "generative_block_818b3c7dc1614a7ba05555121acde617",
+      "generative_id": "818b3c7dc1614a7ba05555121acde617",
       "objective": "On the Potluck Planner home page, inspect the created-events listing after the rejected submission, then assert no event with title 'Assurance Past Potluck 39817' was created.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "29917c48-ad2c-4b14-956b-4b150b90e01c",
+          "instruction_id": "4594dc51-2bd8-4925-8340-40ce00ca05e0",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for completion after reviewing the Events listing",
+          "instruction": "Waiting while inspecting the Events listing below the Create event form",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -3512,12 +3688,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "54a58bde-0e09-4b2a-8308-4b71789efada",
-              "instruction_id": "29917c48-ad2c-4b14-956b-4b150b90e01c",
-              "instruction": "Waiting for completion after reviewing the Events listing",
-              "intent": "Waiting for completion after reviewing the Events listing",
-              "operation_start": "2026-10-24T20:23:51.737713+00:00",
-              "operation_end": "2026-10-24T20:23:52.740Z",
+              "operation_id": "67542019-7054-4d82-ae24-5a82c1589582",
+              "instruction_id": "4594dc51-2bd8-4925-8340-40ce00ca05e0",
+              "instruction": "Waiting while inspecting the Events listing below the Create event form",
+              "intent": "Waiting while inspecting the Events listing below the Create event form",
+              "operation_start": "2026-10-24T21:47:20.939493+00:00",
+              "operation_end": "2026-10-24T21:47:21.947Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -3531,7 +3707,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for completion after reviewing the Events listing\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: inspect completion after reviewing the Events listing; role=text | HINTS: container=Potluck Planner home page\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting while inspecting the Events listing below the Create event form\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: inspect the Events listing; role=list; text=\\\"Dish empty name test, Dish full roster test, Dish available test\\\" | HINTS: container=below the Create event form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3542,7 +3718,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/54a58bde-0e09-4b2a-8308-4b71789efada.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/67542019-7054-4d82-ae24-5a82c1589582.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3636,12 +3812,12 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": null,
-              "reasoning": "PRIMARY: inspect completion after reviewing the Events listing; role=text | HINTS: container=Potluck Planner home page"
+              "reasoning": "PRIMARY: inspect the Events listing; role=list; text=\"Dish empty name test, Dish full roster test, Dish available test\" | HINTS: container=below the Create event form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:23:51.737713+00:00",
-          "end_timestamp": "2026-10-24T20:23:52.740Z",
+          "start_timestamp": "2026-10-24T21:47:20.939493+00:00",
+          "end_timestamp": "2026-10-24T21:47:21.947Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -3667,7 +3843,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "c3488041d7984fd08e29166391201947",
+          "generative_id": "818b3c7dc1614a7ba05555121acde617",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, inspect the created-events listing after the rejected submission, then assert no event with title 'Assurance Past Potluck 39817' was created.",
           "error_message": "",
@@ -3675,10 +3851,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: inspect completion after reviewing the Events listing; role=text | HINTS: container=Potluck Planner home page"
+          "reasoning": "PRIMARY: inspect the Events listing; role=list; text=\"Dish empty name test, Dish full roster test, Dish available test\" | HINTS: container=below the Create event form"
         },
         {
-          "instruction_id": "a0945de8-69bb-4354-87db-5e97c4f51e7b",
+          "instruction_id": "63946cbe-0bff-4998-b491-6c195995e47b",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the specified event is present",
@@ -3689,11 +3865,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "c0c58a56-c334-4578-8139-403027d806b8",
-              "instruction_id": "a0945de8-69bb-4354-87db-5e97c4f51e7b",
+              "operation_id": "f19c5bc5-14d8-4f05-8de4-28176ef664e0",
+              "instruction_id": "63946cbe-0bff-4998-b491-6c195995e47b",
               "instruction": "Checking whether the specified event is present",
               "intent": "Checking whether the specified event is present",
-              "operation_start": "2026-10-24T20:24:02.823382+00:00",
+              "operation_start": "2026-10-24T21:47:34.211374+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -3708,7 +3884,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the specified event is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether event with title 'Assurance Past Potluck 39817' is present (in the Events list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"!![...el(23).querySelectorAll('a')].find(a => a.textContent.trim() === 'Assurance Past Potluck 39817')\",\"wrapped_js\":\"(els) => {\\n  const __m = {23: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (!![...el(23).querySelectorAll('a')].find(a => a.textContent.trim() === 'Assurance Past Potluck 39817'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"RSVP replacement test 2026-10-24Assurance Future Potluck 39817 2026-10-25Dish\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether event with title 'Assurance Past Potluck 39817' is present (in the Events list)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"no event with title 'Assurance Past Potluck 39817' was created\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the specified event is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether event with title 'Assurance Past Potluck 39817' is present (in the visible Events list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(23).querySelectorAll('a')).some(a => a.textContent.trim() === 'Assurance Past Potluck 39817')\",\"wrapped_js\":\"(els) => {\\n  const __m = {23: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(23).querySelectorAll('a')).some(a => a.textContent.trim() === 'Assurance Past Potluck 39817'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Dish empty name test 2026-10-24Dish full roster test 2026-10-24Dish available\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether event with title 'Assurance Past Potluck 39817' is present (in the visible Events list)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"No event with title 'Assurance Past Potluck 39817' was created.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3719,7 +3895,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c0c58a56-c334-4578-8139-403027d806b8.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/f19c5bc5-14d8-4f05-8de4-28176ef664e0.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3815,11 +3991,11 @@
                 "assurance_past_potluck_39817_event_absent": "false"
               },
               "visual_context": null,
-              "reasoning": "whether event with title 'Assurance Past Potluck 39817' is present (in the Events list)"
+              "reasoning": "whether event with title 'Assurance Past Potluck 39817' is present (in the visible Events list)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:24:02.823382+00:00",
+          "start_timestamp": "2026-10-24T21:47:34.211374+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3846,7 +4022,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "c3488041d7984fd08e29166391201947",
+          "generative_id": "818b3c7dc1614a7ba05555121acde617",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, inspect the created-events listing after the rejected submission, then assert no event with title 'Assurance Past Potluck 39817' was created.",
           "error_message": "",
@@ -3854,10 +4030,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether event with title 'Assurance Past Potluck 39817' is present (in the Events list)"
+          "reasoning": "whether event with title 'Assurance Past Potluck 39817' is present (in the visible Events list)"
         },
         {
-          "instruction_id": "0ed0654f-33b7-4a8c-a600-bbca1672c45a",
+          "instruction_id": "fc546e92-46cf-4fbb-b417-3d46fb05d179",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -3873,7 +4049,7 @@
                 "assertion_tree": {
                   "sub_results": [
                     {
-                      "description": "no event with title 'Assurance Past Potluck 39817' was created",
+                      "description": "No event with title 'Assurance Past Potluck 39817' was created.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3888,7 +4064,7 @@
                   ],
                   "sub_checks": [
                     {
-                      "description": "no event with title 'Assurance Past Potluck 39817' was created",
+                      "description": "No event with title 'Assurance Past Potluck 39817' was created.",
                       "store_key": "assurance_past_potluck_39817_event_absent",
                       "expected_value": "false",
                       "extracted_value": "{{assurance_past_potluck_39817_event_absent}}",
@@ -3898,7 +4074,7 @@
                   ],
                   "composite_operator": "and",
                   "verification": "",
-                  "claim": "no event with title 'Assurance Past Potluck 39817' was created",
+                  "claim": "No event with title 'Assurance Past Potluck 39817' was created.",
                   "operator": [],
                   "assertion_operands": [],
                   "left_operand": null,
@@ -3914,11 +4090,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "6ae582a8-b716-4a48-bf1f-f81ee6704d76",
-              "instruction_id": "0ed0654f-33b7-4a8c-a600-bbca1672c45a",
+              "operation_id": "9c3a8252-af51-4a13-b225-c04bdf462ea9",
+              "instruction_id": "fc546e92-46cf-4fbb-b417-3d46fb05d179",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T20:24:03.444040+00:00",
+              "operation_start": "2026-10-24T21:47:34.802298+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -3944,7 +4120,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6ae582a8-b716-4a48-bf1f-f81ee6704d76.webp",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/9c3a8252-af51-4a13-b225-c04bdf462ea9.png",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4010,7 +4186,7 @@
                 "operands": [],
                 "sub_results": [
                   {
-                    "description": "no event with title 'Assurance Past Potluck 39817' was created",
+                    "description": "No event with title 'Assurance Past Potluck 39817' was created.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4025,7 +4201,7 @@
                 ],
                 "sub_checks": [
                   {
-                    "description": "no event with title 'Assurance Past Potluck 39817' was created",
+                    "description": "No event with title 'Assurance Past Potluck 39817' was created.",
                     "store_key": "assurance_past_potluck_39817_event_absent",
                     "expected_value": "false",
                     "extracted_value": "{{assurance_past_potluck_39817_event_absent}}",
@@ -4034,16 +4210,16 @@
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "Whether the created-events listing contains an event with title 'Assurance Past Potluck 39817'",
-                "claim": "no event with title 'Assurance Past Potluck 39817' was created"
+                "verification": "The created-events listing does not show an event with title 'Assurance Past Potluck 39817'.",
+                "claim": "No event with title 'Assurance Past Potluck 39817' was created."
               },
               "assertion_tree": {
                 "assertion_id": "assert_cp_1",
                 "status": "passed",
-                "description": "no event with title 'Assurance Past Potluck 39817' was created",
+                "description": "No event with title 'Assurance Past Potluck 39817' was created.",
                 "sub_results": [
                   {
-                    "description": "no event with title 'Assurance Past Potluck 39817' was created",
+                    "description": "No event with title 'Assurance Past Potluck 39817' was created.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4060,7 +4236,7 @@
                 "passed": true,
                 "step": 3,
                 "is_final": true,
-                "verification": "Whether the created-events listing contains an event with title 'Assurance Past Potluck 39817'",
+                "verification": "The created-events listing does not show an event with title 'Assurance Past Potluck 39817'.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -4102,7 +4278,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T20:24:03.444040+00:00",
+          "start_timestamp": "2026-10-24T21:47:34.802298+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -4129,7 +4305,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "c3488041d7984fd08e29166391201947",
+          "generative_id": "818b3c7dc1614a7ba05555121acde617",
           "plan_id": "",
           "generative_objective": "On the Potluck Planner home page, inspect the created-events listing after the rejected submission, then assert no event with title 'Assurance Past Potluck 39817' was created.",
           "error_message": "",
@@ -4145,8 +4321,9 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Inspected the created-events list on the Potluck Planner home page after the submission was rejected.",
-        "Confirmed that no event titled “Assurance Past Potluck 39817” appears in the list, so it was not created."
+        "Inspected the created-events list on the Potluck Planner home page after the event submission was rejected.",
+        "Confirmed that no event titled “Assurance Past Potluck 39817” appears in the visible events list.",
+        "The rejected submission did not create the event."
       ],
       "one_liner": null
     }
@@ -4154,13 +4331,13 @@
   "modules": [],
   "uploaded_files": [],
   "test_params": [],
-  "test_level_variables": "[{\"name\":\"event_title_field_visible\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_field_visible\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"host_name_field_visible\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_error_message\",\"value\":\"Date must be today or later\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_title_field_value\",\"value\":\"Assurance Past Potluck 39817\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_date_field_value\",\"value\":\"2026-10-23\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"event_host_name_field_value\",\"value\":\"Assurance Host\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"assurance_past_potluck_39817_event_absent\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
+  "test_level_variables": "[{\"name\":\"event_title_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"host_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_error_message\",\"value\":\"Date must be today or later\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"title_field_value\",\"value\":\"Assurance Past Potluck 39817\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"date_field_value\",\"value\":\"2026-10-23\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"host_name_field_value\",\"value\":\"Assurance Host\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"assurance_past_potluck_39817_event_absent\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
   "test_global_variables": [
     {
       "id": 464833,
       "name": "start_url",
-      "value": "http://localhost:4100",
-      "session_value": "http://localhost:4100",
+      "value": "http://localhost:4102",
+      "session_value": "http://localhost:4102",
       "is_persist": false,
       "environment_id": 0,
       "environment_name": "No Env"

@@ -1,5 +1,5 @@
 {
-  "commit_id": "75c45584-8308-4f1c-ada6-b23692a48189",
+  "commit_id": "f6de38a0-c254-42ca-bb75-9d38529b724f",
   "test_id": "a724e7e2-3003-415e-94a6-76f7100cdc66",
   "testcase_id": "01M5QS913RDHZHRBVWPS0JSH1K",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,12 +8,19 @@
   "session_name": "today-s-date-is-accepted-for-a-created-event",
   "executions": [
     {
-      "execution_id": "7b50021f-1b42-4525-96fb-07012d216751",
+      "execution_id": "663c0f2c-4969-44d3-b729-75ebf93e6617",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
-      "uploaded": true,
-      "at": "2026-10-24T21:07:45.020Z"
+      "uploaded": false,
+      "at": "2026-10-24T21:49:31.222Z"
+    },
+    {
+      "execution_id": "99229a11-c285-4335-bf13-90fbe75e71a5",
+      "run_kind": "replay",
+      "status": "passed",
+      "at": "2026-10-24T21:51:37.340Z",
+      "uploaded": true
     }
   ]
 }
