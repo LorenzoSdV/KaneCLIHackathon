@@ -8,19 +8,12 @@
   "session_name": "stale-dish-claim-leaves-the-original-claimant-intact",
   "executions": [
     {
-      "execution_id": "663c0f2c-4969-44d3-b729-75ebf93e6617",
+      "execution_id": "f986c61e-92d8-4022-becc-cb6b85688fd2",
       "run_kind": "author",
       "status": "failed",
       "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T21:49:31.221Z"
-    },
-    {
-      "execution_id": "99229a11-c285-4335-bf13-90fbe75e71a5",
-      "run_kind": "replay",
-      "status": "broken",
-      "at": "2026-10-24T21:51:37.340Z",
-      "uploaded": true
+      "uploaded": true,
+      "at": "2026-10-24T21:55:43.252Z"
     }
   ]
 }
