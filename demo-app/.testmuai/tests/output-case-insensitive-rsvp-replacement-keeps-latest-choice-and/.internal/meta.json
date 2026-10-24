@@ -1,25 +1,27 @@
 {
+  "commit_id": "2b2ce635-3797-468d-aaa9-c03669c9ec87",
   "test_id": "e1a94f1b-d48b-4fac-b00e-e8442c34edf4",
+  "testcase_id": "01M5QS0HGPQA0EPNX6QSP0VGGM",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
   "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
   "org_id": "3398072",
   "session_name": "case-insensitive-rsvp-replacement-keeps-latest-choice-and",
-  "commit_id": "c94a2581-fb8d-46bc-8c00-4491412bf508",
-  "testcase_id": "01M5QS0HGPQA0EPNX6QSP0VGGM",
   "executions": [
     {
-      "execution_id": "82c7f393-52c5-45ab-9e97-b9e984dd0a8b",
+      "execution_id": "e8dda90a-62c2-46ee-822c-257567637168",
       "run_kind": "author",
-      "status": "broken",
+      "status": "passed",
       "valid": true,
-      "at": "2026-10-24T20:19:24.341Z"
+      "uploaded": true,
+      "at": "2026-10-24T21:25:07.650Z"
     },
     {
-      "execution_id": "97963b94-1db6-40d9-87aa-c4227ef61905",
-      "run_kind": "author",
-      "status": "broken",
-      "at": "2026-10-24T20:24:54.705Z",
-      "uploaded": true
+      "execution_id": "04aa6500-7264-46be-b39c-cd6a47402062",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-10-24T21:26:46.273Z"
     }
   ]
 }

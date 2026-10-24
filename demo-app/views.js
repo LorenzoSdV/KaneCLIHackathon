@@ -6,13 +6,13 @@ export function escape(value) {
     .replaceAll('"', "&quot;");
 }
 
-export function layout(title, body) {
+export function layout(title, body, documentTitle = `${title} · Potluck Planner`) {
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escape(title)} · Potluck Planner</title>
+  <title>${escape(documentTitle)}</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -60,14 +60,33 @@ export function homePage({ events, errors = {}, values = {} }) {
   );
 }
 
-export function eventPage({ event }) {
+export function eventPage({ event, errors = {}, values = {} }) {
+  const choices = ["Yes", "No", "Maybe"];
+  const counts = choices.map((choice) => `${choice}: ${event.guests.filter((guest) => guest.choice === choice).length}`).join(" · ");
   return layout(
     event.title,
-    `<section class="card">
+    `<nav aria-label="Event navigation"><a href="/">Back home</a></nav>
+<section class="card">
   <h1>${escape(event.title)}</h1>
   <p class="date">${escape(event.date)}</p>
   <p class="host">Hosted by ${escape(event.host)}</p>
-</section>`
+</section>
+<section class="card" aria-labelledby="rsvp-heading">
+  <h2 id="rsvp-heading">RSVP</h2>
+  ${Object.keys(errors).length ? `<div class="error" role="alert">${Object.values(errors).map((message) => `<p>${escape(message)}</p>`).join("")}</div>` : ""}
+  <form method="post" action="/events/${event.id}/rsvp">
+    ${field("Guest name", "name", "text", values, errors, Boolean(errors.name))}
+    <fieldset>
+      <legend>RSVP choice</legend>
+      ${choices.map((choice) => `<label class="rsvp-choice"><input type="radio" name="choice" value="${choice}"${values.choice === choice ? " checked" : ""}> ${choice}</label>`).join("")}
+    </fieldset>
+    <button type="submit">Submit RSVP</button>
+  </form>
+  <p>${counts}</p>
+  <h3>Guest list</h3>
+  ${event.guests.length ? `<ul class="guests">${event.guests.map((guest) => `<li>${escape(guest.name)} — ${escape(guest.choice)}</li>`).join("")}</ul>` : `<p class="muted">No RSVPs yet.</p>`}
+</section>`,
+    event.title
   );
 }
 
