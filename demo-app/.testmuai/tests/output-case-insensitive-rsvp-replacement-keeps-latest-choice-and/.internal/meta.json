@@ -1,5 +1,5 @@
 {
-  "commit_id": "2b2ce635-3797-468d-aaa9-c03669c9ec87",
+  "commit_id": "b07cb0cf-5ee9-4eb1-8442-8df029d568f6",
   "test_id": "e1a94f1b-d48b-4fac-b00e-e8442c34edf4",
   "testcase_id": "01M5QS0HGPQA0EPNX6QSP0VGGM",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,20 +8,12 @@
   "session_name": "case-insensitive-rsvp-replacement-keeps-latest-choice-and",
   "executions": [
     {
-      "execution_id": "e8dda90a-62c2-46ee-822c-257567637168",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T21:25:07.650Z"
-    },
-    {
-      "execution_id": "04aa6500-7264-46be-b39c-cd6a47402062",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": true,
-      "at": "2026-10-24T21:26:46.273Z"
+      "at": "2026-10-24T22:52:09.332Z"
     }
   ]
 }

@@ -1,63 +1,19 @@
 {
+  "commit_id": "0d28855a-9f7f-4987-b6f7-3d6fee8b345e",
   "test_id": "cb1629dc-3d40-4f0e-a9be-c115945d051d",
+  "testcase_id": "01M5QS8VK5KGWGASBBA7KT9R68",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
   "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
   "org_id": "3398072",
   "session_name": "past-event-date-is-rejected-without-losing-entered-values",
-  "commit_id": "0d28855a-9f7f-4987-b6f7-3d6fee8b345e",
-  "testcase_id": "01M5QS8VK5KGWGASBBA7KT9R68",
   "executions": [
     {
-      "execution_id": "27871b46-a253-4ca7-94fc-bd123b8f120c",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
-      "status": "passed",
-      "valid": true,
-      "at": "2026-10-24T20:24:06.180Z"
-    },
-    {
-      "execution_id": "97963b94-1db6-40d9-87aa-c4227ef61905",
-      "run_kind": "author",
-      "status": "passed",
-      "at": "2026-10-24T20:24:54.719Z",
-      "uploaded": true
-    },
-    {
-      "execution_id": "b24f3039-88d2-4f6f-ab4a-dccda1a8fe20",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T20:42:07.777Z"
-    },
-    {
-      "execution_id": "8908a085-ccc9-490a-9a1e-93d17db25c56",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T20:43:46.471Z",
-      "uploaded": true
-    },
-    {
-      "execution_id": "7b50021f-1b42-4525-96fb-07012d216751",
-      "run_kind": "replay",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T21:07:45.019Z"
-    },
-    {
-      "execution_id": "26210384-3e95-4b41-8f01-d52fe2757923",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T22:12:58.253Z"
-    },
-    {
-      "execution_id": "c8c5a872-6b86-4257-8b97-cc6069a9b313",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T22:16:27.217Z",
-      "uploaded": true
+      "at": "2026-10-24T22:52:09.344Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "commit_id": "e580de3f-aadb-49ea-9b1d-fd8c8075ad62",
+  "commit_id": "23ef57f1-5d62-402f-81c6-a1501bf821cf",
   "test_id": "c4f9ae7a-ee1e-4452-b1c1-28193c5ba04f",
   "testcase_id": "01M5QS5R127AYRTYCG813VNS8E",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,36 +8,12 @@
   "session_name": "missing-rsvp-choice-reports-error-without-changing-the-event",
   "executions": [
     {
-      "execution_id": "0ec6bd8f-2668-44a4-9ccb-a4d5eb50c836",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T21:16:47.816Z"
-    },
-    {
-      "execution_id": "e407abe8-cd3e-46f4-bd8e-85a5c17d1097",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": true,
-      "at": "2026-10-24T21:22:31.304Z"
-    },
-    {
-      "execution_id": "e8dda90a-62c2-46ee-822c-257567637168",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": true,
-      "at": "2026-10-24T21:25:07.659Z"
-    },
-    {
-      "execution_id": "04aa6500-7264-46be-b39c-cd6a47402062",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": true,
-      "at": "2026-10-24T21:26:46.279Z"
+      "at": "2026-10-24T22:52:09.341Z"
     }
   ]
 }

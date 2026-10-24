@@ -1,25 +1,19 @@
 {
+  "commit_id": "427f71ac-e4ca-4428-8526-dfd4f475972d",
   "test_id": "104540ab-4997-4eea-87b0-4746daaeb222",
+  "testcase_id": "01M5QZJV64SS1T2SQXVH24TSEF",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
   "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
   "org_id": "3398072",
   "session_name": "stale-dish-claim-leaves-the-original-claimant-intact-2",
-  "commit_id": "427f71ac-e4ca-4428-8526-dfd4f475972d",
-  "testcase_id": "01M5QZJV64SS1T2SQXVH24TSEF",
   "executions": [
     {
-      "execution_id": "350cee5f-7d39-42f0-b963-f5cb77d0b921",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
-      "at": "2026-10-24T22:16:14.380Z"
-    },
-    {
-      "execution_id": "c8c5a872-6b86-4257-8b97-cc6069a9b313",
-      "run_kind": "author",
-      "status": "passed",
-      "at": "2026-10-24T22:16:27.219Z",
-      "uploaded": true
+      "uploaded": true,
+      "at": "2026-10-24T22:52:09.345Z"
     }
   ]
 }
