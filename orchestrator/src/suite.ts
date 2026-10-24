@@ -1,6 +1,8 @@
 // Runs Kane contract tests against a copy of the app.
-//   node orchestrator/src/suite.ts [uc-1 uc-2 ...] [--headless] [--parallel N] [--port N] [--repo DIR]
+//   node orchestrator/src/suite.ts [uc-1 uc-2 ...] [--headless] [--parallel N] [--port N] [--repo DIR] [--app DIR]
 // With no use cases, runs every contract. Prints one line per test and a rollup.
+// --repo is where the tests come from; --app is the copy of the app they run against (default: --repo),
+// e.g. --app wt/feat-b checks a feature branch's code against main's latest contract.
 import { join, resolve } from "node:path";
 import { parseArgs } from "node:util";
 import { startApp } from "./app.ts";
@@ -14,16 +16,18 @@ const { values, positionals } = parseArgs({
     parallel: { type: "string", default: "4" },
     port: { type: "string", default: "4100" },
     repo: { type: "string", default: ROOT },
+    app: { type: "string" },
   },
 });
 
 const repo = resolve(values.repo);
+const appRepo = resolve(values.app ?? values.repo);
 const contracts = loadContracts(repo);
 const useCases = positionals.length ? positionals : Object.keys(contracts);
 const ownerOf = new Map<string, string>();
 for (const uc of useCases) for (const f of contracts[uc] ?? []) ownerOf.set(f.replace(`${APP_DIR}/`, ""), uc);
 
-const app = await startApp(repo, Number(values.port));
+const app = await startApp(appRepo, Number(values.port));
 setStartUrl(repo, app.url);
 
 try {
