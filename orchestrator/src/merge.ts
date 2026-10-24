@@ -2,13 +2,14 @@
 // then runs the FULL contract (all use cases) and loops a Codex fixer until it passes.
 // main is never touched: the last line prints the command to merge integration into main yourself.
 //   node orchestrator/src/merge.ts [--attempts N] [--parallel N] [--watch]
+import { existsSync, readFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { parseArgs } from "node:util";
 import { startApp } from "./app.ts";
 import { runCodex } from "./codex.ts";
 import { APP_DIR, CORE_USE_CASE, FEATURES, INTEGRATION, loadContracts, setStartUrl } from "./features.ts";
 import { commitWork, restoreProtected } from "./gate.ts";
-import { logEvent, runSuite, type MemberResult } from "./kane.ts";
+import { EVENTS_LOG, logEvent, runSuite, type MemberResult } from "./kane.ts";
 import { integrationPrompt, retryPrompt } from "./prompts.ts";
 import { ensureWorktree, git, removeWorktree } from "./worktrees.ts";
 
@@ -22,6 +23,27 @@ const { values } = parseArgs({
 
 const tag = INTEGRATION.id;
 const RECORDINGS = `${APP_DIR}/.testmuai/tests/output-`;
+
+// A feature may only be merged if its latest contract result passed: the end of its gate, or a later
+// Kane-only re-check (npm run suite -- --app wt/<feature>) after its contract was fixed.
+function latestContractResult(featureId: string): string {
+  if (!existsSync(EVENTS_LOG)) return "never run";
+  let latest = "never run";
+  for (const line of readFileSync(EVENTS_LOG, "utf8").split("\n")) {
+    if (!line.includes(`"tag":"${featureId}"`)) continue;
+    const e = JSON.parse(line);
+    if (e.type === "gate_end" || e.type === "contract_recheck_end") latest = e.status;
+  }
+  return latest;
+}
+
+const unpassed = FEATURES.map((f) => ({ id: f.id, result: latestContractResult(f.id) })).filter((r) => r.result !== "passed");
+if (unpassed.length) {
+  logEvent(tag, { source: "merge", type: "merge_refused", features: unpassed });
+  for (const r of unpassed) console.log(`⛔ ${r.id}: latest contract result is "${r.result}", not merging.`);
+  console.log(`Fix it with npm run build -- ${unpassed[0].id}, or re-check with npm run suite -- --app wt/${unpassed[0].id}.`);
+  process.exit(1);
+}
 
 // Fresh integration branch from main on every run.
 removeWorktree(INTEGRATION.id, { deleteBranch: true, branch: INTEGRATION.branch });
