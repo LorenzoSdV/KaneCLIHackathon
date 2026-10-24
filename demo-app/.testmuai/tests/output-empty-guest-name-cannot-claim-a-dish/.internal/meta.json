@@ -1,5 +1,5 @@
 {
-  "commit_id": "9aa6f825-34fd-430c-8dea-d7cc4034530c",
+  "commit_id": "721a02cc-c704-4f10-844d-75f7e17d22d0",
   "test_id": "a2ee9eec-3024-44cd-a0b8-053fb21d29e8",
   "testcase_id": "01M5QS33HJPJNGWRSVH4S12SCR",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,19 +8,12 @@
   "session_name": "empty-guest-name-cannot-claim-a-dish",
   "executions": [
     {
-      "execution_id": "26210384-3e95-4b41-8f01-d52fe2757923",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T22:12:58.251Z"
-    },
-    {
-      "execution_id": "c8c5a872-6b86-4257-8b97-cc6069a9b313",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T22:16:27.213Z",
-      "uploaded": true
+      "uploaded": true,
+      "at": "2026-10-24T22:52:09.336Z"
     }
   ]
 }

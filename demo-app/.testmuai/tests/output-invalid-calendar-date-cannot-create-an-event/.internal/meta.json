@@ -1,63 +1,19 @@
 {
+  "commit_id": "d9753afc-6a54-49a7-a4cf-7182f3ec28f2",
   "test_id": "c9cf1eba-fcb8-40de-b09e-c138e5f876ba",
+  "testcase_id": "01M5QS542ZM858N8P7K0VKVTKR",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
   "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
   "org_id": "3398072",
   "session_name": "invalid-calendar-date-cannot-create-an-event",
-  "commit_id": "d9753afc-6a54-49a7-a4cf-7182f3ec28f2",
-  "testcase_id": "01M5QS542ZM858N8P7K0VKVTKR",
   "executions": [
     {
-      "execution_id": "0d8f8354-acf6-4019-b8c2-3a8204dc1c25",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
-      "status": "passed",
-      "valid": true,
-      "at": "2026-10-24T20:22:34.057Z"
-    },
-    {
-      "execution_id": "97963b94-1db6-40d9-87aa-c4227ef61905",
-      "run_kind": "author",
-      "status": "passed",
-      "at": "2026-10-24T20:24:54.715Z",
-      "uploaded": true
-    },
-    {
-      "execution_id": "b24f3039-88d2-4f6f-ab4a-dccda1a8fe20",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T20:42:07.776Z"
-    },
-    {
-      "execution_id": "8908a085-ccc9-490a-9a1e-93d17db25c56",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T20:43:46.470Z",
-      "uploaded": true
-    },
-    {
-      "execution_id": "7b50021f-1b42-4525-96fb-07012d216751",
-      "run_kind": "replay",
       "status": "passed",
       "valid": true,
       "uploaded": true,
-      "at": "2026-10-24T21:07:45.018Z"
-    },
-    {
-      "execution_id": "26210384-3e95-4b41-8f01-d52fe2757923",
-      "run_kind": "replay",
-      "status": "passed",
-      "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T22:12:58.252Z"
-    },
-    {
-      "execution_id": "c8c5a872-6b86-4257-8b97-cc6069a9b313",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T22:16:27.216Z",
-      "uploaded": true
+      "at": "2026-10-24T22:52:09.340Z"
     }
   ]
 }

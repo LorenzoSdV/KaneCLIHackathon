@@ -2,24 +2,24 @@
   "test_id": "8d84ecac-cb78-4a5b-aa6d-01da362329c9",
   "version": "v4",
   "auto_heal_version": "AH2",
-  "session_id": "291f6375-c31b-4d48-8690-653f010fc931",
+  "session_id": "1d36dd9c-918b-4c18-8bb6-be2bf5adbd7d",
   "org_id": "3398072",
   "user_id": "3574171",
   "url": "",
-  "start_timestamp": "2026-10-24T22:09:05.505Z",
-  "end_timestamp": "2026-10-24T22:10:36.197Z",
+  "start_timestamp": "2026-10-24T22:45:23.543Z",
+  "end_timestamp": "2026-10-24T22:46:44.792Z",
   "status": "success",
-  "commit_id": "291f6375-c31b-4d48-8690-653f010fc931",
+  "commit_id": "1d36dd9c-918b-4c18-8bb6-be2bf5adbd7d",
   "instructions": [
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_70c114516e094ac8b8656b6c3a478944",
-      "generative_id": "70c114516e094ac8b8656b6c3a478944",
+      "instruction_id": "generative_block_d3f68c235eda4e75b8fc9bb3fde2013b",
+      "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
       "objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "99880915-d8d5-4d3e-90ce-30e82396afbb",
+          "instruction_id": "17914df2-0929-4c51-9925-b2b8df2a3bb3",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Navigate to {{global.start_url}}",
@@ -30,12 +30,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "ebd03a0e-690f-4c65-bb03-077815609284",
-              "instruction_id": "99880915-d8d5-4d3e-90ce-30e82396afbb",
+              "operation_id": "1ac800df-459b-46a7-ad2f-ba6c992e1114",
+              "instruction_id": "17914df2-0929-4c51-9925-b2b8df2a3bb3",
               "instruction": "Navigate to {{global.start_url}}",
               "intent": "Navigate to {{global.start_url}}",
-              "operation_start": "2026-10-24T22:09:11.816395+00:00",
-              "operation_end": "2026-10-24T22:09:11.853Z",
+              "operation_start": "2026-10-24T22:45:29.442365+00:00",
+              "operation_end": "2026-10-24T22:45:29.478Z",
               "status": "success",
               "command": "OPEN",
               "name": "",
@@ -60,7 +60,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ebd03a0e-690f-4c65-bb03-077815609284.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1ac800df-459b-46a7-ad2f-ba6c992e1114.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -158,8 +158,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:11.816395+00:00",
-          "end_timestamp": "2026-10-24T22:09:11.853Z",
+          "start_timestamp": "2026-10-24T22:45:29.442365+00:00",
+          "end_timestamp": "2026-10-24T22:45:29.478Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -185,7 +185,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -196,10 +196,10 @@
           "reasoning": "Navigate to {{global.start_url}}"
         },
         {
-          "instruction_id": "a97b8932-87bd-493c-9fb4-71d2f177b220",
+          "instruction_id": "567bb62e-4488-452a-ae88-38662c6cee45",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for queued event details to be entered",
+          "instruction": "Waiting while setting up the queued event details",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -207,12 +207,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "7add6ade-8eaf-4526-9819-9b7a53c514eb",
-              "instruction_id": "a97b8932-87bd-493c-9fb4-71d2f177b220",
-              "instruction": "Waiting for queued event details to be entered",
-              "intent": "Waiting for queued event details to be entered",
-              "operation_start": "2026-10-24T22:09:22.904172+00:00",
-              "operation_end": "2026-10-24T22:09:23.908Z",
+              "operation_id": "e52860e5-0722-40b1-ae6d-92b0d200c89d",
+              "instruction_id": "567bb62e-4488-452a-ae88-38662c6cee45",
+              "instruction": "Waiting while setting up the queued event details",
+              "intent": "Waiting while setting up the queued event details",
+              "operation_start": "2026-10-24T22:45:39.572686+00:00",
+              "operation_end": "2026-10-24T22:45:40.580Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -226,7 +226,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for queued event details to be entered\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (4 steps): type \\\"Event title\\\"; type \\\"Date\\\"; type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting while setting up the queued event details\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (4 steps): type \\\"Event title\\\"; type \\\"Date\\\"; type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -237,7 +237,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7add6ade-8eaf-4526-9819-9b7a53c514eb.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e52860e5-0722-40b1-ae6d-92b0d200c89d.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -335,8 +335,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:22.904172+00:00",
-          "end_timestamp": "2026-10-24T22:09:23.908Z",
+          "start_timestamp": "2026-10-24T22:45:39.572686+00:00",
+          "end_timestamp": "2026-10-24T22:45:40.580Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -362,7 +362,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -373,7 +373,7 @@
           "reasoning": "queued plan (4 steps): type \"Event title\"; type \"Date\"; type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "14c9bab8-0959-44d0-8836-0457f9ba010d",
+          "instruction_id": "5b741d8c-c335-4d14-b432-b6dc28f1fe9c",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Dish available test\" into \"Event title\"",
@@ -384,12 +384,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "4355173c-ab6d-4bb4-b8cd-6e59770a0bd4",
-              "instruction_id": "14c9bab8-0959-44d0-8836-0457f9ba010d",
+              "operation_id": "c130b7a1-df56-4ba2-868b-32c5b0f403f2",
+              "instruction_id": "5b741d8c-c335-4d14-b432-b6dc28f1fe9c",
               "instruction": "Type \"Dish available test\" into \"Event title\"",
               "intent": "Type \"Dish available test\" into \"Event title\"",
-              "operation_start": "2026-10-24T22:09:23.881129+00:00",
-              "operation_end": "2026-10-24T22:09:23.923Z",
+              "operation_start": "2026-10-24T22:45:40.309830+00:00",
+              "operation_end": "2026-10-24T22:45:40.343Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -414,7 +414,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4355173c-ab6d-4bb4-b8cd-6e59770a0bd4.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c130b7a1-df56-4ba2-868b-32c5b0f403f2.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -528,7 +528,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4355173c-ab6d-4bb4-b8cd-6e59770a0bd4.png",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c130b7a1-df56-4ba2-868b-32c5b0f403f2.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -537,8 +537,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:23.881129+00:00",
-          "end_timestamp": "2026-10-24T22:09:23.923Z",
+          "start_timestamp": "2026-10-24T22:45:40.309830+00:00",
+          "end_timestamp": "2026-10-24T22:45:40.343Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -564,7 +564,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -575,7 +575,7 @@
           "reasoning": "PRIMARY: event title input; role=textbox; text=\"Event title\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "441ba3f1-11ef-4f74-865d-6ccc330a0d6e",
+          "instruction_id": "76ccee28-d9e3-4f1f-8ac9-95866979beb7",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"2026-10-24\" into \"Date\"",
@@ -586,12 +586,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "8f5ce24d-9c91-446c-80e2-cb6e00c12304",
-              "instruction_id": "441ba3f1-11ef-4f74-865d-6ccc330a0d6e",
+              "operation_id": "263cce8f-a1ce-4299-a491-c1983d5d4671",
+              "instruction_id": "76ccee28-d9e3-4f1f-8ac9-95866979beb7",
               "instruction": "Type \"2026-10-24\" into \"Date\"",
               "intent": "Type \"2026-10-24\" into \"Date\"",
-              "operation_start": "2026-10-24T22:09:24.682278+00:00",
-              "operation_end": "2026-10-24T22:09:24.707Z",
+              "operation_start": "2026-10-24T22:45:41.056611+00:00",
+              "operation_end": "2026-10-24T22:45:41.087Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -616,7 +616,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8f5ce24d-9c91-446c-80e2-cb6e00c12304.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/263cce8f-a1ce-4299-a491-c1983d5d4671.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -730,7 +730,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/8f5ce24d-9c91-446c-80e2-cb6e00c12304.png",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/263cce8f-a1ce-4299-a491-c1983d5d4671.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -739,8 +739,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:24.682278+00:00",
-          "end_timestamp": "2026-10-24T22:09:24.707Z",
+          "start_timestamp": "2026-10-24T22:45:41.056611+00:00",
+          "end_timestamp": "2026-10-24T22:45:41.087Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -766,7 +766,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -777,10 +777,10 @@
           "reasoning": "PRIMARY: event date input; role=date; text=\"Date\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "6a55b1ab-fec4-431c-9043-5eded4f4f934",
+          "instruction_id": "2c0f0570-9b3b-4b23-bf1e-8dd0068a86f2",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for queued plan to start",
+          "instruction": "Waiting for queued plan steps to start",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -788,12 +788,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "c2371937-fe22-451c-a968-0aebb00206fa",
-              "instruction_id": "6a55b1ab-fec4-431c-9043-5eded4f4f934",
-              "instruction": "Waiting for queued plan to start",
-              "intent": "Waiting for queued plan to start",
-              "operation_start": "2026-10-24T22:09:30.403315+00:00",
-              "operation_end": "2026-10-24T22:09:31.411Z",
+              "operation_id": "3fa7606b-6204-4da7-8fc1-238f578495bc",
+              "instruction_id": "2c0f0570-9b3b-4b23-bf1e-8dd0068a86f2",
+              "instruction": "Waiting for queued plan steps to start",
+              "intent": "Waiting for queued plan steps to start",
+              "operation_start": "2026-10-24T22:45:46.365655+00:00",
+              "operation_end": "2026-10-24T22:45:47.368Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -807,7 +807,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for queued plan to start\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (2 steps): type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for queued plan steps to start\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (2 steps): type \\\"Host name\\\"; click \\\"Create event\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -818,7 +818,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c2371937-fe22-451c-a968-0aebb00206fa.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/3fa7606b-6204-4da7-8fc1-238f578495bc.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -916,8 +916,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:30.403315+00:00",
-          "end_timestamp": "2026-10-24T22:09:31.411Z",
+          "start_timestamp": "2026-10-24T22:45:46.365655+00:00",
+          "end_timestamp": "2026-10-24T22:45:47.368Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -943,7 +943,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -954,7 +954,7 @@
           "reasoning": "queued plan (2 steps): type \"Host name\"; click \"Create event\""
         },
         {
-          "instruction_id": "0db97346-1299-4b14-a2e8-410fd93d7784",
+          "instruction_id": "e131c412-37cc-45ba-a8bb-06c562f9d93a",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Test Host\" into \"Host name\"",
@@ -965,12 +965,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "6a852eeb-6ad1-4f1d-b9e2-866411c0a535",
-              "instruction_id": "0db97346-1299-4b14-a2e8-410fd93d7784",
+              "operation_id": "1a9f1cd3-02c5-4cd2-af75-65ecf4d54dcd",
+              "instruction_id": "e131c412-37cc-45ba-a8bb-06c562f9d93a",
               "instruction": "Type \"Test Host\" into \"Host name\"",
               "intent": "Type \"Test Host\" into \"Host name\"",
-              "operation_start": "2026-10-24T22:09:31.049670+00:00",
-              "operation_end": "2026-10-24T22:09:31.071Z",
+              "operation_start": "2026-10-24T22:45:47.047061+00:00",
+              "operation_end": "2026-10-24T22:45:47.076Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -995,7 +995,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6a852eeb-6ad1-4f1d-b9e2-866411c0a535.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1a9f1cd3-02c5-4cd2-af75-65ecf4d54dcd.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1109,7 +1109,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/6a852eeb-6ad1-4f1d-b9e2-866411c0a535.png",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/1a9f1cd3-02c5-4cd2-af75-65ecf4d54dcd.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -1118,8 +1118,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:31.049670+00:00",
-          "end_timestamp": "2026-10-24T22:09:31.071Z",
+          "start_timestamp": "2026-10-24T22:45:47.047061+00:00",
+          "end_timestamp": "2026-10-24T22:45:47.076Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1145,7 +1145,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -1156,10 +1156,10 @@
           "reasoning": "PRIMARY: host name input; role=textbox; text=\"Host name\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "248068bd-2f63-4748-8364-d4404d554941",
+          "instruction_id": "45bb57ae-0bcc-4d58-a058-ac9f34a9d08d",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Clicking Create event button",
+          "instruction": "Click \"Create event\"",
           "command": "CLICK",
           "error": null,
           "parent_instruction_id": "",
@@ -1167,12 +1167,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "c37f7e56-a206-4294-825c-30b2ce82e5e0",
-              "instruction_id": "248068bd-2f63-4748-8364-d4404d554941",
-              "instruction": "Clicking Create event button",
-              "intent": "Clicking Create event button",
-              "operation_start": "2026-10-24T22:09:36.790927+00:00",
-              "operation_end": "2026-10-24T22:09:36.826Z",
+              "operation_id": "cb9c87ef-6ee6-4eb6-a51f-8bae416ec9ab",
+              "instruction_id": "45bb57ae-0bcc-4d58-a058-ac9f34a9d08d",
+              "instruction": "Click \"Create event\"",
+              "intent": "Click \"Create event\"",
+              "operation_start": "2026-10-24T22:45:47.798066+00:00",
+              "operation_end": "2026-10-24T22:45:47.842Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -1186,7 +1186,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Clicking Create event button\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: create event button; role=button; text=\\\"Create event\\\" | HINTS: container=Create event form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Click \\\"Create event\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: create event button; role=button; text=\\\"Create event\\\" | HINTS: container=Create event form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1197,7 +1197,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c37f7e56-a206-4294-825c-30b2ce82e5e0.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/cb9c87ef-6ee6-4eb6-a51f-8bae416ec9ab.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1311,7 +1311,7 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c37f7e56-a206-4294-825c-30b2ce82e5e0.png",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/cb9c87ef-6ee6-4eb6-a51f-8bae416ec9ab.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
@@ -1320,8 +1320,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:36.790927+00:00",
-          "end_timestamp": "2026-10-24T22:09:36.826Z",
+          "start_timestamp": "2026-10-24T22:45:47.798066+00:00",
+          "end_timestamp": "2026-10-24T22:45:47.842Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1347,7 +1347,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -1358,10 +1358,10 @@
           "reasoning": "PRIMARY: create event button; role=button; text=\"Create event\" | HINTS: container=Create event form"
         },
         {
-          "instruction_id": "b240d304-c837-41da-b710-0a2182bc9a11",
+          "instruction_id": "8423d71b-816a-49d5-9a2b-1ca20ed2a09e",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting briefly on the event page with the Dishes section visible",
+          "instruction": "Waiting briefly after creating the event",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -1369,12 +1369,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "d2501ec0-478d-49f7-92df-ed50afec5751",
-              "instruction_id": "b240d304-c837-41da-b710-0a2182bc9a11",
-              "instruction": "Waiting briefly on the event page with the Dishes section visible",
-              "intent": "Waiting briefly on the event page with the Dishes section visible",
-              "operation_start": "2026-10-24T22:09:41.104649+00:00",
-              "operation_end": "2026-10-24T22:09:41.609Z",
+              "operation_id": "9049041e-ec78-4e0e-a225-bc56fde9f5a8",
+              "instruction_id": "8423d71b-816a-49d5-9a2b-1ca20ed2a09e",
+              "instruction": "Waiting briefly after creating the event",
+              "intent": "Waiting briefly after creating the event",
+              "operation_start": "2026-10-24T22:45:52.931773+00:00",
+              "operation_end": "2026-10-24T22:45:53.440Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -1388,7 +1388,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting briefly on the event page with the Dishes section visible\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: wait briefly on the event page with the Dishes section visible\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting briefly after creating the event\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: wait briefly after event creation\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1399,7 +1399,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/d2501ec0-478d-49f7-92df-ed50afec5751.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/9049041e-ec78-4e0e-a225-bc56fde9f5a8.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1493,12 +1493,12 @@
               "api_data": {},
               "output_variables": {},
               "visual_context": null,
-              "reasoning": "PRIMARY: wait briefly on the event page with the Dishes section visible"
+              "reasoning": "PRIMARY: wait briefly after event creation"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:41.104649+00:00",
-          "end_timestamp": "2026-10-24T22:09:41.609Z",
+          "start_timestamp": "2026-10-24T22:45:52.931773+00:00",
+          "end_timestamp": "2026-10-24T22:45:53.440Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -1524,7 +1524,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -1532,13 +1532,190 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: wait briefly on the event page with the Dishes section visible"
+          "reasoning": "PRIMARY: wait briefly after event creation"
         },
         {
-          "instruction_id": "43b3fdaa-aea4-4e7d-9d2c-8fe720d9abbb",
+          "instruction_id": "903004e8-424e-48c7-9859-ca8afd923fdb",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Reading the dish categories from the dishes list",
+          "instruction": "Waiting briefly with the Dishes section open",
+          "command": "WAIT",
+          "error": null,
+          "parent_instruction_id": "",
+          "classification_layer_resp": [],
+          "classification_error": {},
+          "operations": [
+            {
+              "operation_id": "11b954c4-f87e-4a72-a08a-298197243aea",
+              "instruction_id": "903004e8-424e-48c7-9859-ca8afd923fdb",
+              "instruction": "Waiting briefly with the Dishes section open",
+              "intent": "Waiting briefly with the Dishes section open",
+              "operation_start": "2026-10-24T22:45:57.490070+00:00",
+              "operation_end": "2026-10-24T22:45:57.793Z",
+              "status": "success",
+              "command": "WAIT",
+              "name": "",
+              "target": "",
+              "value": "300",
+              "message": "",
+              "operation_dict": "",
+              "frame": "",
+              "surface": "",
+              "frame_path": "",
+              "grounded_by": "",
+              "error_message": "",
+              "code_snippet": "",
+              "sub_instruction_obj": "{\"operation\":\"Waiting briefly with the Dishes section open\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"PRIMARY: wait briefly with the Dishes section open\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "test_id": "",
+              "test_version": "",
+              "action": "",
+              "string_to_float": false,
+              "feedback_msg": "",
+              "time_taken": "",
+              "create_time_stamp": "",
+              "update_time_stamp": "",
+              "locator_variable": "",
+              "locator_variable_name": "",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/11b954c4-f87e-4a72-a08a-298197243aea.webp",
+              "alternative_xpaths": [],
+              "attribute": "",
+              "value_description": "",
+              "url": "",
+              "navigation_direction": "",
+              "tagified_image_url": "",
+              "query_variable_name": "",
+              "query_variable_value": "",
+              "query_variable_type": "",
+              "expected_value": "",
+              "queried_value": "",
+              "operator": "",
+              "assertion_status": "",
+              "query_info_dict": {},
+              "query_content_confidence": "none",
+              "debugging_logs": [],
+              "locator_index": 0,
+              "query_html": "",
+              "user_variables": "[]",
+              "optional_flag": false,
+              "max_retries": 0,
+              "retries_delay": 0,
+              "explicit_wait": 0,
+              "implicit_wait": 0,
+              "tab_index": "",
+              "tab_identifier": "",
+              "scroll_value": 1,
+              "scroll_direction": "",
+              "mi_scroll_payload": {},
+              "sleep_duration": 0,
+              "app_id": "",
+              "manual_interaction_tag": "",
+              "string_to_float_list": [],
+              "js_snippet": "",
+              "code_error": "",
+              "hide": false,
+              "dismiss_dialog": false,
+              "use_v2_mobile_tagging": false,
+              "multiple_inputs": false,
+              "dialog_action": "",
+              "dialog_type": "",
+              "is_coordinates_used_for_interaction": false,
+              "element_coordinates_ratio": [],
+              "element_bounds_ratio": [],
+              "x_coord": null,
+              "y_coord": null,
+              "target_x_coord": null,
+              "target_y_coord": null,
+              "source_description": null,
+              "target_description": null,
+              "use_coordinates": false,
+              "kaneaiMobileTaggingImageLimit": 1,
+              "clicks_order_code": "se_js_ac",
+              "selector": "",
+              "selector_target": "",
+              "math_result_variable_name": "",
+              "math_result_variable_value": "",
+              "expression_tree": {},
+              "assertion_tree": {},
+              "assertion_tree_simplified": {},
+              "network_throttle": {},
+              "is_mobile_offline": false,
+              "autoheal": false,
+              "reprobe": false,
+              "click_modifier": null,
+              "db_query": "",
+              "db_details": {},
+              "db_query_decoded": "",
+              "is_global_variable": false,
+              "is_global_variable_persist": false,
+              "global_variable_id": "",
+              "wait_for_element_timeout": 0,
+              "failure_condition": "",
+              "screenshot_command": "",
+              "smartui_contents": {},
+              "smartui_results": {},
+              "result_type": "",
+              "result_hint": "",
+              "drag_offset": {},
+              "drag_displacement": {},
+              "hold_duration_ms": null,
+              "move_duration_ms": null,
+              "hold_at_destination_ms": null,
+              "start_coordinates": {},
+              "end_coordinates": {},
+              "element_rect": null,
+              "is_canvas": false,
+              "until_condition": "",
+              "until_max_retries": 0,
+              "until_settle_ms": 0,
+              "api_data": {},
+              "output_variables": {},
+              "visual_context": null,
+              "reasoning": "PRIMARY: wait briefly with the Dishes section open"
+            }
+          ],
+          "status": "success",
+          "start_timestamp": "2026-10-24T22:45:57.490070+00:00",
+          "end_timestamp": "2026-10-24T22:45:57.793Z",
+          "type": "agent_generated",
+          "tags": [],
+          "html_paths": [],
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "content_type": "instruction",
+          "js_snippet": "",
+          "user_variables": "[]",
+          "api_data": {},
+          "params_used": false,
+          "hard_assertion": false,
+          "expected_outcome": "",
+          "module_execution_index": 0,
+          "module_version": null,
+          "network_throttle": {},
+          "isEdited": false,
+          "use_query_assertion_v2": false,
+          "db_query": "",
+          "db_details": {},
+          "network_assertion_content": {},
+          "screenshot_command": "",
+          "smartui_contents": {},
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
+          "plan_id": "",
+          "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "title": "",
+          "used_variables": [],
+          "reasoning": "PRIMARY: wait briefly with the Dishes section open"
+        },
+        {
+          "instruction_id": "13717883-492e-449a-92b4-057302fa05b4",
+          "instruction_class": "driver_action",
+          "module_id": "",
+          "instruction": "Reading the dish categories from the dishes section",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -1546,11 +1723,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "bcc771bf-95f3-4858-8b18-fe4daed71afd",
-              "instruction_id": "43b3fdaa-aea4-4e7d-9d2c-8fe720d9abbb",
-              "instruction": "Reading the dish categories from the dishes list",
-              "intent": "Reading the dish categories from the dishes list",
-              "operation_start": "2026-10-24T22:09:59.983163+00:00",
+              "operation_id": "c606d6fc-5eb3-40da-b0f8-af7bc1804c47",
+              "instruction_id": "13717883-492e-449a-92b4-057302fa05b4",
+              "instruction": "Reading the dish categories from the dishes section",
+              "intent": "Reading the dish categories from the dishes section",
+              "operation_start": "2026-10-24T22:46:13.195371+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -1565,7 +1742,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the dish categories from the dishes list\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the ordered dish category names in the dishes list\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(13).querySelectorAll('h3')).map(x=>x.textContent.trim()).join(', ').replace(/, ([^,]*)$/, ', and $1')\",\"wrapped_js\":\"(els) => {\\n  const __m = {13: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(13).querySelectorAll('h3')).map(x=>x.textContent.trim()).join(', ').replace(/, ([^,]*)$/, ', and $1'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main Guest name Claim Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the ordered dish category names in the dishes list\",\"expected_value\":\"Main, Side, Salad, Dessert, and Drinks\",\"needs_unit_conversion\":false,\"condition\":\"exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the dish categories from the dishes section\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the category names listed in the dishes section\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(29).querySelectorAll(':scope > li > h3')).map(x=>x.textContent.trim()).join(', ')\",\"wrapped_js\":\"(els) => {\\n  const __m = {29: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(29).querySelectorAll(':scope > li > h3')).map(x=>x.textContent.trim()).join(', '));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main Guest name Claim Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the category names listed in the dishes section\",\"expected_value\":\"Main, Side, Salad, Dessert, Drinks\",\"needs_unit_conversion\":false,\"condition\":\"Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1576,7 +1753,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/bcc771bf-95f3-4858-8b18-fe4daed71afd.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c606d6fc-5eb3-40da-b0f8-af7bc1804c47.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1584,7 +1761,7 @@
               "navigation_direction": "",
               "tagified_image_url": "",
               "query_variable_name": "dish_categories_check",
-              "query_variable_value": "Main, Side, Salad, Dessert, and Drinks",
+              "query_variable_value": "Main, Side, Salad, Dessert, Drinks",
               "query_variable_type": "",
               "expected_value": "",
               "queried_value": "",
@@ -1669,14 +1846,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "dish_categories_check": "Main, Side, Salad, Dessert, and Drinks"
+                "dish_categories_check": "Main, Side, Salad, Dessert, Drinks"
               },
               "visual_context": null,
-              "reasoning": "the ordered dish category names in the dishes list"
+              "reasoning": "the category names listed in the dishes section"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.983163+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.195371+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -1703,7 +1880,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -1711,13 +1888,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "the ordered dish category names in the dishes list"
+          "reasoning": "the category names listed in the dishes section"
         },
         {
-          "instruction_id": "63c1773f-253b-4d1b-b67f-99680a21a819",
+          "instruction_id": "2baa4878-fd98-49fe-bcf6-4867a230f95a",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Reading the dishes claimed count",
+          "instruction": "Reading the claimed dishes count",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -1725,11 +1902,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "37e9b5b2-3de7-43cb-b804-fc1f08300940",
-              "instruction_id": "63c1773f-253b-4d1b-b67f-99680a21a819",
-              "instruction": "Reading the dishes claimed count",
-              "intent": "Reading the dishes claimed count",
-              "operation_start": "2026-10-24T22:09:59.983607+00:00",
+              "operation_id": "066a56bd-5d8a-497c-8944-e2dc927176ec",
+              "instruction_id": "2baa4878-fd98-49fe-bcf6-4867a230f95a",
+              "instruction": "Reading the claimed dishes count",
+              "intent": "Reading the claimed dishes count",
+              "operation_start": "2026-10-24T22:46:13.196580+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -1744,7 +1921,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the dishes claimed count\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the dishes claimed count displayed above the dishes list\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(12).textContent.trim()\",\"wrapped_js\":\"(els) => {\\n  const __m = {12: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(12).textContent.trim());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"of 5 dishes claimed\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the dishes claimed count displayed above the dishes list\",\"expected_value\":\"0 of 5 dishes claimed\",\"needs_unit_conversion\":false,\"condition\":\"the count reads '0 of 5 dishes claimed'\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the claimed dishes count\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the claimed dishes count shown above the dishes list\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(28).textContent.trim()\",\"wrapped_js\":\"(els) => {\\n  const __m = {28: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(28).textContent.trim());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"of 5 dishes claimed\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the claimed dishes count shown above the dishes list\",\"expected_value\":\"0 of 5 dishes claimed\",\"needs_unit_conversion\":false,\"condition\":\"The count reads '0 of 5 dishes claimed'.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1755,7 +1932,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/37e9b5b2-3de7-43cb-b804-fc1f08300940.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/066a56bd-5d8a-497c-8944-e2dc927176ec.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -1851,11 +2028,11 @@
                 "dishes_claimed_count": "0 of 5 dishes claimed"
               },
               "visual_context": null,
-              "reasoning": "the dishes claimed count displayed above the dishes list"
+              "reasoning": "the claimed dishes count shown above the dishes list"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.983607+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.196580+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -1882,7 +2059,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -1890,10 +2067,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "the dishes claimed count displayed above the dishes list"
+          "reasoning": "the claimed dishes count shown above the dishes list"
         },
         {
-          "instruction_id": "c22822ce-572e-4049-878f-aed096a8d40b",
+          "instruction_id": "18e541f8-cd83-4287-ba8f-486e6f4759c0",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Main guest name field is present",
@@ -1904,11 +2081,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "7c6071af-8871-410c-8244-83deb085463e",
-              "instruction_id": "c22822ce-572e-4049-878f-aed096a8d40b",
+              "operation_id": "dc7a62f8-7c9c-44c5-92a9-1c12a70a86a9",
+              "instruction_id": "18e541f8-cd83-4287-ba8f-486e6f4759c0",
               "instruction": "Checking whether the Main guest name field is present",
               "intent": "Checking whether the Main guest name field is present",
-              "operation_start": "2026-10-24T22:09:59.983746+00:00",
+              "operation_start": "2026-10-24T22:46:13.196705+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -1923,7 +2100,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Main category guest name field is present (in the Main claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"!!el(16).querySelector('input[aria-label=\\\"Guest name for Main\\\"], input[name], input')\",\"wrapped_js\":\"(els) => {\\n  const __m = {16: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (!!el(16).querySelector('input[aria-label=\\\"Guest name for Main\\\"], input[name], input'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Main\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Main category guest name field is present (in the Main claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Main category has a guest name field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Main category guest name field is present (in the Main claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(34).getAttribute('aria-label') === 'Guest name for Main'\",\"wrapped_js\":\"(els) => {\\n  const __m = {34: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(34).getAttribute('aria-label') === 'Guest name for Main');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Guest name for Main\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Main category guest name field is present (in the Main claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Main category has a guest name field.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -1934,7 +2111,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7c6071af-8871-410c-8244-83deb085463e.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/dc7a62f8-7c9c-44c5-92a9-1c12a70a86a9.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2034,7 +2211,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.983746+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.196705+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2061,7 +2238,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -2072,7 +2249,7 @@
           "reasoning": "whether the Main category guest name field is present (in the Main claim form)"
         },
         {
-          "instruction_id": "eff18acd-073a-4fc9-a19a-3e09d36c55b7",
+          "instruction_id": "c3548226-286f-43bd-a816-90b44423401e",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Main Claim button is present",
@@ -2083,11 +2260,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "4f65b4c0-e1ce-4727-b1c0-3045d9b4b1dd",
-              "instruction_id": "eff18acd-073a-4fc9-a19a-3e09d36c55b7",
+              "operation_id": "81708660-2a1f-4ece-87e6-a011600ac043",
+              "instruction_id": "c3548226-286f-43bd-a816-90b44423401e",
               "instruction": "Checking whether the Main Claim button is present",
               "intent": "Checking whether the Main Claim button is present",
-              "operation_start": "2026-10-24T22:09:59.983852+00:00",
+              "operation_start": "2026-10-24T22:46:13.196812+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2102,7 +2279,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Main category Claim button is present (in the Main claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(16).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim')\",\"wrapped_js\":\"(els) => {\\n  const __m = {16: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(16).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Main\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Main category Claim button is present (in the Main claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Main category has a Claim button\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Main category Claim button is present (in the Main claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(35).textContent.trim() === 'Claim'\",\"wrapped_js\":\"(els) => {\\n  const __m = {35: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(35).textContent.trim() === 'Claim');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:label=\\\"Claim Main\\\"i >> internal:role=button[name=\\\"Claim\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Main category Claim button is present (in the Main claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Main category has a Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2113,7 +2290,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/4f65b4c0-e1ce-4727-b1c0-3045d9b4b1dd.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/81708660-2a1f-4ece-87e6-a011600ac043.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2213,7 +2390,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.983852+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.196812+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2240,7 +2417,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -2251,7 +2428,7 @@
           "reasoning": "whether the Main category Claim button is present (in the Main claim form)"
         },
         {
-          "instruction_id": "9cadfddc-f3a3-41d5-99ad-46d897ef3b53",
+          "instruction_id": "4f301afc-7518-494c-a62f-0227cd50917c",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Side guest name field is present",
@@ -2262,11 +2439,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "3f2ce4a7-80ef-4154-b353-6755190b9e84",
-              "instruction_id": "9cadfddc-f3a3-41d5-99ad-46d897ef3b53",
+              "operation_id": "40e85389-25d2-483b-a8b6-4117886d44a0",
+              "instruction_id": "4f301afc-7518-494c-a62f-0227cd50917c",
               "instruction": "Checking whether the Side guest name field is present",
               "intent": "Checking whether the Side guest name field is present",
-              "operation_start": "2026-10-24T22:09:59.983949+00:00",
+              "operation_start": "2026-10-24T22:46:13.196918+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2281,7 +2458,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Side guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Side category guest name field is present (in the Side claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"!!el(22).querySelector('input[aria-label=\\\"Guest name for Side\\\"], input[name], input')\",\"wrapped_js\":\"(els) => {\\n  const __m = {22: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (!!el(22).querySelector('input[aria-label=\\\"Guest name for Side\\\"], input[name], input'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Side\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Side category guest name field is present (in the Side claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Side category has a guest name field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Side guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Side category guest name field is present (in the Side claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(40).getAttribute('aria-label') === 'Guest name for Side'\",\"wrapped_js\":\"(els) => {\\n  const __m = {40: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(40).getAttribute('aria-label') === 'Guest name for Side');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Guest name for Side\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Side category guest name field is present (in the Side claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Side category has a guest name field.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2292,7 +2469,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/3f2ce4a7-80ef-4154-b353-6755190b9e84.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/40e85389-25d2-483b-a8b6-4117886d44a0.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2392,7 +2569,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.983949+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.196918+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2419,7 +2596,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -2430,7 +2607,7 @@
           "reasoning": "whether the Side category guest name field is present (in the Side claim form)"
         },
         {
-          "instruction_id": "4750efa8-e398-4850-b3ca-76392318bdd1",
+          "instruction_id": "082b4299-384d-47ef-9d01-c2e6a286dbb7",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Side Claim button is present",
@@ -2441,11 +2618,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "a5e51bba-54b7-4cf3-906e-fcdb7281d490",
-              "instruction_id": "4750efa8-e398-4850-b3ca-76392318bdd1",
+              "operation_id": "00c77c6f-6145-40aa-80d1-d5383f7ac1cf",
+              "instruction_id": "082b4299-384d-47ef-9d01-c2e6a286dbb7",
               "instruction": "Checking whether the Side Claim button is present",
               "intent": "Checking whether the Side Claim button is present",
-              "operation_start": "2026-10-24T22:09:59.984049+00:00",
+              "operation_start": "2026-10-24T22:46:13.197020+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2460,7 +2637,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Side Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Side category Claim button is present (in the Side claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(22).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim')\",\"wrapped_js\":\"(els) => {\\n  const __m = {22: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(22).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Side\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Side category Claim button is present (in the Side claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Side category has a Claim button\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Side Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Side category Claim button is present (in the Side claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(41).textContent.trim() === 'Claim'\",\"wrapped_js\":\"(els) => {\\n  const __m = {41: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(41).textContent.trim() === 'Claim');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:label=\\\"Claim Side\\\"i >> internal:role=button[name=\\\"Claim\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Side category Claim button is present (in the Side claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Side category has a Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2471,7 +2648,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/a5e51bba-54b7-4cf3-906e-fcdb7281d490.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/00c77c6f-6145-40aa-80d1-d5383f7ac1cf.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2571,7 +2748,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984049+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197020+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2598,7 +2775,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -2609,7 +2786,7 @@
           "reasoning": "whether the Side category Claim button is present (in the Side claim form)"
         },
         {
-          "instruction_id": "1099c228-09a9-40ea-968d-dec7647844d0",
+          "instruction_id": "74b26fa6-1bfb-4957-88ac-31ef196337c0",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Salad guest name field is present",
@@ -2620,11 +2797,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "19ba1185-8342-41bf-96f9-b478d6c37c6f",
-              "instruction_id": "1099c228-09a9-40ea-968d-dec7647844d0",
+              "operation_id": "eab5bcc0-e0de-45d6-937c-24338bd990a1",
+              "instruction_id": "74b26fa6-1bfb-4957-88ac-31ef196337c0",
               "instruction": "Checking whether the Salad guest name field is present",
               "intent": "Checking whether the Salad guest name field is present",
-              "operation_start": "2026-10-24T22:09:59.984142+00:00",
+              "operation_start": "2026-10-24T22:46:13.197123+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2639,7 +2816,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Salad guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Salad category guest name field is present (in the Salad claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"!!el(28).querySelector('input[aria-label=\\\"Guest name for Salad\\\"], input[name], input')\",\"wrapped_js\":\"(els) => {\\n  const __m = {28: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (!!el(28).querySelector('input[aria-label=\\\"Guest name for Salad\\\"], input[name], input'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Salad\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Salad category guest name field is present (in the Salad claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Salad category has a guest name field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Salad guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Salad category guest name field is present (in the Salad claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(46).getAttribute('aria-label') === 'Guest name for Salad'\",\"wrapped_js\":\"(els) => {\\n  const __m = {46: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(46).getAttribute('aria-label') === 'Guest name for Salad');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Guest name for Salad\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Salad category guest name field is present (in the Salad claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Salad category has a guest name field.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2650,7 +2827,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/19ba1185-8342-41bf-96f9-b478d6c37c6f.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/eab5bcc0-e0de-45d6-937c-24338bd990a1.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2750,7 +2927,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984142+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197123+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2777,7 +2954,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -2788,7 +2965,7 @@
           "reasoning": "whether the Salad category guest name field is present (in the Salad claim form)"
         },
         {
-          "instruction_id": "bb2fd7d2-de24-4e4e-b60c-fe04500db8e7",
+          "instruction_id": "20692a04-72f6-49f6-b4b9-a066e92169f3",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Salad Claim button is present",
@@ -2799,11 +2976,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "b2482f84-ff54-4dc9-bbd3-44f93204b6ed",
-              "instruction_id": "bb2fd7d2-de24-4e4e-b60c-fe04500db8e7",
+              "operation_id": "ec3c1718-62f0-42f6-abe4-3dcabeaa3d4f",
+              "instruction_id": "20692a04-72f6-49f6-b4b9-a066e92169f3",
               "instruction": "Checking whether the Salad Claim button is present",
               "intent": "Checking whether the Salad Claim button is present",
-              "operation_start": "2026-10-24T22:09:59.984325+00:00",
+              "operation_start": "2026-10-24T22:46:13.197227+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2818,7 +2995,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Salad Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Salad category Claim button is present (in the Salad claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(28).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim')\",\"wrapped_js\":\"(els) => {\\n  const __m = {28: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(28).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Salad\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Salad category Claim button is present (in the Salad claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Salad category has a Claim button\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Salad Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Salad category Claim button is present (in the Salad claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(47).textContent.trim() === 'Claim'\",\"wrapped_js\":\"(els) => {\\n  const __m = {47: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(47).textContent.trim() === 'Claim');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:label=\\\"Claim Salad\\\"i >> internal:role=button[name=\\\"Claim\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Salad category Claim button is present (in the Salad claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Salad category has a Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -2829,7 +3006,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b2482f84-ff54-4dc9-bbd3-44f93204b6ed.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ec3c1718-62f0-42f6-abe4-3dcabeaa3d4f.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -2929,7 +3106,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984325+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197227+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -2956,7 +3133,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -2967,7 +3144,7 @@
           "reasoning": "whether the Salad category Claim button is present (in the Salad claim form)"
         },
         {
-          "instruction_id": "2e35c23b-59f5-4796-ab3e-6639bc0aad4c",
+          "instruction_id": "b11a6950-aa7e-4ecf-8049-5883d59ce242",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Dessert guest name field is present",
@@ -2978,11 +3155,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "5a7432f0-0fd2-4fa9-a262-7b976f64c126",
-              "instruction_id": "2e35c23b-59f5-4796-ab3e-6639bc0aad4c",
+              "operation_id": "051bd087-4887-4155-a128-b24345bef3bc",
+              "instruction_id": "b11a6950-aa7e-4ecf-8049-5883d59ce242",
               "instruction": "Checking whether the Dessert guest name field is present",
               "intent": "Checking whether the Dessert guest name field is present",
-              "operation_start": "2026-10-24T22:09:59.984422+00:00",
+              "operation_start": "2026-10-24T22:46:13.197421+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -2997,7 +3174,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Dessert guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Dessert category guest name field is present (in the Dessert claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"!!el(34).querySelector('input[aria-label=\\\"Guest name for Dessert\\\"], input[name], input')\",\"wrapped_js\":\"(els) => {\\n  const __m = {34: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (!!el(34).querySelector('input[aria-label=\\\"Guest name for Dessert\\\"], input[name], input'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Dessert\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Dessert category guest name field is present (in the Dessert claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Dessert category has a guest name field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Dessert guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Dessert category guest name field is present (in the Dessert claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(52).getAttribute('aria-label') === 'Guest name for Dessert'\",\"wrapped_js\":\"(els) => {\\n  const __m = {52: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(52).getAttribute('aria-label') === 'Guest name for Dessert');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Guest name for Dessert\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Dessert category guest name field is present (in the Dessert claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Dessert category has a guest name field.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3008,7 +3185,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/5a7432f0-0fd2-4fa9-a262-7b976f64c126.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/051bd087-4887-4155-a128-b24345bef3bc.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3108,7 +3285,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984422+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197421+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3135,7 +3312,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -3146,7 +3323,7 @@
           "reasoning": "whether the Dessert category guest name field is present (in the Dessert claim form)"
         },
         {
-          "instruction_id": "361dad9f-54c5-43ab-9e5c-14bb9c66df03",
+          "instruction_id": "b0d0cfbb-ff04-4253-a2a2-3eaf124c7173",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Dessert Claim button is present",
@@ -3157,11 +3334,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "b0c7e7b2-f394-45c5-bcc4-640aa5a30f1e",
-              "instruction_id": "361dad9f-54c5-43ab-9e5c-14bb9c66df03",
+              "operation_id": "b93f8a43-8136-4fa1-85d9-b1b074b50111",
+              "instruction_id": "b0d0cfbb-ff04-4253-a2a2-3eaf124c7173",
               "instruction": "Checking whether the Dessert Claim button is present",
               "intent": "Checking whether the Dessert Claim button is present",
-              "operation_start": "2026-10-24T22:09:59.984515+00:00",
+              "operation_start": "2026-10-24T22:46:13.197520+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -3176,7 +3353,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Dessert Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Dessert category Claim button is present (in the Dessert claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(34).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim')\",\"wrapped_js\":\"(els) => {\\n  const __m = {34: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(34).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Dessert\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Dessert category Claim button is present (in the Dessert claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Dessert category has a Claim button\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Dessert Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Dessert category Claim button is present (in the Dessert claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(53).textContent.trim() === 'Claim'\",\"wrapped_js\":\"(els) => {\\n  const __m = {53: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(53).textContent.trim() === 'Claim');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:label=\\\"Claim Dessert\\\"i >> internal:role=button[name=\\\"Claim\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Dessert category Claim button is present (in the Dessert claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Dessert category has a Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3187,7 +3364,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b0c7e7b2-f394-45c5-bcc4-640aa5a30f1e.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/b93f8a43-8136-4fa1-85d9-b1b074b50111.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3287,7 +3464,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984515+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197520+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3314,7 +3491,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -3325,7 +3502,7 @@
           "reasoning": "whether the Dessert category Claim button is present (in the Dessert claim form)"
         },
         {
-          "instruction_id": "70478346-7355-4977-b9e9-c82690cbe210",
+          "instruction_id": "c47c01d9-5133-4572-b67f-81b995e4d22b",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Drinks guest name field is present",
@@ -3336,11 +3513,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "e8620975-0c19-463a-85e3-89ea1a4b39b1",
-              "instruction_id": "70478346-7355-4977-b9e9-c82690cbe210",
+              "operation_id": "0a29b691-c212-401b-91df-a8cfdf4b298a",
+              "instruction_id": "c47c01d9-5133-4572-b67f-81b995e4d22b",
               "instruction": "Checking whether the Drinks guest name field is present",
               "intent": "Checking whether the Drinks guest name field is present",
-              "operation_start": "2026-10-24T22:09:59.984608+00:00",
+              "operation_start": "2026-10-24T22:46:13.197628+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -3355,7 +3532,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Drinks guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Drinks category guest name field is present (in the Drinks claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"!!el(40).querySelector('input[aria-label=\\\"Guest name for Drinks\\\"], input[name], input')\",\"wrapped_js\":\"(els) => {\\n  const __m = {40: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (!!el(40).querySelector('input[aria-label=\\\"Guest name for Drinks\\\"], input[name], input'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Drinks\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Drinks category guest name field is present (in the Drinks claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Drinks category has a guest name field\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Drinks guest name field is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Drinks category guest name field is present (in the Drinks claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(58).getAttribute('aria-label') === 'Guest name for Drinks'\",\"wrapped_js\":\"(els) => {\\n  const __m = {58: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(58).getAttribute('aria-label') === 'Guest name for Drinks');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=textbox[name=\\\"Guest name for Drinks\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Drinks category guest name field is present (in the Drinks claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Drinks category has a guest name field.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3366,7 +3543,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e8620975-0c19-463a-85e3-89ea1a4b39b1.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/0a29b691-c212-401b-91df-a8cfdf4b298a.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3466,7 +3643,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984608+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197628+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3493,7 +3670,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -3504,7 +3681,7 @@
           "reasoning": "whether the Drinks category guest name field is present (in the Drinks claim form)"
         },
         {
-          "instruction_id": "bbdc87b6-a0d7-431e-a24a-a2978a8617cc",
+          "instruction_id": "e337932a-b0d6-42db-9b9e-89eebe2b299e",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Drinks Claim button is present",
@@ -3515,11 +3692,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "e7e4b626-0ca5-421e-9c47-a421b774113c",
-              "instruction_id": "bbdc87b6-a0d7-431e-a24a-a2978a8617cc",
+              "operation_id": "201e0082-9b00-4926-b30d-44aa3171f974",
+              "instruction_id": "e337932a-b0d6-42db-9b9e-89eebe2b299e",
               "instruction": "Checking whether the Drinks Claim button is present",
               "intent": "Checking whether the Drinks Claim button is present",
-              "operation_start": "2026-10-24T22:09:59.984704+00:00",
+              "operation_start": "2026-10-24T22:46:13.197725+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -3534,7 +3711,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Drinks Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Drinks category Claim button is present (in the Drinks claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(40).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim')\",\"wrapped_js\":\"(els) => {\\n  const __m = {40: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(40).querySelectorAll('button')).some(x=>x.textContent.trim()==='Claim'));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=form[name=\\\"Claim Drinks\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Drinks category Claim button is present (in the Drinks claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"the Drinks category has a Claim button\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Drinks Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether the Drinks category Claim button is present (in the Drinks claim form)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(59).textContent.trim() === 'Claim'\",\"wrapped_js\":\"(els) => {\\n  const __m = {59: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(59).textContent.trim() === 'Claim');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:label=\\\"Claim Drinks\\\"i >> internal:role=button[name=\\\"Claim\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether the Drinks category Claim button is present (in the Drinks claim form)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"The Drinks category has a Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -3545,7 +3722,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e7e4b626-0ca5-421e-9c47-a421b774113c.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/201e0082-9b00-4926-b30d-44aa3171f974.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -3645,7 +3822,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:09:59.984704+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.197725+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -3672,7 +3849,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -3683,7 +3860,7 @@
           "reasoning": "whether the Drinks category Claim button is present (in the Drinks claim form)"
         },
         {
-          "instruction_id": "4ca0b05f-9702-4d85-81c2-e04730574bd4",
+          "instruction_id": "1d3ce574-d362-4e9a-aea7-fbbb6cd34189",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -3699,22 +3876,22 @@
                 "assertion_tree": {
                   "sub_results": [
                     {
-                      "description": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks",
+                      "description": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [
                         "strip"
                       ],
                       "json_path": null,
-                      "expected": "Main, Side, Salad, Dessert, and Drinks",
+                      "expected": "Main, Side, Salad, Dessert, Drinks",
                       "extracted_value": "{{dish_categories_check}}",
                       "store_key": "dish_categories_check",
                       "variable_refs": {
-                        "{{dish_categories_check}}": "Main, Side, Salad, Dessert, and Drinks"
+                        "{{dish_categories_check}}": "Main, Side, Salad, Dessert, Drinks"
                       }
                     },
                     {
-                      "description": "the count reads '0 of 5 dishes claimed'",
+                      "description": "The count reads '0 of 5 dishes claimed'.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [
@@ -3729,7 +3906,7 @@
                       }
                     },
                     {
-                      "description": "the Main category has a guest name field",
+                      "description": "The Main category has a guest name field.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3742,7 +3919,7 @@
                       }
                     },
                     {
-                      "description": "the Main category has a Claim button",
+                      "description": "The Main category has a Claim button.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3755,7 +3932,7 @@
                       }
                     },
                     {
-                      "description": "the Side category has a guest name field",
+                      "description": "The Side category has a guest name field.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3768,7 +3945,7 @@
                       }
                     },
                     {
-                      "description": "the Side category has a Claim button",
+                      "description": "The Side category has a Claim button.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3781,7 +3958,7 @@
                       }
                     },
                     {
-                      "description": "the Salad category has a guest name field",
+                      "description": "The Salad category has a guest name field.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3794,7 +3971,7 @@
                       }
                     },
                     {
-                      "description": "the Salad category has a Claim button",
+                      "description": "The Salad category has a Claim button.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3807,7 +3984,7 @@
                       }
                     },
                     {
-                      "description": "the Dessert category has a guest name field",
+                      "description": "The Dessert category has a guest name field.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3820,7 +3997,7 @@
                       }
                     },
                     {
-                      "description": "the Dessert category has a Claim button",
+                      "description": "The Dessert category has a Claim button.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3833,7 +4010,7 @@
                       }
                     },
                     {
-                      "description": "the Drinks category has a guest name field",
+                      "description": "The Drinks category has a guest name field.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3846,7 +4023,7 @@
                       }
                     },
                     {
-                      "description": "the Drinks category has a Claim button",
+                      "description": "The Drinks category has a Claim button.",
                       "passed": true,
                       "operator": "equals",
                       "transforms": [],
@@ -3861,9 +4038,9 @@
                   ],
                   "sub_checks": [
                     {
-                      "description": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks",
+                      "description": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks.",
                       "store_key": "dish_categories_check",
-                      "expected_value": "Main, Side, Salad, Dessert, and Drinks",
+                      "expected_value": "Main, Side, Salad, Dessert, Drinks",
                       "extracted_value": "{{dish_categories_check}}",
                       "operator": "equals",
                       "transforms": [
@@ -3871,7 +4048,7 @@
                       ]
                     },
                     {
-                      "description": "the count reads '0 of 5 dishes claimed'",
+                      "description": "The count reads '0 of 5 dishes claimed'.",
                       "store_key": "dishes_claimed_count",
                       "expected_value": "0 of 5 dishes claimed",
                       "extracted_value": "{{dishes_claimed_count}}",
@@ -3881,7 +4058,7 @@
                       ]
                     },
                     {
-                      "description": "the Main category has a guest name field",
+                      "description": "The Main category has a guest name field.",
                       "store_key": "main_guest_name_field",
                       "expected_value": "true",
                       "extracted_value": "{{main_guest_name_field}}",
@@ -3889,7 +4066,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Main category has a Claim button",
+                      "description": "The Main category has a Claim button.",
                       "store_key": "main_claim_button",
                       "expected_value": "true",
                       "extracted_value": "{{main_claim_button}}",
@@ -3897,7 +4074,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Side category has a guest name field",
+                      "description": "The Side category has a guest name field.",
                       "store_key": "side_guest_name_field",
                       "expected_value": "true",
                       "extracted_value": "{{side_guest_name_field}}",
@@ -3905,7 +4082,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Side category has a Claim button",
+                      "description": "The Side category has a Claim button.",
                       "store_key": "side_claim_button",
                       "expected_value": "true",
                       "extracted_value": "{{side_claim_button}}",
@@ -3913,7 +4090,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Salad category has a guest name field",
+                      "description": "The Salad category has a guest name field.",
                       "store_key": "salad_guest_name_field",
                       "expected_value": "true",
                       "extracted_value": "{{salad_guest_name_field}}",
@@ -3921,7 +4098,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Salad category has a Claim button",
+                      "description": "The Salad category has a Claim button.",
                       "store_key": "salad_claim_button",
                       "expected_value": "true",
                       "extracted_value": "{{salad_claim_button}}",
@@ -3929,7 +4106,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Dessert category has a guest name field",
+                      "description": "The Dessert category has a guest name field.",
                       "store_key": "dessert_guest_name_field",
                       "expected_value": "true",
                       "extracted_value": "{{dessert_guest_name_field}}",
@@ -3937,7 +4114,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Dessert category has a Claim button",
+                      "description": "The Dessert category has a Claim button.",
                       "store_key": "dessert_claim_button",
                       "expected_value": "true",
                       "extracted_value": "{{dessert_claim_button}}",
@@ -3945,7 +4122,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Drinks category has a guest name field",
+                      "description": "The Drinks category has a guest name field.",
                       "store_key": "drinks_guest_name_field",
                       "expected_value": "true",
                       "extracted_value": "{{drinks_guest_name_field}}",
@@ -3953,7 +4130,7 @@
                       "transforms": []
                     },
                     {
-                      "description": "the Drinks category has a Claim button",
+                      "description": "The Drinks category has a Claim button.",
                       "store_key": "drinks_claim_button",
                       "expected_value": "true",
                       "extracted_value": "{{drinks_claim_button}}",
@@ -3963,7 +4140,7 @@
                   ],
                   "composite_operator": "and",
                   "verification": "",
-                  "claim": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button",
+                  "claim": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks; the count reads '0 of 5 dishes claimed'; and each category has a guest name field and Claim button.",
                   "operator": [],
                   "assertion_operands": [],
                   "left_operand": null,
@@ -3979,11 +4156,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "ed4fe47d-3afd-4523-bd1b-a7fdbdf76a5b",
-              "instruction_id": "4ca0b05f-9702-4d85-81c2-e04730574bd4",
+              "operation_id": "857df666-6a2e-4fc4-81c2-aba544c56b19",
+              "instruction_id": "1d3ce574-d362-4e9a-aea7-fbbb6cd34189",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:10:00.585339+00:00",
+              "operation_start": "2026-10-24T22:46:13.802021+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -4009,7 +4186,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/ed4fe47d-3afd-4523-bd1b-a7fdbdf76a5b.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/857df666-6a2e-4fc4-81c2-aba544c56b19.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4075,22 +4252,22 @@
                 "operands": [],
                 "sub_results": [
                   {
-                    "description": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks",
+                    "description": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [
                       "strip"
                     ],
                     "json_path": null,
-                    "expected": "Main, Side, Salad, Dessert, and Drinks",
+                    "expected": "Main, Side, Salad, Dessert, Drinks",
                     "extracted_value": "{{dish_categories_check}}",
                     "store_key": "dish_categories_check",
                     "variable_refs": {
-                      "{{dish_categories_check}}": "Main, Side, Salad, Dessert, and Drinks"
+                      "{{dish_categories_check}}": "Main, Side, Salad, Dessert, Drinks"
                     }
                   },
                   {
-                    "description": "the count reads '0 of 5 dishes claimed'",
+                    "description": "The count reads '0 of 5 dishes claimed'.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [
@@ -4105,7 +4282,7 @@
                     }
                   },
                   {
-                    "description": "the Main category has a guest name field",
+                    "description": "The Main category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4118,7 +4295,7 @@
                     }
                   },
                   {
-                    "description": "the Main category has a Claim button",
+                    "description": "The Main category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4131,7 +4308,7 @@
                     }
                   },
                   {
-                    "description": "the Side category has a guest name field",
+                    "description": "The Side category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4144,7 +4321,7 @@
                     }
                   },
                   {
-                    "description": "the Side category has a Claim button",
+                    "description": "The Side category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4157,7 +4334,7 @@
                     }
                   },
                   {
-                    "description": "the Salad category has a guest name field",
+                    "description": "The Salad category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4170,7 +4347,7 @@
                     }
                   },
                   {
-                    "description": "the Salad category has a Claim button",
+                    "description": "The Salad category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4183,7 +4360,7 @@
                     }
                   },
                   {
-                    "description": "the Dessert category has a guest name field",
+                    "description": "The Dessert category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4196,7 +4373,7 @@
                     }
                   },
                   {
-                    "description": "the Dessert category has a Claim button",
+                    "description": "The Dessert category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4209,7 +4386,7 @@
                     }
                   },
                   {
-                    "description": "the Drinks category has a guest name field",
+                    "description": "The Drinks category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4222,7 +4399,7 @@
                     }
                   },
                   {
-                    "description": "the Drinks category has a Claim button",
+                    "description": "The Drinks category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4237,9 +4414,9 @@
                 ],
                 "sub_checks": [
                   {
-                    "description": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks",
+                    "description": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks.",
                     "store_key": "dish_categories_check",
-                    "expected_value": "Main, Side, Salad, Dessert, and Drinks",
+                    "expected_value": "Main, Side, Salad, Dessert, Drinks",
                     "extracted_value": "{{dish_categories_check}}",
                     "operator": "equals",
                     "transforms": [
@@ -4247,7 +4424,7 @@
                     ]
                   },
                   {
-                    "description": "the count reads '0 of 5 dishes claimed'",
+                    "description": "The count reads '0 of 5 dishes claimed'.",
                     "store_key": "dishes_claimed_count",
                     "expected_value": "0 of 5 dishes claimed",
                     "extracted_value": "{{dishes_claimed_count}}",
@@ -4257,7 +4434,7 @@
                     ]
                   },
                   {
-                    "description": "the Main category has a guest name field",
+                    "description": "The Main category has a guest name field.",
                     "store_key": "main_guest_name_field",
                     "expected_value": "true",
                     "extracted_value": "{{main_guest_name_field}}",
@@ -4265,7 +4442,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Main category has a Claim button",
+                    "description": "The Main category has a Claim button.",
                     "store_key": "main_claim_button",
                     "expected_value": "true",
                     "extracted_value": "{{main_claim_button}}",
@@ -4273,7 +4450,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Side category has a guest name field",
+                    "description": "The Side category has a guest name field.",
                     "store_key": "side_guest_name_field",
                     "expected_value": "true",
                     "extracted_value": "{{side_guest_name_field}}",
@@ -4281,7 +4458,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Side category has a Claim button",
+                    "description": "The Side category has a Claim button.",
                     "store_key": "side_claim_button",
                     "expected_value": "true",
                     "extracted_value": "{{side_claim_button}}",
@@ -4289,7 +4466,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Salad category has a guest name field",
+                    "description": "The Salad category has a guest name field.",
                     "store_key": "salad_guest_name_field",
                     "expected_value": "true",
                     "extracted_value": "{{salad_guest_name_field}}",
@@ -4297,7 +4474,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Salad category has a Claim button",
+                    "description": "The Salad category has a Claim button.",
                     "store_key": "salad_claim_button",
                     "expected_value": "true",
                     "extracted_value": "{{salad_claim_button}}",
@@ -4305,7 +4482,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Dessert category has a guest name field",
+                    "description": "The Dessert category has a guest name field.",
                     "store_key": "dessert_guest_name_field",
                     "expected_value": "true",
                     "extracted_value": "{{dessert_guest_name_field}}",
@@ -4313,7 +4490,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Dessert category has a Claim button",
+                    "description": "The Dessert category has a Claim button.",
                     "store_key": "dessert_claim_button",
                     "expected_value": "true",
                     "extracted_value": "{{dessert_claim_button}}",
@@ -4321,7 +4498,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Drinks category has a guest name field",
+                    "description": "The Drinks category has a guest name field.",
                     "store_key": "drinks_guest_name_field",
                     "expected_value": "true",
                     "extracted_value": "{{drinks_guest_name_field}}",
@@ -4329,7 +4506,7 @@
                     "transforms": []
                   },
                   {
-                    "description": "the Drinks category has a Claim button",
+                    "description": "The Drinks category has a Claim button.",
                     "store_key": "drinks_claim_button",
                     "expected_value": "true",
                     "extracted_value": "{{drinks_claim_button}}",
@@ -4338,31 +4515,31 @@
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "The Dishes section lists exactly the specified categories, shows the specified claimed-dishes count, and provides a guest name field and Claim button for every category.",
-                "claim": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button"
+                "verification": "The Dishes section shows the listed categories, dish claim count, guest name fields, and Claim buttons.",
+                "claim": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks; the count reads '0 of 5 dishes claimed'; and each category has a guest name field and Claim button."
               },
               "assertion_tree": {
                 "assertion_id": "assert_cp_1",
                 "status": "passed",
-                "description": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button",
+                "description": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks; the count reads '0 of 5 dishes claimed'; and each category has a guest name field and Claim button.",
                 "sub_results": [
                   {
-                    "description": "exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks",
+                    "description": "Exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [
                       "strip"
                     ],
                     "json_path": null,
-                    "expected": "Main, Side, Salad, Dessert, and Drinks",
+                    "expected": "Main, Side, Salad, Dessert, Drinks",
                     "extracted_value": "{{dish_categories_check}}",
                     "store_key": "dish_categories_check",
                     "variable_refs": {
-                      "{{dish_categories_check}}": "Main, Side, Salad, Dessert, and Drinks"
+                      "{{dish_categories_check}}": "Main, Side, Salad, Dessert, Drinks"
                     }
                   },
                   {
-                    "description": "the count reads '0 of 5 dishes claimed'",
+                    "description": "The count reads '0 of 5 dishes claimed'.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [
@@ -4377,7 +4554,7 @@
                     }
                   },
                   {
-                    "description": "the Main category has a guest name field",
+                    "description": "The Main category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4390,7 +4567,7 @@
                     }
                   },
                   {
-                    "description": "the Main category has a Claim button",
+                    "description": "The Main category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4403,7 +4580,7 @@
                     }
                   },
                   {
-                    "description": "the Side category has a guest name field",
+                    "description": "The Side category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4416,7 +4593,7 @@
                     }
                   },
                   {
-                    "description": "the Side category has a Claim button",
+                    "description": "The Side category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4429,7 +4606,7 @@
                     }
                   },
                   {
-                    "description": "the Salad category has a guest name field",
+                    "description": "The Salad category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4442,7 +4619,7 @@
                     }
                   },
                   {
-                    "description": "the Salad category has a Claim button",
+                    "description": "The Salad category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4455,7 +4632,7 @@
                     }
                   },
                   {
-                    "description": "the Dessert category has a guest name field",
+                    "description": "The Dessert category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4468,7 +4645,7 @@
                     }
                   },
                   {
-                    "description": "the Dessert category has a Claim button",
+                    "description": "The Dessert category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4481,7 +4658,7 @@
                     }
                   },
                   {
-                    "description": "the Drinks category has a guest name field",
+                    "description": "The Drinks category has a guest name field.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4494,7 +4671,7 @@
                     }
                   },
                   {
-                    "description": "the Drinks category has a Claim button",
+                    "description": "The Drinks category has a Claim button.",
                     "passed": true,
                     "operator": "equals",
                     "transforms": [],
@@ -4511,7 +4688,7 @@
                 "passed": true,
                 "step": 12,
                 "is_final": true,
-                "verification": "The Dishes section lists exactly the specified categories, shows the specified claimed-dishes count, and provides a guest name field and Claim button for every category.",
+                "verification": "The Dishes section shows the listed categories, dish claim count, guest name fields, and Claim buttons.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -4553,7 +4730,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:00.585339+00:00",
+          "start_timestamp": "2026-10-24T22:46:13.802021+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -4580,7 +4757,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "70c114516e094ac8b8656b6c3a478944",
+          "generative_id": "d3f68c235eda4e75b8fc9bb3fde2013b",
           "plan_id": "",
           "generative_objective": "At {{global.start_url}}, create a Potluck Planner event from the home page with title 'Dish available test', today's date, and host name 'Test Host'; reach its event page and Dishes section, then assert exactly five categories are listed as Main, Side, Salad, Dessert, and Drinks, the count reads '0 of 5 dishes claimed', and each category has a guest name field and Claim button.",
           "error_message": "",
@@ -4596,25 +4773,25 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Created the Potluck Planner event “Dish available test” with today’s date and host name “Test Host.”",
+        "Created the Potluck Planner event “Dish available test” with Test Host as the host and today’s date.",
         "Opened the event’s Dishes section.",
-        "Confirmed that the five available dish categories are Main, Side, Salad, Dessert, and Drinks, with no dishes claimed yet.",
+        "Confirmed that the section shows five categories—Main, Side, Salad, Dessert, and Drinks—with no dishes claimed yet.",
         "Confirmed that every category has a guest-name field and a Claim button."
       ],
       "one_liner": null
     },
     {
       "content_type": "generative_block",
-      "instruction_id": "generative_block_fef80f292e654767ba579098755175a6",
-      "generative_id": "fef80f292e654767ba579098755175a6",
+      "instruction_id": "generative_block_06516e78b90847ea83118e759e3cc637",
+      "generative_id": "06516e78b90847ea83118e759e3cc637",
       "objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
       "status": "success",
       "children": [
         {
-          "instruction_id": "230f814c-26de-473b-a28c-015fa461266f",
+          "instruction_id": "42ff71d5-ff30-4095-ad77-42b4acc52df5",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Waiting for the next step to run",
+          "instruction": "Waiting for the next step in the plan to run",
           "command": "WAIT",
           "error": null,
           "parent_instruction_id": "",
@@ -4622,12 +4799,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "e5c7be16-115a-449c-a771-b32f4453c6d5",
-              "instruction_id": "230f814c-26de-473b-a28c-015fa461266f",
-              "instruction": "Waiting for the next step to run",
-              "intent": "Waiting for the next step to run",
-              "operation_start": "2026-10-24T22:10:13.880648+00:00",
-              "operation_end": "2026-10-24T22:10:14.884Z",
+              "operation_id": "e8882363-e494-4e89-9e47-b8a36ef6ac9f",
+              "instruction_id": "42ff71d5-ff30-4095-ad77-42b4acc52df5",
+              "instruction": "Waiting for the next step in the plan to run",
+              "intent": "Waiting for the next step in the plan to run",
+              "operation_start": "2026-10-24T22:46:26.052698+00:00",
+              "operation_end": "2026-10-24T22:46:27.056Z",
               "status": "success",
               "command": "WAIT",
               "name": "",
@@ -4641,7 +4818,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Waiting for the next step to run\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (2 steps): type \\\"Guest name for Main\\\"; click \\\"Claim\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Waiting for the next step in the plan to run\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"WAIT\"},\"reasoning\":\"queued plan (2 steps): type \\\"Guest name for Main\\\"; click \\\"Claim\\\"\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4652,7 +4829,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e5c7be16-115a-449c-a771-b32f4453c6d5.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e8882363-e494-4e89-9e47-b8a36ef6ac9f.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4750,8 +4927,8 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:13.880648+00:00",
-          "end_timestamp": "2026-10-24T22:10:14.884Z",
+          "start_timestamp": "2026-10-24T22:46:26.052698+00:00",
+          "end_timestamp": "2026-10-24T22:46:27.056Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -4777,7 +4954,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -4788,7 +4965,7 @@
           "reasoning": "queued plan (2 steps): type \"Guest name for Main\"; click \"Claim\""
         },
         {
-          "instruction_id": "ab0a0c4b-c554-42f4-a74f-25cd3cd26fa4",
+          "instruction_id": "df6175d2-21d3-4fc9-a2bc-2aa33d9abac6",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Type \"Alex\" into \"Guest name for Main\"",
@@ -4799,12 +4976,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "785e03a4-3526-4ede-b10a-43be31f252ea",
-              "instruction_id": "ab0a0c4b-c554-42f4-a74f-25cd3cd26fa4",
+              "operation_id": "cbab4f4b-0146-40d5-ab0a-b29f56083b78",
+              "instruction_id": "df6175d2-21d3-4fc9-a2bc-2aa33d9abac6",
               "instruction": "Type \"Alex\" into \"Guest name for Main\"",
               "intent": "Type \"Alex\" into \"Guest name for Main\"",
-              "operation_start": "2026-10-24T22:10:14.512278+00:00",
-              "operation_end": "2026-10-24T22:10:14.534Z",
+              "operation_start": "2026-10-24T22:46:26.693460+00:00",
+              "operation_end": "2026-10-24T22:46:26.720Z",
               "status": "success",
               "command": "TYPE",
               "name": "",
@@ -4818,7 +4995,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Type \\\"Alex\\\" into \\\"Guest name for Main\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"TYPE\"},\"reasoning\":\"PRIMARY: guest name input for Main; role=textbox; text=\\\"Guest name for Main\\\" | HINTS: container=Claim Main form in Dishes section\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Type \\\"Alex\\\" into \\\"Guest name for Main\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"TYPE\"},\"reasoning\":\"PRIMARY: guest name input for Main; role=textbox; text=\\\"Guest name for Main\\\" | HINTS: container=Main dish claim form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -4829,7 +5006,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/785e03a4-3526-4ede-b10a-43be31f252ea.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/cbab4f4b-0146-40d5-ab0a-b29f56083b78.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -4931,11 +5108,11 @@
               "output_variables": {},
               "visual_context": {
                 "x": 960,
-                "y": 475,
+                "y": 912,
                 "confidence": 0,
                 "bbox": {
                   "x": 648,
-                  "y": 467,
+                  "y": 904,
                   "width": 624,
                   "height": 16
                 },
@@ -4943,17 +5120,17 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/785e03a4-3526-4ede-b10a-43be31f252ea.png",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/cbab4f4b-0146-40d5-ab0a-b29f56083b78.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: guest name input for Main; role=textbox; text=\"Guest name for Main\" | HINTS: container=Claim Main form in Dishes section"
+              "reasoning": "PRIMARY: guest name input for Main; role=textbox; text=\"Guest name for Main\" | HINTS: container=Main dish claim form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:14.512278+00:00",
-          "end_timestamp": "2026-10-24T22:10:14.534Z",
+          "start_timestamp": "2026-10-24T22:46:26.693460+00:00",
+          "end_timestamp": "2026-10-24T22:46:26.720Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -4979,7 +5156,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -4987,10 +5164,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: guest name input for Main; role=textbox; text=\"Guest name for Main\" | HINTS: container=Claim Main form in Dishes section"
+          "reasoning": "PRIMARY: guest name input for Main; role=textbox; text=\"Guest name for Main\" | HINTS: container=Main dish claim form"
         },
         {
-          "instruction_id": "89ec58ed-3c6b-4fc2-be9f-7cd223293f75",
+          "instruction_id": "5097563e-bd3d-4c4a-8dc9-031f3386d294",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Click \"Claim\"",
@@ -5001,12 +5178,12 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "bf5e4b61-0ed9-46ad-a273-a4aaf6964ae4",
-              "instruction_id": "89ec58ed-3c6b-4fc2-be9f-7cd223293f75",
+              "operation_id": "742fe1dc-5fb7-4419-b25c-86fc2876720f",
+              "instruction_id": "5097563e-bd3d-4c4a-8dc9-031f3386d294",
               "instruction": "Click \"Claim\"",
               "intent": "Click \"Claim\"",
-              "operation_start": "2026-10-24T22:10:15.267464+00:00",
-              "operation_end": "2026-10-24T22:10:15.306Z",
+              "operation_start": "2026-10-24T22:46:27.454161+00:00",
+              "operation_end": "2026-10-24T22:46:27.490Z",
               "status": "success",
               "command": "CLICK",
               "name": "",
@@ -5020,7 +5197,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Click \\\"Claim\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: Claim button for Main; role=button; text=\\\"Claim\\\" | HINTS: container=Claim Main form in Dishes section\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "sub_instruction_obj": "{\"operation\":\"Click \\\"Claim\\\"\",\"agent\":\"Vision Agent\",\"operation_dict\":{\"operation_type\":\"CLICK\"},\"reasoning\":\"PRIMARY: Claim button for Main; role=button; text=\\\"Claim\\\" | HINTS: container=Main dish claim form\",\"variable\":{},\"secrets\":{},\"params\":{}}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5031,7 +5208,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/bf5e4b61-0ed9-46ad-a273-a4aaf6964ae4.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/742fe1dc-5fb7-4419-b25c-86fc2876720f.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5145,17 +5322,17 @@
                 "viewport_width": 1920,
                 "viewport_height": 1080,
                 "scale_factor": null,
-                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/bf5e4b61-0ed9-46ad-a273-a4aaf6964ae4.png",
+                "raw_image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/742fe1dc-5fb7-4419-b25c-86fc2876720f.webp",
                 "raw_image_sas_url": "",
                 "annotated_image_url": "",
                 "annotated_image_sas_url": ""
               },
-              "reasoning": "PRIMARY: Claim button for Main; role=button; text=\"Claim\" | HINTS: container=Claim Main form in Dishes section"
+              "reasoning": "PRIMARY: Claim button for Main; role=button; text=\"Claim\" | HINTS: container=Main dish claim form"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:15.267464+00:00",
-          "end_timestamp": "2026-10-24T22:10:15.306Z",
+          "start_timestamp": "2026-10-24T22:46:27.454161+00:00",
+          "end_timestamp": "2026-10-24T22:46:27.490Z",
           "type": "agent_generated",
           "tags": [],
           "html_paths": [],
@@ -5181,7 +5358,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -5189,13 +5366,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "PRIMARY: Claim button for Main; role=button; text=\"Claim\" | HINTS: container=Claim Main form in Dishes section"
+          "reasoning": "PRIMARY: Claim button for Main; role=button; text=\"Claim\" | HINTS: container=Main dish claim form"
         },
         {
-          "instruction_id": "31c34478-7141-4cbb-bad9-5ad99172d94a",
+          "instruction_id": "10e92aaa-2c7e-4546-b3d7-b1ce3d74da5b",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Checking whether the Main claim heading is present",
+          "instruction": "Checking whether Main is claimed by Alex",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -5203,11 +5380,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "49a58537-d530-44c5-9943-70081c2881b2",
-              "instruction_id": "31c34478-7141-4cbb-bad9-5ad99172d94a",
-              "instruction": "Checking whether the Main claim heading is present",
-              "intent": "Checking whether the Main claim heading is present",
-              "operation_start": "2026-10-24T22:10:33.000982+00:00",
+              "operation_id": "67fbbd42-8978-4ba4-9c2f-2c4ea7491b6d",
+              "instruction_id": "10e92aaa-2c7e-4546-b3d7-b1ce3d74da5b",
+              "instruction": "Checking whether Main is claimed by Alex",
+              "intent": "Checking whether Main is claimed by Alex",
+              "operation_start": "2026-10-24T22:46:42.196965+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -5222,7 +5399,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main claim heading is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether 'Main — claimed by Alex' is present (in the dishes list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(15).textContent.trim() === 'Main — claimed by Alex'\",\"wrapped_js\":\"(els) => {\\n  const __m = {15: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(15).textContent.trim() === 'Main — claimed by Alex');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=heading[name=\\\"Main — claimed by Alex\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether 'Main — claimed by Alex' is present (in the dishes list)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"'Main — claimed by Alex' appears.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether Main is claimed by Alex\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether 'Main — claimed by Alex' is present (in the dishes list)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(31).textContent.trim() === 'Main — claimed by Alex'\",\"wrapped_js\":\"(els) => {\\n  const __m = {31: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(31).textContent.trim() === 'Main — claimed by Alex');\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=heading[name=\\\"Main — claimed by Alex\\\"i]\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether 'Main — claimed by Alex' is present (in the dishes list)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"'Main — claimed by Alex' appears.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5233,7 +5410,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/49a58537-d530-44c5-9943-70081c2881b2.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/67fbbd42-8978-4ba4-9c2f-2c4ea7491b6d.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5333,7 +5510,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:33.000982+00:00",
+          "start_timestamp": "2026-10-24T22:46:42.196965+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -5360,7 +5537,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -5371,7 +5548,7 @@
           "reasoning": "whether 'Main — claimed by Alex' is present (in the dishes list)"
         },
         {
-          "instruction_id": "27b15f7e-0373-456b-8013-bfb15f16156e",
+          "instruction_id": "ef5cc325-c663-486c-8344-e5f15d302eaa",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Reading the dishes claimed count",
@@ -5382,11 +5559,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "3fc6a2eb-49b5-49e2-9339-c77164ececf9",
-              "instruction_id": "27b15f7e-0373-456b-8013-bfb15f16156e",
+              "operation_id": "9efcf0de-3f66-4145-a7c3-1ffb541641d9",
+              "instruction_id": "ef5cc325-c663-486c-8344-e5f15d302eaa",
               "instruction": "Reading the dishes claimed count",
               "intent": "Reading the dishes claimed count",
-              "operation_start": "2026-10-24T22:10:33.001375+00:00",
+              "operation_start": "2026-10-24T22:46:42.197313+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -5401,7 +5578,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Reading the dishes claimed count\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the dishes claimed count\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(12).textContent.trim()\",\"wrapped_js\":\"(els) => {\\n  const __m = {12: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(12).textContent.trim());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"of 5 dishes claimed\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the dishes claimed count\",\"expected_value\":\"1 of 5 dishes claimed\",\"needs_unit_conversion\":false,\"condition\":\"The count reads '1 of 5 dishes claimed'.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Reading the dishes claimed count\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"the dishes claimed count\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(28).textContent.trim()\",\"wrapped_js\":\"(els) => {\\n  const __m = {28: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(28).textContent.trim());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"of 5 dishes claimed\\\"i\"],\"operator\":\"equals\",\"transforms\":[\"strip\"],\"query\":\"the dishes claimed count\",\"expected_value\":\"1 of 5 dishes claimed\",\"needs_unit_conversion\":false,\"condition\":\"The count reads '1 of 5 dishes claimed'.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5412,7 +5589,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/3fc6a2eb-49b5-49e2-9339-c77164ececf9.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/9efcf0de-3f66-4145-a7c3-1ffb541641d9.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5512,7 +5689,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:33.001375+00:00",
+          "start_timestamp": "2026-10-24T22:46:42.197313+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -5539,7 +5716,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -5550,7 +5727,7 @@
           "reasoning": "the dishes claimed count"
         },
         {
-          "instruction_id": "9d00b164-1205-4290-883f-3ccd38764252",
+          "instruction_id": "3cd5fd29-c7b8-4145-9f41-791d4198ac16",
           "instruction_class": "driver_action",
           "module_id": "",
           "instruction": "Checking whether the Main Claim button is present",
@@ -5561,11 +5738,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "507c64be-a0c6-4f71-ba7d-2d9ef5694838",
-              "instruction_id": "9d00b164-1205-4290-883f-3ccd38764252",
+              "operation_id": "688539ce-fbad-47b0-9866-c7651f020a68",
+              "instruction_id": "3cd5fd29-c7b8-4145-9f41-791d4198ac16",
               "instruction": "Checking whether the Main Claim button is present",
               "intent": "Checking whether the Main Claim button is present",
-              "operation_start": "2026-10-24T22:10:33.001491+00:00",
+              "operation_start": "2026-10-24T22:46:42.197422+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -5580,7 +5757,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Main Claim button is present (in the Main dish entry)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"Array.from(el(13).querySelectorAll('li')).some(li => li.querySelector('h3')?.textContent.trim() === 'Main — claimed by Alex' && Array.from(li.querySelectorAll('button')).some(b => b.textContent.trim() === 'Claim'))\",\"wrapped_js\":\"(els) => {\\n  const __m = {13: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (Array.from(el(13).querySelectorAll('li')).some(li => li.querySelector('h3')?.textContent.trim() === 'Main — claimed by Alex' && Array.from(li.querySelectorAll('button')).some(b => b.textContent.trim() === 'Claim')));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main — claimed by Alex Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Main Claim button is present (in the Main dish entry)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"Main has no Claim button.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking whether the Main Claim button is present\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Main Claim button is present (in the Main dish item)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(30).querySelector('button') !== null\",\"wrapped_js\":\"(els) => {\\n  const __m = {30: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(30).querySelector('button') !== null);\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:role=listitem >> internal:has-text=\\\"Main — claimed by Alex\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Main Claim button is present (in the Main dish item)\",\"expected_value\":\"false\",\"needs_unit_conversion\":false,\"condition\":\"Main has no Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5591,7 +5768,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/507c64be-a0c6-4f71-ba7d-2d9ef5694838.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/688539ce-fbad-47b0-9866-c7651f020a68.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -5687,11 +5864,11 @@
                 "main_claim_button": "false"
               },
               "visual_context": null,
-              "reasoning": "whether Main Claim button is present (in the Main dish entry)"
+              "reasoning": "whether Main Claim button is present (in the Main dish item)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:33.001491+00:00",
+          "start_timestamp": "2026-10-24T22:46:42.197422+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -5718,7 +5895,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -5726,13 +5903,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether Main Claim button is present (in the Main dish entry)"
+          "reasoning": "whether Main Claim button is present (in the Main dish item)"
         },
         {
-          "instruction_id": "9840bb78-baf9-4316-9b94-ad65d1453a2e",
+          "instruction_id": "572e63a4-e8b2-477a-b437-b71a0b094abf",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Checking guest name fields for other unclaimed categories",
+          "instruction": "Checking guest name fields in the other unclaimed categories",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -5740,11 +5917,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "48247cc7-8b6b-42ff-ae58-cc9992d27f9d",
-              "instruction_id": "9840bb78-baf9-4316-9b94-ad65d1453a2e",
-              "instruction": "Checking guest name fields for other unclaimed categories",
-              "intent": "Checking guest name fields for other unclaimed categories",
-              "operation_start": "2026-10-24T22:10:33.001602+00:00",
+              "operation_id": "e044b522-1be2-4c5d-9b53-34c951895ea1",
+              "instruction_id": "572e63a4-e8b2-477a-b437-b71a0b094abf",
+              "instruction": "Checking guest name fields in the other unclaimed categories",
+              "intent": "Checking guest name fields in the other unclaimed categories",
+              "operation_start": "2026-10-24T22:46:42.197521+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -5759,7 +5936,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking guest name fields for other unclaimed categories\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether guest name field for each other unclaimed category is present (in the other unclaimed dish entries)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"(() => { const items = Array.from(el(13).querySelectorAll(':scope > li')).filter(li => !li.querySelector('h3')?.textContent.includes('claimed by')); return items.length > 0 && items.every(li => li.querySelector('input[aria-label^=\\\"Guest name for\\\"]') !== null); })()\",\"wrapped_js\":\"(els) => {\\n  const __m = {13: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = ((() => { const items = Array.from(el(13).querySelectorAll(':scope > li')).filter(li => !li.querySelector('h3')?.textContent.includes('claimed by')); return items.length > 0 && items.every(li => li.querySelector('input[aria-label^=\\\"Guest name for\\\"]') !== null); })());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main — claimed by Alex Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether guest name field for each other unclaimed category is present (in the other unclaimed dish entries)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Each other unclaimed category still has a guest name field.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking guest name fields in the other unclaimed categories\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether guest name field in each other unclaimed category is present (in the other dish category items)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(29).querySelectorAll('li').length === 5 && Array.from(el(29).querySelectorAll('li')).slice(1).every(item => item.querySelector('input[aria-label^=\\\"Guest name for\\\"]') !== null)\",\"wrapped_js\":\"(els) => {\\n  const __m = {29: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(29).querySelectorAll('li').length === 5 && Array.from(el(29).querySelectorAll('li')).slice(1).every(item => item.querySelector('input[aria-label^=\\\"Guest name for\\\"]') !== null));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main — claimed by Alex Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether guest name field in each other unclaimed category is present (in the other dish category items)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Each other unclaimed category still has a guest name field.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5770,14 +5947,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/48247cc7-8b6b-42ff-ae58-cc9992d27f9d.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/e044b522-1be2-4c5d-9b53-34c951895ea1.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "other_unclaimed_guest_name_fields",
+              "query_variable_name": "other_unclaimed_categories_guest_name_field",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -5863,14 +6040,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "other_unclaimed_guest_name_fields": "true"
+                "other_unclaimed_categories_guest_name_field": "true"
               },
               "visual_context": null,
-              "reasoning": "whether guest name field for each other unclaimed category is present (in the other unclaimed dish entries)"
+              "reasoning": "whether guest name field in each other unclaimed category is present (in the other dish category items)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:33.001602+00:00",
+          "start_timestamp": "2026-10-24T22:46:42.197521+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -5897,7 +6074,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -5905,13 +6082,13 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether guest name field for each other unclaimed category is present (in the other unclaimed dish entries)"
+          "reasoning": "whether guest name field in each other unclaimed category is present (in the other dish category items)"
         },
         {
-          "instruction_id": "aaa101ec-af1a-4395-ab35-dbe2def6ad50",
+          "instruction_id": "d82b0437-68b9-465a-b2ac-47f03200bb88",
           "instruction_class": "driver_action",
           "module_id": "",
-          "instruction": "Checking Claim buttons for other unclaimed categories",
+          "instruction": "Checking Claim buttons in the other unclaimed categories",
           "command": "TEXTUAL_ANALYZER",
           "error": null,
           "parent_instruction_id": "",
@@ -5919,11 +6096,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "7721f6b7-b199-4c49-86bd-1d6d8506ea2a",
-              "instruction_id": "aaa101ec-af1a-4395-ab35-dbe2def6ad50",
-              "instruction": "Checking Claim buttons for other unclaimed categories",
-              "intent": "Checking Claim buttons for other unclaimed categories",
-              "operation_start": "2026-10-24T22:10:33.001721+00:00",
+              "operation_id": "a31016a7-ad42-421b-8761-2517bf021273",
+              "instruction_id": "d82b0437-68b9-465a-b2ac-47f03200bb88",
+              "instruction": "Checking Claim buttons in the other unclaimed categories",
+              "intent": "Checking Claim buttons in the other unclaimed categories",
+              "operation_start": "2026-10-24T22:46:42.197636+00:00",
               "operation_end": "",
               "status": "success",
               "command": "TEXTUAL_ANALYZER",
@@ -5938,7 +6115,7 @@
               "grounded_by": "",
               "error_message": "",
               "code_snippet": "",
-              "sub_instruction_obj": "{\"operation\":\"Checking Claim buttons for other unclaimed categories\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Claim button for each other unclaimed category is present (in the other unclaimed dish entries)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"(() => { const items = Array.from(el(13).querySelectorAll(':scope > li')).filter(li => !li.querySelector('h3')?.textContent.includes('claimed by')); return items.length > 0 && items.every(li => Array.from(li.querySelectorAll('button')).some(b => b.textContent.trim() === 'Claim')); })()\",\"wrapped_js\":\"(els) => {\\n  const __m = {13: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = ((() => { const items = Array.from(el(13).querySelectorAll(':scope > li')).filter(li => !li.querySelector('h3')?.textContent.includes('claimed by')); return items.length > 0 && items.every(li => Array.from(li.querySelectorAll('button')).some(b => b.textContent.trim() === 'Claim')); })());\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main — claimed by Alex Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Claim button for each other unclaimed category is present (in the other unclaimed dish entries)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Each other unclaimed category still has a Claim button.\"}",
+              "sub_instruction_obj": "{\"operation\":\"Checking Claim buttons in the other unclaimed categories\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"TEXTUAL_ANALYZER\"},\"reasoning\":\"whether Claim button in each other unclaimed category is present (in the other dish category items)\",\"variable\":{},\"secrets\":{},\"params\":{},\"code_js\":\"el(29).querySelectorAll('li').length === 5 && Array.from(el(29).querySelectorAll('li')).slice(1).every(item => Array.from(item.querySelectorAll('button')).some(button => button.textContent.trim() === 'Claim'))\",\"wrapped_js\":\"(els) => {\\n  const __m = {29: 0};\\n  const el = (i) => els[__m[i]];\\n  const __v = (el(29).querySelectorAll('li').length === 5 && Array.from(el(29).querySelectorAll('li')).slice(1).every(item => Array.from(item.querySelectorAll('button')).some(button => button.textContent.trim() === 'Claim')));\\n  return (typeof __v === 'boolean' ? String(__v) : __v);\\n}\",\"locators\":[\"internal:text=\\\"Main — claimed by Alex Side\\\"i\"],\"operator\":\"equals\",\"transforms\":[],\"query\":\"whether Claim button in each other unclaimed category is present (in the other dish category items)\",\"expected_value\":\"true\",\"needs_unit_conversion\":false,\"condition\":\"Each other unclaimed category still has a Claim button.\"}",
               "test_id": "",
               "test_version": "",
               "action": "",
@@ -5949,14 +6126,14 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/7721f6b7-b199-4c49-86bd-1d6d8506ea2a.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/a31016a7-ad42-421b-8761-2517bf021273.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
               "url": "",
               "navigation_direction": "",
               "tagified_image_url": "",
-              "query_variable_name": "other_unclaimed_claim_buttons",
+              "query_variable_name": "other_unclaimed_categories_claim_button",
               "query_variable_value": "true",
               "query_variable_type": "",
               "expected_value": "",
@@ -6042,14 +6219,14 @@
               "until_settle_ms": 0,
               "api_data": {},
               "output_variables": {
-                "other_unclaimed_claim_buttons": "true"
+                "other_unclaimed_categories_claim_button": "true"
               },
               "visual_context": null,
-              "reasoning": "whether Claim button for each other unclaimed category is present (in the other unclaimed dish entries)"
+              "reasoning": "whether Claim button in each other unclaimed category is present (in the other dish category items)"
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:33.001721+00:00",
+          "start_timestamp": "2026-10-24T22:46:42.197636+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -6076,7 +6253,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -6084,10 +6261,10 @@
           "reason": "",
           "title": "",
           "used_variables": [],
-          "reasoning": "whether Claim button for each other unclaimed category is present (in the other unclaimed dish entries)"
+          "reasoning": "whether Claim button in each other unclaimed category is present (in the other dish category items)"
         },
         {
-          "instruction_id": "18ed3394-b6db-4a97-b736-2cb0c46819db",
+          "instruction_id": "1c3a0223-fc14-46e4-9662-d553c1eeabc0",
           "instruction_class": "non_driver_action",
           "module_id": "",
           "instruction": "Assertion check",
@@ -6150,10 +6327,10 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{other_unclaimed_guest_name_fields}}",
-                      "store_key": "other_unclaimed_guest_name_fields",
+                      "extracted_value": "{{other_unclaimed_categories_guest_name_field}}",
+                      "store_key": "other_unclaimed_categories_guest_name_field",
                       "variable_refs": {
-                        "{{other_unclaimed_guest_name_fields}}": "true"
+                        "{{other_unclaimed_categories_guest_name_field}}": "true"
                       }
                     },
                     {
@@ -6163,10 +6340,10 @@
                       "transforms": [],
                       "json_path": null,
                       "expected": "true",
-                      "extracted_value": "{{other_unclaimed_claim_buttons}}",
-                      "store_key": "other_unclaimed_claim_buttons",
+                      "extracted_value": "{{other_unclaimed_categories_claim_button}}",
+                      "store_key": "other_unclaimed_categories_claim_button",
                       "variable_refs": {
-                        "{{other_unclaimed_claim_buttons}}": "true"
+                        "{{other_unclaimed_categories_claim_button}}": "true"
                       }
                     }
                   ],
@@ -6199,17 +6376,17 @@
                     },
                     {
                       "description": "Each other unclaimed category still has a guest name field.",
-                      "store_key": "other_unclaimed_guest_name_fields",
+                      "store_key": "other_unclaimed_categories_guest_name_field",
                       "expected_value": "true",
-                      "extracted_value": "{{other_unclaimed_guest_name_fields}}",
+                      "extracted_value": "{{other_unclaimed_categories_guest_name_field}}",
                       "operator": "equals",
                       "transforms": []
                     },
                     {
                       "description": "Each other unclaimed category still has a Claim button.",
-                      "store_key": "other_unclaimed_claim_buttons",
+                      "store_key": "other_unclaimed_categories_claim_button",
                       "expected_value": "true",
-                      "extracted_value": "{{other_unclaimed_claim_buttons}}",
+                      "extracted_value": "{{other_unclaimed_categories_claim_button}}",
                       "operator": "equals",
                       "transforms": []
                     }
@@ -6232,11 +6409,11 @@
           "classification_error": {},
           "operations": [
             {
-              "operation_id": "da7dc74f-2262-4843-80c4-2e83bd58c54c",
-              "instruction_id": "18ed3394-b6db-4a97-b736-2cb0c46819db",
+              "operation_id": "681f2f3f-5262-4919-a8cd-7a4bc6f4a3b7",
+              "instruction_id": "1c3a0223-fc14-46e4-9662-d553c1eeabc0",
               "instruction": "Assertion check",
               "intent": "Assertion check",
-              "operation_start": "2026-10-24T22:10:33.620712+00:00",
+              "operation_start": "2026-10-24T22:46:42.793495+00:00",
               "operation_end": "",
               "status": "success",
               "command": "ASSERTION",
@@ -6262,7 +6439,7 @@
               "update_time_stamp": "",
               "locator_variable": "",
               "locator_variable_name": "",
-              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/da7dc74f-2262-4843-80c4-2e83bd58c54c.png",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/681f2f3f-5262-4919-a8cd-7a4bc6f4a3b7.webp",
               "alternative_xpaths": [],
               "attribute": "",
               "value_description": "",
@@ -6375,10 +6552,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{other_unclaimed_guest_name_fields}}",
-                    "store_key": "other_unclaimed_guest_name_fields",
+                    "extracted_value": "{{other_unclaimed_categories_guest_name_field}}",
+                    "store_key": "other_unclaimed_categories_guest_name_field",
                     "variable_refs": {
-                      "{{other_unclaimed_guest_name_fields}}": "true"
+                      "{{other_unclaimed_categories_guest_name_field}}": "true"
                     }
                   },
                   {
@@ -6388,10 +6565,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{other_unclaimed_claim_buttons}}",
-                    "store_key": "other_unclaimed_claim_buttons",
+                    "extracted_value": "{{other_unclaimed_categories_claim_button}}",
+                    "store_key": "other_unclaimed_categories_claim_button",
                     "variable_refs": {
-                      "{{other_unclaimed_claim_buttons}}": "true"
+                      "{{other_unclaimed_categories_claim_button}}": "true"
                     }
                   }
                 ],
@@ -6424,23 +6601,23 @@
                   },
                   {
                     "description": "Each other unclaimed category still has a guest name field.",
-                    "store_key": "other_unclaimed_guest_name_fields",
+                    "store_key": "other_unclaimed_categories_guest_name_field",
                     "expected_value": "true",
-                    "extracted_value": "{{other_unclaimed_guest_name_fields}}",
+                    "extracted_value": "{{other_unclaimed_categories_guest_name_field}}",
                     "operator": "equals",
                     "transforms": []
                   },
                   {
                     "description": "Each other unclaimed category still has a Claim button.",
-                    "store_key": "other_unclaimed_claim_buttons",
+                    "store_key": "other_unclaimed_categories_claim_button",
                     "expected_value": "true",
-                    "extracted_value": "{{other_unclaimed_claim_buttons}}",
+                    "extracted_value": "{{other_unclaimed_categories_claim_button}}",
                     "operator": "equals",
                     "transforms": []
                   }
                 ],
                 "composite_operator": "and",
-                "verification": "Check the Dishes section after claiming Main with guest name Alex.",
+                "verification": "The Dishes section reflects Main claimed by Alex while all other unclaimed categories retain their claiming controls.",
                 "claim": "'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button."
               },
               "assertion_tree": {
@@ -6496,10 +6673,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{other_unclaimed_guest_name_fields}}",
-                    "store_key": "other_unclaimed_guest_name_fields",
+                    "extracted_value": "{{other_unclaimed_categories_guest_name_field}}",
+                    "store_key": "other_unclaimed_categories_guest_name_field",
                     "variable_refs": {
-                      "{{other_unclaimed_guest_name_fields}}": "true"
+                      "{{other_unclaimed_categories_guest_name_field}}": "true"
                     }
                   },
                   {
@@ -6509,10 +6686,10 @@
                     "transforms": [],
                     "json_path": null,
                     "expected": "true",
-                    "extracted_value": "{{other_unclaimed_claim_buttons}}",
-                    "store_key": "other_unclaimed_claim_buttons",
+                    "extracted_value": "{{other_unclaimed_categories_claim_button}}",
+                    "store_key": "other_unclaimed_categories_claim_button",
                     "variable_refs": {
-                      "{{other_unclaimed_claim_buttons}}": "true"
+                      "{{other_unclaimed_categories_claim_button}}": "true"
                     }
                   }
                 ],
@@ -6520,7 +6697,7 @@
                 "passed": true,
                 "step": 5,
                 "is_final": true,
-                "verification": "Check the Dishes section after claiming Main with guest name Alex.",
+                "verification": "The Dishes section reflects Main claimed by Alex while all other unclaimed categories retain their claiming controls.",
                 "error_message": null,
                 "duration_ms": 0
               },
@@ -6562,7 +6739,7 @@
             }
           ],
           "status": "success",
-          "start_timestamp": "2026-10-24T22:10:33.620712+00:00",
+          "start_timestamp": "2026-10-24T22:46:42.793495+00:00",
           "end_timestamp": "",
           "type": "agent_generated",
           "tags": [],
@@ -6589,7 +6766,7 @@
           "network_assertion_content": {},
           "screenshot_command": "",
           "smartui_contents": {},
-          "generative_id": "fef80f292e654767ba579098755175a6",
+          "generative_id": "06516e78b90847ea83118e759e3cc637",
           "plan_id": "",
           "generative_objective": "On that event page's Dishes section, claim Main with guest name Alex, then assert 'Main — claimed by Alex' appears, the count reads '1 of 5 dishes claimed', Main has no Claim button, and each other unclaimed category still has a guest name field and Claim button.",
           "error_message": "",
@@ -6605,9 +6782,9 @@
       "result_code": null,
       "bifurcation_context": [],
       "approach_reason": [
-        "Claimed the Main dish for guest name Alex on the event’s Dishes section.",
-        "The page now shows “Main — claimed by Alex” and “1 of 5 dishes claimed.”",
-        "The Main dish can no longer be claimed again, while the remaining dish categories still provide guest-name fields and Claim buttons."
+        "Claimed the Main dish for guest Alex on the event page.",
+        "The Dishes section now shows “Main — claimed by Alex” and “1 of 5 dishes claimed.”",
+        "Main no longer has a Claim button, while the remaining dish categories still have guest name fields and Claim buttons."
       ],
       "one_liner": null
     }
@@ -6615,13 +6792,13 @@
   "modules": [],
   "uploaded_files": [],
   "test_params": [],
-  "test_level_variables": "[{\"name\":\"dish_categories_check\",\"value\":\"Main, Side, Salad, Dessert, and Drinks\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"dishes_claimed_count\",\"value\":\"1 of 5 dishes claimed\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"main_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"main_claim_button\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"side_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"side_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"salad_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"salad_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"dessert_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"dessert_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"drinks_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"drinks_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"main_claimed_by_alex_visible\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"other_unclaimed_guest_name_fields\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"other_unclaimed_claim_buttons\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
+  "test_level_variables": "[{\"name\":\"dish_categories_check\",\"value\":\"Main, Side, Salad, Dessert, Drinks\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"dishes_claimed_count\",\"value\":\"1 of 5 dishes claimed\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"main_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"main_claim_button\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"side_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"side_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"salad_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"salad_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"dessert_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"dessert_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"drinks_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"drinks_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"main_claimed_by_alex_visible\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"other_unclaimed_categories_guest_name_field\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"other_unclaimed_categories_claim_button\",\"value\":\"true\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
   "test_global_variables": [
     {
       "id": 464833,
       "name": "start_url",
-      "value": "http://localhost:4102",
-      "session_value": "http://localhost:4102",
+      "value": "http://localhost:4103",
+      "session_value": "http://localhost:4103",
       "is_persist": false,
       "environment_id": 0,
       "environment_name": "No Env"

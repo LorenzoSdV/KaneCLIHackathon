@@ -1,25 +1,19 @@
 {
+  "commit_id": "5dad0d6d-f9bb-46f2-b2a0-c0fa4679b1e4",
   "test_id": "27e7bf22-a88a-4e44-b222-1d75e5452247",
+  "testcase_id": "01M5QS3JF4RW2JD18QP2CKZJBP",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
   "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
   "org_id": "3398072",
   "session_name": "empty-rsvp-name-reports-error-without-changing-the-event",
-  "commit_id": "1ee81c0c-260c-46a2-9d55-4697c1a96dab",
-  "testcase_id": "01M5QS3JF4RW2JD18QP2CKZJBP",
   "executions": [
     {
-      "execution_id": "800b5b61-6d9a-4f45-852c-d8d948d42529",
+      "execution_id": "89f861e5-fc9e-4701-91bf-62270eb789de",
       "run_kind": "author",
-      "status": "failed",
+      "status": "passed",
       "valid": true,
-      "at": "2026-10-24T20:20:56.851Z"
-    },
-    {
-      "execution_id": "97963b94-1db6-40d9-87aa-c4227ef61905",
-      "run_kind": "author",
-      "status": "failed",
-      "at": "2026-10-24T20:24:54.712Z",
-      "uploaded": true
+      "uploaded": true,
+      "at": "2026-10-24T22:52:09.337Z"
     }
   ]
 }
