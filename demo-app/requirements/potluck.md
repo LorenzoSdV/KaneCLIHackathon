@@ -12,7 +12,8 @@ A host creates a potluck from the home page.
 - Submitting the form creates the event and opens its event page.
 - The event page shows the event title, the date, and "Hosted by <host name>".
 - The home page lists every created event by title, and each title links to its event page.
-- Submitting the form with an empty title shows the error "Title is required" and creates no event.
+- All three fields are required. Submitting the form with an empty title shows the error "Title is required", with an empty date shows "Date is required", and with an empty host name shows "Host name is required". In each case no event is created and the values already typed stay in the form.
+- When several fields are empty, every matching error is shown.
 
 ## Feature A: RSVP
 

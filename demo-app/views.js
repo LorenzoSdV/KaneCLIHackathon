@@ -22,7 +22,15 @@ export function layout(title, body) {
 </html>`;
 }
 
-export function homePage({ events, error = "", values = {} }) {
+function field(label, name, type, values, errors, autofocus) {
+  const error = errors[name];
+  const attrs = error ? ` class="invalid" aria-invalid="true"${autofocus ? " autofocus" : ""}` : "";
+  return `<label>${label} <input name="${name}" type="${type}" value="${escape(values[name])}"${attrs}></label>`;
+}
+
+export function homePage({ events, errors = {}, values = {} }) {
+  const messages = Object.values(errors);
+  const firstInvalid = ["title", "date", "host"].find((name) => errors[name]);
   const list = events.length
     ? `<ul class="events">${events
         .map((e) => `<li><a href="/events/${e.id}">${escape(e.title)}</a> <span class="muted">${escape(e.date)}</span></li>`)
@@ -33,13 +41,15 @@ export function homePage({ events, error = "", values = {} }) {
     "Home",
     `<section class="card">
   <h1>Create event</h1>
-  ${error ? `<p class="error" role="alert">${escape(error)}</p>` : ""}
+  ${
+    messages.length
+      ? `<div class="error" role="alert">${messages.map((m) => `<p>${escape(m)}</p>`).join("")}</div>`
+      : ""
+  }
   <form method="post" action="/events">
-    <label>Event title <input name="title" value="${escape(values.title)}"${
-      error ? ' class="invalid" aria-invalid="true" autofocus' : ""
-    }></label>
-    <label>Date <input name="date" type="date" value="${escape(values.date)}"></label>
-    <label>Host name <input name="host" value="${escape(values.host)}"></label>
+    ${field("Event title", "title", "text", values, errors, firstInvalid === "title")}
+    ${field("Date", "date", "date", values, errors, firstInvalid === "date")}
+    ${field("Host name", "host", "text", values, errors, firstInvalid === "host")}
     <button type="submit">Create event</button>
   </form>
 </section>

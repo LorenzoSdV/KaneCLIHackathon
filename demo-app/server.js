@@ -12,6 +12,20 @@ async function readForm(req) {
   return Object.fromEntries(new URLSearchParams(body));
 }
 
+// Dates are compared as local YYYY-MM-DD strings, the format <input type="date"> submits.
+function today() {
+  const now = new Date();
+  const pad = (n) => String(n).padStart(2, "0");
+  return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+}
+
+function isValidDate(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [y, m, d] = value.split("-").map(Number);
+  const date = new Date(y, m - 1, d);
+  return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d;
+}
+
 function send(res, status, html) {
   res.writeHead(status, { "content-type": "text/html; charset=utf-8" });
   res.end(html);
@@ -34,10 +48,17 @@ const server = createServer(async (req, res) => {
     if (req.method === "POST" && path === "/events") {
       const form = await readForm(req);
       const title = (form.title ?? "").trim();
-      if (!title) {
-        return send(res, 400, homePage({ events: listEvents(), error: "Title is required", values: form }));
+      const date = (form.date ?? "").trim();
+      const host = (form.host ?? "").trim();
+      const errors = {};
+      if (!title) errors.title = "Title is required";
+      if (!date) errors.date = "Date is required";
+      else if (!isValidDate(date) || date < today()) errors.date = "Date must be today or later";
+      if (!host) errors.host = "Host name is required";
+      if (Object.keys(errors).length) {
+        return send(res, 400, homePage({ events: listEvents(), errors, values: form }));
       }
-      const event = createEvent({ title, date: form.date ?? "", host: (form.host ?? "").trim() });
+      const event = createEvent({ title, date, host });
       return redirect(res, `/events/${event.id}`);
     }
 
