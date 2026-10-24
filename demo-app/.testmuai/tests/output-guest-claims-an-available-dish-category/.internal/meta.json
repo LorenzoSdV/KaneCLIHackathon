@@ -1,24 +1,25 @@
 {
+  "commit_id": "8c34dbf1-cfde-4c87-a419-a3a279951a92",
   "test_id": "8d84ecac-cb78-4a5b-aa6d-01da362329c9",
+  "testcase_id": "01M5QS44VK06HQMVNAX0MHJETK",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
   "folder_id": "01M5QNDJP42Q246QHXRZ7GMBAN",
   "org_id": "3398072",
   "session_name": "guest-claims-an-available-dish-category",
-  "commit_id": "8c34dbf1-cfde-4c87-a419-a3a279951a92",
-  "testcase_id": "01M5QS44VK06HQMVNAX0MHJETK",
   "executions": [
     {
-      "execution_id": "f2cb0343-6ad8-4e2e-8237-9cc881ae1178",
+      "execution_id": "26210384-3e95-4b41-8f01-d52fe2757923",
       "run_kind": "author",
-      "status": "broken",
+      "status": "passed",
       "valid": true,
-      "at": "2026-10-24T20:21:19.619Z"
+      "uploaded": false,
+      "at": "2026-10-24T22:12:58.252Z"
     },
     {
-      "execution_id": "97963b94-1db6-40d9-87aa-c4227ef61905",
-      "run_kind": "author",
-      "status": "broken",
-      "at": "2026-10-24T20:24:54.713Z",
+      "execution_id": "c8c5a872-6b86-4257-8b97-cc6069a9b313",
+      "run_kind": "replay",
+      "status": "passed",
+      "at": "2026-10-24T22:16:27.215Z",
       "uploaded": true
     }
   ]

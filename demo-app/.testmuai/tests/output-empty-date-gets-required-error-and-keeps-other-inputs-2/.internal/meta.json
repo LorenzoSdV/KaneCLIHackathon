@@ -28,6 +28,21 @@
       "valid": true,
       "uploaded": true,
       "at": "2026-10-24T21:07:45.017Z"
+    },
+    {
+      "execution_id": "26210384-3e95-4b41-8f01-d52fe2757923",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": false,
+      "at": "2026-10-24T22:12:58.250Z"
+    },
+    {
+      "execution_id": "c8c5a872-6b86-4257-8b97-cc6069a9b313",
+      "run_kind": "replay",
+      "status": "passed",
+      "at": "2026-10-24T22:16:27.212Z",
+      "uploaded": true
     }
   ]
 }

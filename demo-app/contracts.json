@@ -19,6 +19,6 @@
     "demo-app/.testmuai/tests/empty-guest-name-cannot-claim-a-dish_test.md",
     "demo-app/.testmuai/tests/five-claims-fill-the-dish-roster_test.md",
     "demo-app/.testmuai/tests/guest-claims-an-available-dish-category_test.md",
-    "demo-app/.testmuai/tests/stale-dish-claim-leaves-the-original-claimant-intact_test.md"
+    "demo-app/.testmuai/tests/stale-dish-claim-leaves-the-original-claimant-intact-2_test.md"
   ]
 }
