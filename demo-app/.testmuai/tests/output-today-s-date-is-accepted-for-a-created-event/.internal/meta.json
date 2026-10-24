@@ -8,19 +8,12 @@
   "session_name": "today-s-date-is-accepted-for-a-created-event",
   "executions": [
     {
-      "execution_id": "b24f3039-88d2-4f6f-ab4a-dccda1a8fe20",
+      "execution_id": "0ec6bd8f-2668-44a4-9ccb-a4d5eb50c836",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T20:42:07.778Z"
-    },
-    {
-      "execution_id": "8908a085-ccc9-490a-9a1e-93d17db25c56",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T20:43:46.472Z",
-      "uploaded": true
+      "uploaded": true,
+      "at": "2026-10-24T21:16:47.821Z"
     }
   ]
 }

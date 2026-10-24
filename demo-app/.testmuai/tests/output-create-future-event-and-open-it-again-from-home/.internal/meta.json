@@ -1,5 +1,5 @@
 {
-  "commit_id": "a10b6d1f-2d4e-44a2-a0df-0d7dacbd8fa2",
+  "commit_id": "8f70edcb-785e-47d2-a58b-77aa5f2455b1",
   "test_id": "d5d65423-5db6-44de-a165-0f889695e814",
   "testcase_id": "01M5QS0J7658P23K5NWKPCEQ1J",
   "project_id": "01M5QNDJBAJNS75BPKHFBZWJTX",
@@ -8,19 +8,12 @@
   "session_name": "create-future-event-and-open-it-again-from-home",
   "executions": [
     {
-      "execution_id": "b24f3039-88d2-4f6f-ab4a-dccda1a8fe20",
+      "execution_id": "0ec6bd8f-2668-44a4-9ccb-a4d5eb50c836",
       "run_kind": "author",
       "status": "passed",
       "valid": true,
-      "uploaded": false,
-      "at": "2026-10-24T20:42:07.774Z"
-    },
-    {
-      "execution_id": "8908a085-ccc9-490a-9a1e-93d17db25c56",
-      "run_kind": "replay",
-      "status": "passed",
-      "at": "2026-10-24T20:43:46.468Z",
-      "uploaded": true
+      "uploaded": true,
+      "at": "2026-10-24T21:16:47.811Z"
     }
   ]
 }
