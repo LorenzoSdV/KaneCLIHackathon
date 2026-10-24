@@ -1,6 +1,6 @@
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
-import { createEvent, getEvent, listEvents } from "./store.js";
+import { createEvent, getEvent, listEvents, claimDish } from "./store.js";
 import { homePage, eventPage, notFoundPage } from "./views.js";
 
 const PORT = Number(process.env.PORT ?? 4100);
@@ -59,6 +59,16 @@ const server = createServer(async (req, res) => {
         return send(res, 400, homePage({ events: listEvents(), errors, values: form }));
       }
       const event = createEvent({ title, date, host });
+      return redirect(res, `/events/${event.id}`);
+    }
+
+    const claimMatch = path.match(/^\/events\/([^/]+)\/claims$/);
+    if (req.method === "POST" && claimMatch) {
+      const event = getEvent(claimMatch[1]);
+      if (!event) return send(res, 404, notFoundPage());
+      const form = await readForm(req);
+      const error = claimDish(event, form.category, form.guestName ?? "");
+      if (error) return send(res, 400, eventPage({ event, error }));
       return redirect(res, `/events/${event.id}`);
     }
 

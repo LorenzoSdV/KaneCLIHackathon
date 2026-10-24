@@ -1,3 +1,5 @@
+import { dishCategories } from "./store.js";
+
 export function escape(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -60,13 +62,30 @@ export function homePage({ events, errors = {}, values = {} }) {
   );
 }
 
-export function eventPage({ event }) {
+export function eventPage({ event, error }) {
+  const dishes = dishCategories.map((category) => {
+    const claimant = event.claims[category];
+    return `<li class="dish">
+    <h3>${escape(category)}${claimant ? ` — claimed by ${escape(claimant)}` : ""}</h3>
+    ${claimant ? "" : `<form method="post" action="/events/${event.id}/claims" aria-label="Claim ${category}">
+      <input type="hidden" name="category" value="${category}">
+      <label>Guest name <input type="text" name="guestName" aria-label="Guest name for ${category}"></label>
+      <button type="submit">Claim</button>
+    </form>`}
+  </li>`;
+  }).join("");
   return layout(
     event.title,
     `<section class="card">
   <h1>${escape(event.title)}</h1>
   <p class="date">${escape(event.date)}</p>
   <p class="host">Hosted by ${escape(event.host)}</p>
+</section>
+<section class="card" aria-labelledby="dishes-heading">
+  <h2 id="dishes-heading">Dishes</h2>
+  <p>${Object.keys(event.claims).length} of 5 dishes claimed</p>
+  ${error ? `<div class="error" role="alert">${escape(error)}</div>` : ""}
+  <ul class="dishes">${dishes}</ul>
 </section>`
   );
 }
