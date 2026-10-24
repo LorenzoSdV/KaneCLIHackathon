@@ -26,16 +26,21 @@ const PROTECTED = [`${APP_DIR}/.testmuai/tests`, `${APP_DIR}/requirements`, `${A
 // start_url differs per worktree, so it is never committed (it would conflict at merge).
 const VARIABLES = `${APP_DIR}/.testmuai/variables`;
 
-function restoreProtected(dir: string, tag: string) {
-  const touched = git(["status", "--porcelain", "--", ...PROTECTED], dir);
+// Compares against the index, not HEAD: during a merge the resolved recordings are staged
+// and must survive; only the agent's unstaged edits and new files are undone.
+export function restoreProtected(dir: string, tag: string) {
+  const edited = git(["diff", "--name-only", "--", ...PROTECTED], dir);
+  const added = git(["ls-files", "--others", "--exclude-standard", "--", ...PROTECTED], dir);
+  const touched = [edited, added].filter(Boolean).join("\n");
   if (!touched) return;
   logEvent(tag, { source: "gate", type: "contract_tamper_reverted", files: touched.split("\n") });
-  git(["checkout", "HEAD", "--", ...PROTECTED], dir);
-  git(["clean", "-fdq", "--", ...PROTECTED], dir);
+  if (edited) git(["checkout", "--", ...edited.split("\n")], dir);
+  if (added) git(["clean", "-fdq", "--", ...added.split("\n")], dir);
 }
 
-function commitWork(dir: string, message: string): boolean {
-  git(["add", "-A", "--", ".", `:!${VARIABLES}`], dir);
+// Stages only the app folder, so stray files an agent leaves elsewhere in the worktree are never committed.
+export function commitWork(dir: string, message: string): boolean {
+  git(["add", "-A", "--", APP_DIR, `:!${VARIABLES}`], dir);
   if (!git(["diff", "--cached", "--name-only"], dir)) return false;
   git(["commit", "-m", message], dir);
   return true;

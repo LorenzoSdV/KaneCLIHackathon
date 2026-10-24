@@ -48,9 +48,46 @@ RULES
 - No npm dependencies. Plain HTML forms with POST + redirect are fine; keep it server-rendered.
 - Put the feature on the event page (/events/:id). Use visible text and labels that match the spec wording,
   so a browser agent reading the page can find and verify them.
+- Do NOT run kane-cli, Playwright or any browser yourself: the orchestrator runs the Kane contract after
+  you finish (a browser can't start inside your sandbox anyway). Don't leave scratch files in the repo.
 - Check your work: start the app with \`PORT=${feature.port + 800} node demo-app/server.js\` and exercise it with curl
   (create an event via POST /events with title, a future date and host, then use your feature).
   Stop the server when done.
+- Finish with a short summary of what you changed.`;
+}
+
+// The integration branch carries both features: the resolver/fixer must keep both contracts.
+export function integrationPrompt(
+  repoDir: string,
+  features: Feature[],
+  contracts: Record<string, string[]>,
+  coreTests: string[],
+  task: string,
+): string {
+  const blocks = features
+    .map((f) => `### ${f.title}\n\n${requirementsFor(repoDir, f)}\n\nTests:\n${testsBlock(repoDir, contracts[f.useCase])}`)
+    .join("\n\n");
+  return `You are the integrator for Potluck Planner, a small web app in ./demo-app
+(Node, no dependencies: server.js routes, store.js in-memory data, views.js HTML, public/style.css).
+Two features were built separately by two agents and have now been merged into this branch.
+
+${task}
+
+BOTH FEATURES MUST KEEP WORKING. Their requirements and the Kane browser tests that must pass:
+
+${blocks}
+
+EXISTING BEHAVIOUR YOU MUST NOT BREAK (create-event tests):
+${coreTests.map((f) => `- ${f.split("/").pop()}`).join("\n")}
+
+RULES
+- Change only files inside ./demo-app (server.js, store.js, views.js, public/style.css, or new files there).
+- Do NOT edit anything under ./demo-app/.testmuai, ./demo-app/requirements or ./demo-app/contracts.json.
+- No npm dependencies. Keep both features on the event page (/events/:id).
+- Do NOT run kane-cli, Playwright or any browser yourself: the orchestrator runs the Kane contract after
+  you finish (a browser can't start inside your sandbox anyway). Don't leave scratch files in the repo.
+- Check your work: start the app with \`PORT=4903 node demo-app/server.js\`, exercise both features with curl,
+  and stop the server when done.
 - Finish with a short summary of what you changed.`;
 }
 
