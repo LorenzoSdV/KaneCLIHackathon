@@ -3,3 +3,10 @@ wt/
 .contract/
 **/.testmuai/evidence/
 .DS_Store
+
+# secrets: never commit an OpenAI key or other env files
+.env
+.env.*
+
+# Kane's per-run report, rewritten on every run (the recordings next to it stay committed)
+**/.testmuai/tests/output-*/Result.md
