@@ -314,11 +314,33 @@ function render() {
 
 function queueRender() { if (!renderQueued) { renderQueued = true; requestAnimationFrame(render); } }
 
+// Without the Node server (e.g. on GitHub Pages) the page replays the recording in the browser.
+async function replayInBrowser(speed) {
+  const lines = (await (await fetch("fixtures/demo.jsonl")).text()).split("\n").filter((l) => l.startsWith("{"));
+  apply({ type: "stream_mode", mode: "replay", speed, total: lines.length });
+  let prev = null;
+  for (const line of lines) {
+    const e = JSON.parse(line);
+    const at = Date.parse(e.at ?? "") || prev;
+    if (prev && at) {
+      const wait = Math.min(Math.max(at - prev, 0), 1500) / speed;
+      if (wait > 5) await new Promise((r) => setTimeout(r, wait));
+    }
+    prev = at;
+    apply(e);
+    queueRender();
+  }
+  apply({ type: "stream_replay_done" });
+  queueRender();
+}
+
 async function start() {
   let config = { core: { title: "Create an event" }, features: [] };
+  const hasServer = await fetch("/healthz").then((r) => r.ok).catch(() => false);
+  const get = (serverPath, staticPath) => fetch(hasServer ? serverPath : staticPath);
   try {
-    config = await (await fetch("/features")).json();
-    const contracts = await (await fetch("/contracts")).json();
+    config = await (await get("/features", "../demo-app/features.json")).json();
+    const contracts = await (await get("/contracts", "../demo-app/contracts.json")).json();
     for (const [uc, files] of Object.entries(contracts)) for (const f of files) ucOfTest.set(base(f), uc);
   } catch { /* tiles fall back to the core colour */ }
 
@@ -332,6 +354,11 @@ async function start() {
   document.getElementById("legend").innerHTML = [`<span><i style="background:var(--core)"></i>Core (${esc(config.core.title.toLowerCase())})</span>`,
     ...config.features.map((f, i) => `<span><i style="background:var(--f${i % 6})"></i>${esc(f.title)} contract</span>`)].join("");
   render();
+  if (!hasServer) {
+    // The recording covers round 1 (A, B, merge); hide feature columns it has no events for.
+    COLUMNS = COLUMNS.filter((c) => c.tag === "integration" || ["feat-a", "feat-b"].includes(c.tag));
+    return replayInBrowser(Math.max(0.25, Number(params.get("speed") ?? 8) || 8));
+  }
   const q = params.get("replay") ? `?replay=${encodeURIComponent(params.get("replay"))}&speed=${encodeURIComponent(params.get("speed") ?? "8")}` : "";
   const es = new EventSource(`/stream${q}`);
   es.onmessage = (m) => { try { apply(JSON.parse(m.data)); } catch (err) { console.error(err); } queueRender(); };
