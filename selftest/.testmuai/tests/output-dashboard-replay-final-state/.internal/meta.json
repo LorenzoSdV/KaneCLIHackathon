@@ -13,6 +13,13 @@
       "status": "passed",
       "valid": true,
       "at": "2026-10-24T23:22:57.350Z"
+    },
+    {
+      "execution_id": "f0a627ca-a9d1-434f-a47d-56a40226ff4d",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-10-24T23:45:24.865Z"
     }
   ]
 }
