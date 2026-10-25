@@ -88,6 +88,11 @@ createServer((req, res) => {
     const speed = Math.max(0.25, Number(url.searchParams.get("speed") ?? 1) || 1);
     return replay ? streamReplay(req, res, replay, speed) : streamLive(req, res);
   }
+  if (url.pathname === "/features") {
+    const file = join(root, "demo-app", "features.json");
+    res.writeHead(200, { "content-type": "application/json" });
+    return res.end(existsSync(file) ? readFileSync(file) : '{"features":[]}');
+  }
   if (url.pathname === "/contracts") {
     const file = join(root, "demo-app", "contracts.json");
     res.writeHead(200, { "content-type": "application/json" });

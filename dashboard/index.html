@@ -9,14 +9,14 @@
     --bg: #f6f5f2; --panel: #ffffff; --panel-2: #f1efea; --text: #1d1c1a; --muted: #6d6a63; --border: #e4e0d8;
     --pass: #15803d; --pass-bg: #dcfce7; --fail: #b91c1c; --fail-bg: #fee2e2; --run: #1d4ed8; --run-bg: #dbeafe;
     --warn: #a16207; --warn-bg: #fef3c7; --idle-bg: #ece9e3;
-    --core: #6b7280; --rsvp: #7c3aed; --dish: #c2410c;
+    --core: #6b7280; --f0: #7c3aed; --f1: #c2410c; --f2: #0f766e; --f3: #be185d; --f4: #4d7c0f; --f5: #1d4ed8;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #141413; --panel: #1d1c1a; --panel-2: #262522; --text: #ecebe7; --muted: #a29f97; --border: #34322e;
       --pass: #4ade80; --pass-bg: #14301f; --fail: #f87171; --fail-bg: #3b1717; --run: #93c5fd; --run-bg: #172a46;
       --warn: #fbbf24; --warn-bg: #3a2c0c; --idle-bg: #2b2a27;
-      --core: #9ca3af; --rsvp: #a78bfa; --dish: #fb923c;
+      --core: #9ca3af; --f0: #a78bfa; --f1: #fb923c; --f2: #2dd4bf; --f3: #f472b6; --f4: #a3e635; --f5: #93c5fd;
     }
   }
   * { box-sizing: border-box; }
@@ -34,7 +34,7 @@
   .mode { font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 999px; background: var(--idle-bg); }
   .mode.live { background: var(--pass-bg); color: var(--pass); }
   .mode.replay { background: var(--warn-bg); color: var(--warn); }
-  main { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 16px 24px 32px; align-items: start; }
+  main { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 16px; padding: 16px 24px 32px; align-items: start; }
   @media (max-width: 1100px) { main { grid-template-columns: 1fr; } }
   .col { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
   .col-head { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 8px; align-items: start; }
@@ -59,7 +59,8 @@
   .cmd { font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
   .tile { border-radius: 8px; padding: 6px 8px; font-size: 12px; background: var(--panel); border: 1px solid var(--border); border-left: 4px solid var(--core); }
-  .tile.uc-2 { border-left-color: var(--rsvp); } .tile.uc-3 { border-left-color: var(--dish); }
+  .tile.f0 { border-left-color: var(--f0); } .tile.f1 { border-left-color: var(--f1); } .tile.f2 { border-left-color: var(--f2); }
+  .tile.f3 { border-left-color: var(--f3); } .tile.f4 { border-left-color: var(--f4); } .tile.f5 { border-left-color: var(--f5); }
   .tile .st { font-weight: 700; }
   .tile.running { background: var(--run-bg); } .tile.running .st { color: var(--run); }
   .tile.passed .st { color: var(--pass); }
@@ -80,11 +81,7 @@
   <div>
     <h1>Spec Contract <span id="mode" class="mode">connecting…</span></h1>
     <div class="sub">PRD → Kane-designed tests → one Codex agent per feature, gated by its Kane contract → merge → full suite</div>
-    <div class="legend" style="margin-top:6px">
-      <span><i style="background:var(--core)"></i>Core (create event)</span>
-      <span><i style="background:var(--rsvp)"></i>RSVP contract</span>
-      <span><i style="background:var(--dish)"></i>Dish claims contract</span>
-    </div>
+    <div class="legend" id="legend" style="margin-top:6px"></div>
   </div>
   <div class="stats">
     <div class="stat"><b id="s-codex">0</b><span>Codex attempts</span></div>
@@ -97,14 +94,14 @@
 <footer id="foot"></footer>
 
 <script>
-const COLUMNS = [
-  { tag: "feat-a", title: "Feature A · RSVP", agent: "Codex agent A" },
-  { tag: "feat-b", title: "Feature B · Dish claims", agent: "Codex agent B" },
-  { tag: "integration", title: "Integration · merge A + B", agent: "Codex integrator" },
-];
+// Columns come from demo-app/features.json (one per feature), then the integration column.
+// The "Contracts" column (Codex contract agent) appears once it has run.
+let COLUMNS = [];
 const params = new URLSearchParams(location.search);
 const ucOfTest = new Map(); // test basename -> use case
-const state = Object.fromEntries(COLUMNS.map((c) => [c.tag, newSession()]));
+const ucColor = new Map(); // use case -> tile colour class
+let state = {};
+const contractsLog = { phases: [] };
 const totals = { codexAttempts: 0, kaneRuns: 0, kaneTests: 0 };
 let renderQueued = false;
 const openAttempts = new Set(); // expanded earlier attempts survive re-renders
@@ -129,12 +126,13 @@ function current(s) { return s.attempts.at(-1); }
 function apply(e) {
   if (e.type === "stream_mode") return setMode(e);
   if (e.type === "stream_replay_done") { document.getElementById("foot").textContent = "Replay finished."; return; }
+  if (e.tag === "contracts") return applyContracts(e);
   const s = state[e.tag];
   if (!s) return;
 
   // A new worktree_ready starts a new session for that column (a fresh run of build/merge).
   if (e.type === "worktree_ready") {
-    state[e.tag] = newSession({ status: "starting", branch: e.branch, port: e.port, sessions: s.sessions + 1 });
+    state[e.tag] = newSession({ status: "starting", branch: e.branch, port: e.port, sessions: s.sessions + 1, startedAt: e.at });
     return;
   }
   const a = current(s);
@@ -190,6 +188,41 @@ function apply(e) {
   if (e.type === "testrun_summary") k.totals = e.totals;
 }
 
+// Contract agent: Codex drives Kane's design commands; a person approves.
+function applyContracts(e) {
+  const p = contractsLog.phases.at(-1);
+  if (e.type === "contract_agent_start") contractsLog.phases.push({ name: e.phase, codex: codexBlock(), report: null, waiting: [], approved: null });
+  else if (e.type === "contract_agent_end" && p) { p.report = e.report; p.codex.state = "done"; p.exitCode = e.exitCode; }
+  else if (e.type === "contracts_waiting") { const q = contractsLog.phases.findLast((x) => x.name === (e.phase === "use_cases" ? "extract" : "design")); if (q) q.waiting = e.items; }
+  else if (e.type === "contracts_approved") { const q = contractsLog.phases.findLast((x) => x.name === (e.phase === "use_cases" ? "extract" : "design")); if (q) { q.approved = e.items; q.waiting = []; } }
+  else if (e.source === "codex" && p) {
+    const c = p.codex;
+    if (e.type === "item.started" && e.item?.type === "command_execution") c.lastCmd = String(e.item.command ?? "").replace(/^\/bin\/zsh -lc /, "");
+    if (e.type === "item.completed" && e.item?.type === "command_execution") c.commands++;
+    if (e.type === "turn.completed") c.state = "done";
+  }
+}
+
+function contractsHtml() {
+  if (!contractsLog.phases.length) return "";
+  const phases = contractsLog.phases.map((p) => {
+    const label = p.name === "extract" ? "requirements → use cases" : "use cases → tests";
+    const answers = (p.report?.answers ?? []).map((a) => `<div class="summary">? ${esc(a.question)}<br>→ <b>${esc(a.answer)}</b> <span class="sub">(${esc(a.reasoning)})</span></div>`).join("");
+    const found = p.name === "extract"
+      ? (p.report?.use_cases ?? []).map((u) => `<div class="summary">• <b>${esc(u.id)}</b> ${esc(u.title)}</div>`).join("")
+      : (p.report?.designed ?? []).map((d) => `<div class="summary">• <b>${esc(d.use_case)}</b>: ${d.tests} tests${d.gaps.length ? ` · ${d.gaps.length} gaps` : ""}</div>`).join("");
+    const gateState = p.approved ? `<div class="merge-row">✓ approved by you: ${esc(p.approved.join(", ")).slice(0, 200)}</div>`
+      : p.waiting.length ? `<div class="note">⏳ waiting for your approval: ${esc(p.waiting.join(", "))}</div>` : "";
+    return `<div class="block"><h3><span class="who">🤖 Codex contract agent · ${label}</span><span class="r">${p.codex.state === "running" ? '<span class="spin"></span> working' : "done"} · ${plural(p.codex.commands, "command")}</span></h3>
+      ${p.codex.state === "running" && p.codex.lastCmd ? `<div class="cmd">$ ${esc(p.codex.lastCmd.slice(0, 160))}</div>` : ""}
+      ${found}${answers ? `<div class="sub" style="margin-top:6px">Kane asked; the agent answered:</div>${answers}` : ""}${gateState}</div>`;
+  }).join("");
+  const last = contractsLog.phases.at(-1);
+  const status = last.codex.state === "running" ? ["codex", "Codex working"] : last.waiting.length ? ["kane", "waiting for you"] : ["passed", "approved"];
+  return `<section class="col" data-tag="contracts"><div class="col-head"><div><h2>Contracts · Codex + Kane, you approve</h2><div class="meta">PRD → Kane use cases → Kane tests</div></div>
+    <span class="pill ${status[0]}">${status[1]}</span></div><div class="body">${phases}</div></section>`;
+}
+
 function setMode(e) {
   const el = document.getElementById("mode");
   el.className = `mode ${e.mode}`;
@@ -201,9 +234,9 @@ function setMode(e) {
 
 function tiles(k) {
   return `<div class="tiles">${[...k.tests].map(([name, t]) => {
-    const uc = ucOfTest.get(name) ?? "uc-1";
+    const color = ucColor.get(ucOfTest.get(name)) ?? "";
     const icon = { passed: "✓ pass", failed: "✗ fail", broken: "✗ broken", interrupted: "✗ stopped", running: "", queued: "· queued" }[t.status] ?? t.status;
-    return `<div class="tile ${uc} ${t.status}" title="${esc(name)}${t.failure ? "\n" + esc(t.failure) : ""}">
+    return `<div class="tile ${color} ${t.status}" title="${esc(name)}${t.failure ? "\n" + esc(t.failure) : ""}">
       <div class="st">${t.status === "running" ? '<span class="spin"></span> running' : icon}${t.secs ? ` <span style="font-weight:400;color:var(--muted)">${Math.round(t.secs)}s</span>` : ""}</div>
       <div>${esc(pretty(name))}</div>
       ${t.failure ? `<div class="why">${esc(t.failure.slice(0, 140))}</div>` : ""}
@@ -229,9 +262,26 @@ function kaneHtml(k, result) {
 
 function render() {
   renderQueued = false;
-  document.getElementById("cols").innerHTML = COLUMNS.map(({ tag, title, agent }) => {
+  const contracts = contractsHtml();
+  const cols = document.getElementById("cols");
+  cols.style.setProperty("--cols", Math.min(COLUMNS.length + (contracts ? 1 : 0), 4));
+  cols.innerHTML = contracts + COLUMNS.map(({ tag, title, agent }) => {
     const s = state[tag];
-    const label = { idle: "waiting", starting: "starting", codex: "Codex working", kane: "Kane testing", merging: "merging", passed: "contract passed", blocked: "blocked" }[s.status] ?? s.status;
+    let label = { idle: "waiting", starting: "starting", codex: "Codex working", kane: "Kane testing", merging: "merging", passed: "contract passed", blocked: "blocked" }[s.status] ?? s.status;
+    let pill = s.status;
+    let headNote = "";
+    if (tag === "integration") {
+      // The column shows the last merge run. Features that started after it are not in it yet.
+      const merged = s.merges.map((m) => m.branch.replace(/^feat\//, "").toUpperCase());
+      title = merged.length ? `Integration · merged ${merged.join(" + ")}` : "Integration";
+      const newer = COLUMNS.filter((c) => c.tag !== "integration" && state[c.tag].startedAt && (!s.startedAt || state[c.tag].startedAt > s.startedAt));
+      if (newer.length && !["merging", "codex", "kane"].includes(s.status)) {
+        const letters = newer.map((c) => c.tag.replace(/^feat-/, "").toUpperCase()).join(", ");
+        label = `waiting for ${letters}`;
+        pill = "idle";
+        if (s.merges.length) headNote = `<div class="note">Below: the earlier merge (${merged.join(" + ")}), before ${letters} were built. ${letters} merge after their contracts pass.</div>`;
+      }
+    }
     const merges = s.merges.map((m) => `<div class="merge-row">${m.state === "running" ? '<span class="spin"></span>' : m.state === "blocked" ? "⛔" : "✓"} merge <b>${esc(m.branch)}</b>
       ${m.recordings || m.code.length ? `<span class="sub"> · ${m.recordings} Kane recording conflicts (auto) · ${m.code.length ? `${m.code.length} code conflicts → Codex` : "no code conflicts"}</span>` : ""}</div>`).join("");
     // Earlier attempts collapse to a one-line summary (click to expand); the latest stays open.
@@ -245,8 +295,9 @@ function render() {
     }).join("");
     return `<section class="col" data-tag="${tag}">
       <div class="col-head"><div><h2>${esc(title)}</h2><div class="meta">${s.branch ? `branch ${esc(s.branch)} · port ${esc(s.port)}` : "not started"}${s.sessions > 1 ? ` · run ${s.sessions}` : ""}</div></div>
-      <span class="pill ${s.status}">${label}</span></div>
+      <span class="pill ${pill}">${label}</span></div>
       <div class="body">
+        ${headNote}
         ${merges ? `<div class="block">${merges}</div>` : ""}
         ${s.resolver?.codex ? codexHtml(s.resolver.codex, `${agent} · resolve conflicts`) : ""}
         ${attempts || (merges ? "" : '<div class="empty">No run yet.</div>')}
@@ -264,10 +315,22 @@ function render() {
 function queueRender() { if (!renderQueued) { renderQueued = true; requestAnimationFrame(render); } }
 
 async function start() {
+  let config = { core: { title: "Create an event" }, features: [] };
   try {
+    config = await (await fetch("/features")).json();
     const contracts = await (await fetch("/contracts")).json();
     for (const [uc, files] of Object.entries(contracts)) for (const f of files) ucOfTest.set(base(f), uc);
-  } catch { /* tiles fall back to core colour */ }
+  } catch { /* tiles fall back to the core colour */ }
+
+  const letter = (f) => f.prdSection.replace(/^Feature\s+/i, "");
+  COLUMNS = [
+    ...config.features.map((f) => ({ tag: f.id, title: `${f.prdSection} · ${f.title}`, agent: `Codex agent ${letter(f)}` })),
+    { tag: "integration", title: `Integration · merge ${config.features.map(letter).join(" + ")}`, agent: "Codex integrator" },
+  ];
+  state = Object.fromEntries(COLUMNS.map((c) => [c.tag, newSession()]));
+  config.features.forEach((f, i) => ucColor.set(f.useCase, `f${i % 6}`));
+  document.getElementById("legend").innerHTML = [`<span><i style="background:var(--core)"></i>Core (${esc(config.core.title.toLowerCase())})</span>`,
+    ...config.features.map((f, i) => `<span><i style="background:var(--f${i % 6})"></i>${esc(f.title)} contract</span>`)].join("");
   render();
   const q = params.get("replay") ? `?replay=${encodeURIComponent(params.get("replay"))}&speed=${encodeURIComponent(params.get("speed") ?? "8")}` : "";
   const es = new EventSource(`/stream${q}`);
