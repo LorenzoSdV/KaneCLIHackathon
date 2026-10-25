@@ -355,8 +355,6 @@ async function start() {
     ...config.features.map((f, i) => `<span><i style="background:var(--f${i % 6})"></i>${esc(f.title)} contract</span>`)].join("");
   render();
   if (!hasServer) {
-    // The recording covers round 1 (A, B, merge); hide feature columns it has no events for.
-    COLUMNS = COLUMNS.filter((c) => c.tag === "integration" || ["feat-a", "feat-b"].includes(c.tag));
     return replayInBrowser(Math.max(0.25, Number(params.get("speed") ?? 8) || 8));
   }
   const q = params.get("replay") ? `?replay=${encodeURIComponent(params.get("replay"))}&speed=${encodeURIComponent(params.get("speed") ?? "8")}` : "";
