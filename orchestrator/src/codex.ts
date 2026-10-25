@@ -17,6 +17,10 @@ export interface CodexOptions {
   resumeThreadId?: string | null; // continue the same conversation on retries
   timeoutMs?: number;
   model?: string;
+  // Only the contract agent gets these: Kane's design commands need the network and Kane's own folder.
+  network?: boolean;
+  addDirs?: string[];
+  outputSchemaFile?: string; // JSON Schema for the final message
 }
 
 // Sandboxed to the worktree, never asks for approval (nobody is there to answer).
@@ -29,6 +33,9 @@ export function runCodex(prompt: string, opts: CodexOptions): Promise<CodexResul
 
   const common = [...SAFETY, "--json", "--skip-git-repo-check", "-o", lastMessageFile];
   if (opts.model) common.push("-m", opts.model);
+  if (opts.network) common.push("-c", "sandbox_workspace_write.network_access=true");
+  for (const dir of opts.addDirs ?? []) common.push("--add-dir", dir);
+  if (opts.outputSchemaFile) common.push("--output-schema", opts.outputSchemaFile);
   const args = opts.resumeThreadId
     ? ["exec", "resume", ...common, opts.resumeThreadId, prompt]
     : ["exec", ...common, "-C", opts.cwd, prompt];

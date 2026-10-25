@@ -15,14 +15,14 @@ export interface Feature {
   useCase: string; // Kane use-case ref
   branch: string;
   port: number;
+  prdSection: string; // "## <heading>" prefix in requirements/potluck.md
+  decisionSections: string[]; // "## <heading>" prefixes in requirements/decisions.md
 }
 
-export const CORE_USE_CASE = "uc-1";
-
-export const FEATURES: Feature[] = [
-  { id: "feat-a", title: "RSVP", useCase: "uc-2", branch: "feat/a", port: 4101 },
-  { id: "feat-b", title: "Dish claims", useCase: "uc-3", branch: "feat/b", port: 4102 },
-];
+// Features live in demo-app/features.json: adding a feature is a config change, not a code change.
+const config = JSON.parse(readFileSync(join(ROOT, APP_DIR, "features.json"), "utf8"));
+export const CORE_USE_CASE: string = config.core.useCase;
+export const FEATURES: Feature[] = config.features;
 
 export const INTEGRATION = { id: "integration", branch: "integration", port: 4103 };
 

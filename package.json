@@ -11,7 +11,9 @@
     "suite": "node orchestrator/src/suite.ts",
     "build": "node orchestrator/src/build.ts",
     "merge": "node orchestrator/src/merge.ts",
-    "dashboard": "node dashboard/server.js"
+    "dashboard": "node dashboard/server.js",
+    "contracts": "node orchestrator/src/contracts.ts",
+    "round": "node orchestrator/src/contracts.ts round"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",

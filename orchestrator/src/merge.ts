@@ -11,7 +11,7 @@ import { APP_DIR, CORE_USE_CASE, FEATURES, INTEGRATION, loadContracts, setStartU
 import { commitWork, restoreProtected } from "./gate.ts";
 import { EVENTS_LOG, logEvent, runSuite, type MemberResult } from "./kane.ts";
 import { integrationPrompt, retryPrompt } from "./prompts.ts";
-import { ensureWorktree, git, removeWorktree } from "./worktrees.ts";
+import { ensureWorktree, git, isMerged, removeWorktree } from "./worktrees.ts";
 
 const { values } = parseArgs({
   options: {
@@ -37,7 +37,13 @@ function latestContractResult(featureId: string): string {
   return latest;
 }
 
-const unpassed = FEATURES.map((f) => ({ id: f.id, result: latestContractResult(f.id) })).filter((r) => r.result !== "passed");
+// Features already on main were merged in an earlier round; only new ones are merged now.
+const toMerge = FEATURES.filter((f) => !isMerged(f.branch));
+if (!toMerge.length) {
+  console.log("Every feature in demo-app/features.json is already merged into main. Nothing to merge.");
+  process.exit(0);
+}
+const unpassed = toMerge.map((f) => ({ id: f.id, result: latestContractResult(f.id) })).filter((r) => r.result !== "passed");
 if (unpassed.length) {
   logEvent(tag, { source: "merge", type: "merge_refused", features: unpassed });
   for (const r of unpassed) console.log(`⛔ ${r.id}: latest contract result is "${r.result}", not merging.`);
@@ -76,7 +82,7 @@ function testOfRecording(file: string): string {
 let threadId: string | null = null;
 
 // 1. Merge each feature branch.
-for (const feature of FEATURES) {
+for (const feature of toMerge) {
   logEvent(tag, { source: "merge", type: "merge_start", branch: feature.branch });
   try {
     git(["merge", "--no-ff", "--no-edit", "-m", `Merge ${feature.branch} (${feature.title}) into integration`, feature.branch], dir);

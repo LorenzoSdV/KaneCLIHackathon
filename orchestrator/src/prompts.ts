@@ -1,5 +1,5 @@
 // Prompts for the Codex agents. The contract is the requirement text plus the Kane tests, verbatim.
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Feature } from "./features.ts";
 import type { MemberResult } from "./kane.ts";
@@ -10,12 +10,13 @@ function section(markdown: string, prefix: string): string {
   return parts.find((p) => p.startsWith(`## ${prefix}`))?.trim() ?? "";
 }
 
+// A feature's "## <prdSection>" may live in any requirements file (potluck.md, round-2.md, ...).
 function requirementsFor(repoDir: string, feature: Feature): string {
-  const prd = readFileSync(join(repoDir, "demo-app/requirements/potluck.md"), "utf8");
-  const decisions = readFileSync(join(repoDir, "demo-app/requirements/decisions.md"), "utf8");
-  const featureHeading = feature.id === "feat-a" ? "Feature A" : "Feature B";
-  const decisionHeading = feature.id === "feat-a" ? "An RSVP needs a choice" : "__none__";
-  return [section(prd, featureHeading), section(decisions, decisionHeading)].filter(Boolean).join("\n\n");
+  const dir = join(repoDir, "demo-app/requirements");
+  const docs = readdirSync(dir).filter((f) => f.endsWith(".md") && f !== "decisions.md").map((f) => readFileSync(join(dir, f), "utf8"));
+  const decisions = readFileSync(join(dir, "decisions.md"), "utf8");
+  const featureSection = docs.map((d) => section(d, feature.prdSection)).find(Boolean) ?? "";
+  return [featureSection, ...feature.decisionSections.map((h) => section(decisions, h))].filter(Boolean).join("\n\n");
 }
 
 function testsBlock(repoDir: string, testFiles: string[]): string {
@@ -39,7 +40,7 @@ in a real Chrome. The work is accepted only when every one of these tests passes
 
 ${testsBlock(repoDir, featureTests)}
 
-EXISTING BEHAVIOUR YOU MUST NOT BREAK (create-event tests):
+EXISTING BEHAVIOUR YOU MUST NOT BREAK (tests of everything already built: create event, plus features already merged):
 ${coreTests.map((f) => `- ${f.split("/").pop()}`).join("\n")}
 
 RULES

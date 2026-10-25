@@ -19,6 +19,15 @@ function branchExists(branch: string): boolean {
   }
 }
 
+// True when the feature was merged: its tip is a parent of a merge commit on <into>. (Just "tip is an
+// ancestor of main" is wrong: a freshly created branch with no commits yet is also an ancestor of main.)
+export function isMerged(branch: string, into = "main"): boolean {
+  if (!branchExists(branch)) return false;
+  const tip = git(["rev-parse", branch]);
+  const mergeParents = git(["log", into, "--merges", "--format=%P"]);
+  return mergeParents.split(/\s+/).includes(tip);
+}
+
 // Creates wt/<name> on <branch> (branched from <base>), or reuses it if it already exists.
 export function ensureWorktree(name: string, branch: string, base = "main"): string {
   const dir = join(WORKTREES_DIR, name);

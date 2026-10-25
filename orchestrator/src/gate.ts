@@ -3,10 +3,10 @@
 import { join } from "node:path";
 import { startApp } from "./app.ts";
 import { runCodex } from "./codex.ts";
-import { APP_DIR, CORE_USE_CASE, type Contracts, type Feature, setStartUrl } from "./features.ts";
+import { APP_DIR, CORE_USE_CASE, type Contracts, type Feature, FEATURES, setStartUrl } from "./features.ts";
 import { logEvent, runSuite, type MemberResult } from "./kane.ts";
 import { initialPrompt, retryPrompt } from "./prompts.ts";
-import { git } from "./worktrees.ts";
+import { git, isMerged } from "./worktrees.ts";
 
 export interface GateResult {
   feature: string;
@@ -54,7 +54,9 @@ export async function runGate(
 ): Promise<GateResult> {
   const maxAttempts = opts.maxAttempts ?? 4;
   const featureTests = contracts[feature.useCase];
-  const coreTests = contracts[CORE_USE_CASE];
+  // "Existing behaviour": the core, plus every feature already merged into main, must keep passing.
+  const merged = FEATURES.filter((f) => f.id !== feature.id && isMerged(f.branch));
+  const coreTests = [...contracts[CORE_USE_CASE], ...merged.flatMap((f) => contracts[f.useCase] ?? [])];
   const tag = feature.id;
   let threadId: string | null = null;
   let failures: MemberResult[] = [];
